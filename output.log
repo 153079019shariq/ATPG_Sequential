@@ -1,0 +1,684 @@
+['A', 'B', 'G3', 'G2', 'G1', 'fanout1', 'fanout2', 'fanout3', 'FF3', 'FF2', 'FF1', 'G4', 'output1']
+[('A', 'fanout1'), ('B', 'FF1'), ('G3', 'G4'), ('G2', 'fanout3'), ('G1', 'FF2'), ('fanout1', 'G3'), ('fanout1', 'G1'), ('fanout2', 'G2'), ('fanout2', 'G1'), ('fanout3', 'G4'), ('fanout3', 'FF3'), ('FF3', 'G4'), ('FF2', 'G2'), ('FF1', 'fanout2'), ('G4', 'output1')]
+########################################################################################
+########################################################################################
+##########################################################
+***********************************
+Length of Graph 76
+test_not_possible_with_this_val() False
+**********************Objective ********************
+D_fronteir_list []
+node1 node2 fanout1_4 G1_4
+**********************Backtrace ********************
+node1 fanout1_4
+Before Backtrace ('A_4', 'fanout1_4') x x
+None
+After Backtrace ('A_4', 'fanout1_4') 0 0
+None
+Backtrace node A_4 fanout1_4 0 0
+I_Stack.peek() ('A_4', 'fanout1_4') 0
+None
+**********************Forward Implication 1st********************
+new_node1 new_node2 fanout1_4 G1_4
+new_node1 new_node2 fanout3_5 G4_5
+new_node1 new_node2 fanout3_5 G4_6
+new_node1 new_node2 fanout1_4 G3_4
+**************************************************************
+faulty_edge_list ['fanout1_4', 'G1_4', 'sa1']
+FF3_op_0 x x
+FF2_op_0 x x
+fanout3_0 x x
+fanout3_0 x x
+fanout3_1 x x
+fanout3_1 x x
+fanout3_2 x x
+fanout3_2 x x
+fanout3_3 x x
+fanout3_3 x x
+fanout3_4 x x
+fanout3_4 x x
+fanout3_5 x x
+fanout3_5 x x
+fanout3_6 x x
+fanout3_6 x x
+fanout1_6 x x
+fanout1_6 x x
+fanout1_4 0 1
+fanout1_4 0 0
+fanout1_5 x x
+fanout1_5 x x
+fanout1_2 x x
+fanout1_2 x x
+fanout1_3 x x
+fanout1_3 x x
+fanout1_0 x x
+fanout1_0 x x
+fanout1_1 x x
+fanout1_1 x x
+G1_5 x x
+G1_4 x 1
+G1_6 x x
+G1_1 x x
+G1_0 x x
+G1_3 x x
+G1_2 x x
+G3_3 x x
+G3_2 x x
+G3_1 x x
+G3_0 x x
+G3_6 x x
+G3_5 x x
+G3_4 1 1
+A_6 x x
+A_5 x x
+A_4 0 0
+A_3 x x
+A_2 x x
+A_1 x x
+A_0 x x
+B_0 x x
+B_1 x x
+B_2 x x
+B_3 x x
+B_4 x x
+B_5 x x
+B_6 x x
+G2_2 x x
+G2_3 x x
+G2_0 x x
+G2_1 x x
+G2_6 x x
+G2_4 x x
+G2_5 x x
+FF1_op_0 x x
+G4_0 x x
+G4_1 x x
+G4_2 x x
+G4_3 x x
+G4_4 1 1
+G4_5 x x
+G4_6 x x
+fanout2_1 x x
+fanout2_1 x x
+fanout2_0 x x
+fanout2_0 x x
+fanout2_3 x x
+fanout2_3 x x
+fanout2_2 x x
+fanout2_2 x x
+fanout2_5 x x
+fanout2_5 x x
+fanout2_4 x x
+fanout2_4 x x
+fanout2_6 x x
+fanout2_6 x x
+One turn over try another
+test_not_possible_with_this_val() False
+**********************Objective ********************
+D_fronteir_list ['G1_4']
+D_fronteir []
+sort_D_fronteir
+D_fronteir_list [('G1_4', 3)]
+@@@@@@@@@@@ undefined_ip
+node_D_fronteir G1_4
+node1 node2 fanout2_4 G1_4
+**********************Backtrace ********************
+node1 fanout2_4
+Before Backtrace ('B_3', 'fanout2_4') x x
+None
+After Backtrace ('B_3', 'fanout2_4') 0 0
+None
+Backtrace node B_3 fanout2_4 0 0
+I_Stack.peek() ('A_4', 'fanout1_4') 0
+('B_3', 'fanout2_4') 0
+None
+**********************Forward Implication 1st********************
+new_node1 new_node2 fanout2_4 G1_4
+new_node1 new_node2 fanout3_5 G4_5
+new_node1 new_node2 fanout3_5 G4_6
+new_node1 new_node2 fanout2_4 G2_4
+new_node1 new_node2 fanout3_4 G4_4
+new_node1 new_node2 fanout3_4 G4_5
+**************************************************************
+faulty_edge_list ['fanout1_4', 'G1_4', 'sa1']
+FF3_op_0 x x
+FF2_op_0 x x
+fanout3_0 x x
+fanout3_0 x x
+fanout3_1 x x
+fanout3_1 x x
+fanout3_2 x x
+fanout3_2 x x
+fanout3_3 x x
+fanout3_3 x x
+fanout3_4 1 1
+fanout3_4 1 1
+fanout3_5 1 x
+fanout3_5 1 x
+fanout3_6 x x
+fanout3_6 x x
+fanout1_6 x x
+fanout1_6 x x
+fanout1_4 0 1
+fanout1_4 0 0
+fanout1_5 x x
+fanout1_5 x x
+fanout1_2 x x
+fanout1_2 x x
+fanout1_3 x x
+fanout1_3 x x
+fanout1_0 x x
+fanout1_0 x x
+fanout1_1 x x
+fanout1_1 x x
+G1_5 x x
+G1_4 0 1
+G1_6 x x
+G1_1 x x
+G1_0 x x
+G1_3 x x
+G1_2 x x
+G3_3 x x
+G3_2 x x
+G3_1 x x
+G3_0 x x
+G3_6 x x
+G3_5 x x
+G3_4 1 1
+A_6 x x
+A_5 x x
+A_4 0 0
+A_3 x x
+A_2 x x
+A_1 x x
+A_0 x x
+B_0 x x
+B_1 x x
+B_2 x x
+B_3 0 0
+B_4 x x
+B_5 x x
+B_6 x x
+G2_2 x x
+G2_3 x x
+G2_0 x x
+G2_1 x x
+G2_6 x x
+G2_4 1 1
+G2_5 1 x
+FF1_op_0 x x
+G4_0 x x
+G4_1 x x
+G4_2 x x
+G4_3 x x
+G4_4 1 1
+G4_5 1 1
+G4_6 1 x
+fanout2_1 x x
+fanout2_1 x x
+fanout2_0 x x
+fanout2_0 x x
+fanout2_3 x x
+fanout2_3 x x
+fanout2_2 x x
+fanout2_2 x x
+fanout2_5 x x
+fanout2_5 x x
+fanout2_4 0 0
+fanout2_4 0 0
+fanout2_6 x x
+fanout2_6 x x
+One turn over try another
+test_not_possible_with_this_val() False
+**********************Objective ********************
+D_fronteir_list [('G1_4', 3)]
+D_fronteir []
+sort_D_fronteir
+D_fronteir_list [('G2_5', 4)]
+@@@@@@@@@@@ undefined_ip
+node_D_fronteir G2_5
+node1 node2 fanout2_5 G2_5
+**********************Backtrace ********************
+node1 fanout2_5
+Before Backtrace ('B_4', 'fanout2_5') x x
+None
+After Backtrace ('B_4', 'fanout2_5') 1 1
+None
+Backtrace node B_4 fanout2_5 1 0
+I_Stack.peek() ('A_4', 'fanout1_4') 0
+('B_3', 'fanout2_4') 0
+('B_4', 'fanout2_5') 1
+None
+**********************Forward Implication 1st********************
+new_node1 new_node2 fanout2_5 G1_5
+new_node1 new_node2 fanout3_6 G4_6
+new_node1 new_node2 fanout3_6 FF3_ip_6
+new_node1 new_node2 fanout2_5 G2_5
+new_node1 new_node2 fanout3_5 G4_5
+new_node1 new_node2 fanout3_5 G4_6
+**************************************************************
+faulty_edge_list ['fanout1_4', 'G1_4', 'sa1']
+FF3_op_0 x x
+FF2_op_0 x x
+fanout3_0 x x
+fanout3_0 x x
+fanout3_1 x x
+fanout3_1 x x
+fanout3_2 x x
+fanout3_2 x x
+fanout3_3 x x
+fanout3_3 x x
+fanout3_4 1 1
+fanout3_4 1 1
+fanout3_5 1 0
+fanout3_5 1 0
+fanout3_6 x x
+fanout3_6 x x
+fanout1_6 x x
+fanout1_6 x x
+fanout1_4 0 1
+fanout1_4 0 0
+fanout1_5 x x
+fanout1_5 x x
+fanout1_2 x x
+fanout1_2 x x
+fanout1_3 x x
+fanout1_3 x x
+fanout1_0 x x
+fanout1_0 x x
+fanout1_1 x x
+fanout1_1 x x
+G1_5 1 1
+G1_4 0 1
+G1_6 x x
+G1_1 x x
+G1_0 x x
+G1_3 x x
+G1_2 x x
+G3_3 x x
+G3_2 x x
+G3_1 x x
+G3_0 x x
+G3_6 x x
+G3_5 x x
+G3_4 1 1
+A_6 x x
+A_5 x x
+A_4 0 0
+A_3 x x
+A_2 x x
+A_1 x x
+A_0 x x
+B_0 x x
+B_1 x x
+B_2 x x
+B_3 0 0
+B_4 1 1
+B_5 x x
+B_6 x x
+G2_2 x x
+G2_3 x x
+G2_0 x x
+G2_1 x x
+G2_6 x x
+G2_4 1 1
+G2_5 1 0
+FF1_op_0 x x
+G4_0 x x
+G4_1 x x
+G4_2 x x
+G4_3 x x
+G4_4 1 1
+G4_5 1 1
+G4_6 1 x
+fanout2_1 x x
+fanout2_1 x x
+fanout2_0 x x
+fanout2_0 x x
+fanout2_3 x x
+fanout2_3 x x
+fanout2_2 x x
+fanout2_2 x x
+fanout2_5 1 1
+fanout2_5 1 1
+fanout2_4 0 0
+fanout2_4 0 0
+fanout2_6 x x
+fanout2_6 x x
+One turn over try another
+test_not_possible_with_this_val() False
+**********************Objective ********************
+D_fronteir_list [('G2_5', 4)]
+D_fronteir []
+sort_D_fronteir
+D_fronteir_list [('G4_6', 6)]
+@@@@@@@@@@@ undefined_ip
+node_D_fronteir G4_6
+node1 node2 G3_6 G4_6
+**********************Backtrace ********************
+node1 G3_6
+Before Backtrace ('fanout1_6', 'G3_6') x x
+None
+After Backtrace ('fanout1_6', 'G3_6') 1 1
+None
+node1 fanout1_6
+Before Backtrace ('A_6', 'fanout1_6') x x
+None
+After Backtrace ('A_6', 'fanout1_6') 1 1
+None
+Backtrace node A_6 fanout1_6 1 0
+I_Stack.peek() ('A_4', 'fanout1_4') 0
+('B_3', 'fanout2_4') 0
+('B_4', 'fanout2_5') 1
+('A_6', 'fanout1_6') 1
+None
+**********************Forward Implication 1st********************
+new_node1 new_node2 fanout1_6 G1_6
+new_node1 new_node2 fanout1_6 G3_6
+**************************************************************
+faulty_edge_list ['fanout1_4', 'G1_4', 'sa1']
+FF3_op_0 x x
+FF2_op_0 x x
+fanout3_0 x x
+fanout3_0 x x
+fanout3_1 x x
+fanout3_1 x x
+fanout3_2 x x
+fanout3_2 x x
+fanout3_3 x x
+fanout3_3 x x
+fanout3_4 1 1
+fanout3_4 1 1
+fanout3_5 1 0
+fanout3_5 1 0
+fanout3_6 x x
+fanout3_6 x x
+fanout1_6 1 1
+fanout1_6 1 1
+fanout1_4 0 1
+fanout1_4 0 0
+fanout1_5 x x
+fanout1_5 x x
+fanout1_2 x x
+fanout1_2 x x
+fanout1_3 x x
+fanout1_3 x x
+fanout1_0 x x
+fanout1_0 x x
+fanout1_1 x x
+fanout1_1 x x
+G1_5 1 1
+G1_4 0 1
+G1_6 1 1
+G1_1 x x
+G1_0 x x
+G1_3 x x
+G1_2 x x
+G3_3 x x
+G3_2 x x
+G3_1 x x
+G3_0 x x
+G3_6 0 0
+G3_5 x x
+G3_4 1 1
+A_6 1 1
+A_5 x x
+A_4 0 0
+A_3 x x
+A_2 x x
+A_1 x x
+A_0 x x
+B_0 x x
+B_1 x x
+B_2 x x
+B_3 0 0
+B_4 1 1
+B_5 x x
+B_6 x x
+G2_2 x x
+G2_3 x x
+G2_0 x x
+G2_1 x x
+G2_6 x x
+G2_4 1 1
+G2_5 1 0
+FF1_op_0 x x
+G4_0 x x
+G4_1 x x
+G4_2 x x
+G4_3 x x
+G4_4 1 1
+G4_5 1 1
+G4_6 1 x
+fanout2_1 x x
+fanout2_1 x x
+fanout2_0 x x
+fanout2_0 x x
+fanout2_3 x x
+fanout2_3 x x
+fanout2_2 x x
+fanout2_2 x x
+fanout2_5 1 1
+fanout2_5 1 1
+fanout2_4 0 0
+fanout2_4 0 0
+fanout2_6 x x
+fanout2_6 x x
+One turn over try another
+test_not_possible_with_this_val() False
+**********************Objective ********************
+D_fronteir_list [('G4_6', 6)]
+D_fronteir []
+sort_D_fronteir
+D_fronteir_list [('G4_6', 6)]
+@@@@@@@@@@@ undefined_ip
+node_D_fronteir G4_6
+node1 node2 fanout3_6 G4_6
+**********************Backtrace ********************
+node1 fanout3_6
+Before Backtrace ('G2_6', 'fanout3_6') x x
+None
+After Backtrace ('G2_6', 'fanout3_6') 0 0
+None
+node1 G2_6
+Before Backtrace ('G1_5', 'G2_6') 1 1
+('fanout2_6', 'G2_6') x x
+None
+After Backtrace ('G1_5', 'G2_6') 1 1
+('fanout2_6', 'G2_6') 1 1
+None
+node1 fanout2_6
+Before Backtrace ('B_5', 'fanout2_6') x x
+None
+After Backtrace ('B_5', 'fanout2_6') 1 1
+None
+Backtrace node B_5 fanout2_6 1 0
+I_Stack.peek() ('A_4', 'fanout1_4') 0
+('B_3', 'fanout2_4') 0
+('B_4', 'fanout2_5') 1
+('A_6', 'fanout1_6') 1
+('B_5', 'fanout2_6') 1
+None
+**********************Forward Implication 1st********************
+new_node1 new_node2 fanout2_6 G1_6
+new_node1 new_node2 fanout2_6 G2_6
+new_node1 new_node2 fanout3_6 G4_6
+new_node1 new_node2 fanout3_6 FF3_ip_6
+**************************************************************
+faulty_edge_list ['fanout1_4', 'G1_4', 'sa1']
+FF3_op_0 x x
+FF2_op_0 x x
+fanout3_0 x x
+fanout3_0 x x
+fanout3_1 x x
+fanout3_1 x x
+fanout3_2 x x
+fanout3_2 x x
+fanout3_3 x x
+fanout3_3 x x
+fanout3_4 1 1
+fanout3_4 1 1
+fanout3_5 1 0
+fanout3_5 1 0
+fanout3_6 0 0
+fanout3_6 0 0
+fanout1_6 1 1
+fanout1_6 1 1
+fanout1_4 0 1
+fanout1_4 0 0
+fanout1_5 x x
+fanout1_5 x x
+fanout1_2 x x
+fanout1_2 x x
+fanout1_3 x x
+fanout1_3 x x
+fanout1_0 x x
+fanout1_0 x x
+fanout1_1 x x
+fanout1_1 x x
+G1_5 1 1
+G1_4 0 1
+G1_6 1 1
+G1_1 x x
+G1_0 x x
+G1_3 x x
+G1_2 x x
+G3_3 x x
+G3_2 x x
+G3_1 x x
+G3_0 x x
+G3_6 0 0
+G3_5 x x
+G3_4 1 1
+A_6 1 1
+A_5 x x
+A_4 0 0
+A_3 x x
+A_2 x x
+A_1 x x
+A_0 x x
+B_0 x x
+B_1 x x
+B_2 x x
+B_3 0 0
+B_4 1 1
+B_5 1 1
+B_6 x x
+G2_2 x x
+G2_3 x x
+G2_0 x x
+G2_1 x x
+G2_6 0 0
+G2_4 1 1
+G2_5 1 0
+FF1_op_0 x x
+G4_0 x x
+G4_1 x x
+G4_2 x x
+G4_3 x x
+G4_4 1 1
+G4_5 1 1
+G4_6 1 0
+fanout2_1 x x
+fanout2_1 x x
+fanout2_0 x x
+fanout2_0 x x
+fanout2_3 x x
+fanout2_3 x x
+fanout2_2 x x
+fanout2_2 x x
+fanout2_5 1 1
+fanout2_5 1 1
+fanout2_4 0 0
+fanout2_4 0 0
+fanout2_6 1 1
+fanout2_6 1 1
+One turn over try another
+faulty_edge_list ['fanout1_4', 'G1_4', 'sa1']
+FF3_op_0 x x
+FF2_op_0 x x
+fanout3_0 x x
+fanout3_0 x x
+fanout3_1 x x
+fanout3_1 x x
+fanout3_2 x x
+fanout3_2 x x
+fanout3_3 x x
+fanout3_3 x x
+fanout3_4 1 1
+fanout3_4 1 1
+fanout3_5 1 0
+fanout3_5 1 0
+fanout3_6 0 0
+fanout3_6 0 0
+fanout1_6 1 1
+fanout1_6 1 1
+fanout1_4 0 1
+fanout1_4 0 0
+fanout1_5 x x
+fanout1_5 x x
+fanout1_2 x x
+fanout1_2 x x
+fanout1_3 x x
+fanout1_3 x x
+fanout1_0 x x
+fanout1_0 x x
+fanout1_1 x x
+fanout1_1 x x
+G1_5 1 1
+G1_4 0 1
+G1_6 1 1
+G1_1 x x
+G1_0 x x
+G1_3 x x
+G1_2 x x
+G3_3 x x
+G3_2 x x
+G3_1 x x
+G3_0 x x
+G3_6 0 0
+G3_5 x x
+G3_4 1 1
+A_6 1 1
+A_5 x x
+A_4 0 0
+A_3 x x
+A_2 x x
+A_1 x x
+A_0 x x
+B_0 x x
+B_1 x x
+B_2 x x
+B_3 0 0
+B_4 1 1
+B_5 1 1
+B_6 x x
+G2_2 x x
+G2_3 x x
+G2_0 x x
+G2_1 x x
+G2_6 0 0
+G2_4 1 1
+G2_5 1 0
+FF1_op_0 x x
+G4_0 x x
+G4_1 x x
+G4_2 x x
+G4_3 x x
+G4_4 1 1
+G4_5 1 1
+G4_6 1 0
+fanout2_1 x x
+fanout2_1 x x
+fanout2_0 x x
+fanout2_0 x x
+fanout2_3 x x
+fanout2_3 x x
+fanout2_2 x x
+fanout2_2 x x
+fanout2_5 1 1
+fanout2_5 1 1
+fanout2_4 0 0
+fanout2_4 0 0
+fanout2_6 1 1
+fanout2_6 1 1

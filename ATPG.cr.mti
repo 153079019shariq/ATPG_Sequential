@@ -1,0 +1,8 @@
+/home/shariq/Documents/ATPG_Shariq/c17.v {1 {vlog -work work -stats=none /home/shariq/Documents/ATPG_Shariq/c17.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module c17
+
+Top level modules:
+	c17
+
+} {} {}}

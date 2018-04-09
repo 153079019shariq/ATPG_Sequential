@@ -1,0 +1,13 @@
+diff --git a/Graph_build.py b/Graph_build.py
+index e149768..02d131e 100755
+--- a/Graph_build.py
++++ b/Graph_build.py
+@@ -16,5 +16,5 @@ G.add_node('fanout2',type='fanout')
+ G.add_node('fanout3',type='fanout')
+ G.add_node('output1',type='output')
+ G.add_node('output2',type='output')
+-G.add_edges_from([('G1', 'G8'),('fanout1', 'G9')('G2', 'G12'),('fanout2', 'G15'),('G5', 'G15'),('G8', 'G16'),('fanout3', 'G17'),('G15', 'G17')], value_non_fault='x',value_faulty='x', fault='')
+-G.add_edge('fanout3','G17', value_non_fault='x',value_faulty='x',fault='sa1')
+\ No newline at end of file
++G.add_edges_from([('G5', 'G15')('G15', 'G17'),('G1', 'G8'),('fanout1', 'G9'),('G2', 'G12'),('fanout2', 'G15'),('G8', 'G16'),('fanout3', 'G17')], value_non_fault='x',value_faulty='x', fault='')
++G.add_edge('fanout3','G17', value_non_fault='x',value_faulty='x',fault='sa0')

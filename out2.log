@@ -1,0 +1,109 @@
+1
+<type 'str'>
+**********************Objective ********************
+D_fronteir_list []
+node1 node2 fanout3 G17
+**********************Backtrace ********************
+node1 fanout3
+Before Backtrace ('G12', 'fanout3') x x
+None
+After Backtrace ('G12', 'fanout3') 1 1
+None
+node1 G12
+Before Backtrace ('fanout2', 'G12') x x
+('G2', 'G12') x x
+None
+After Backtrace ('fanout2', 'G12') 0 0
+('G2', 'G12') x x
+None
+node1 fanout2
+Before Backtrace ('G9', 'fanout2') x x
+None
+After Backtrace ('G9', 'fanout2') 0 0
+None
+node1 G9
+Before Backtrace ('fanout1', 'G9') x x
+('G4', 'G9') x x
+None
+After Backtrace ('fanout1', 'G9') 1 1
+('G4', 'G9') x x
+None
+node1 fanout1
+Before Backtrace ('G3', 'fanout1') x x
+None
+After Backtrace ('G3', 'fanout1') 1 1
+None
+Backtrace node G3 fanout1 1 0
+I_Stack.peek() ('G3', 'fanout1') 1
+None
+**********************Forward Implication 1st********************
+@@@@@@@@@Forward Implication Fanout
+faulty_edge_list[:2] ['fanout3', 'G17']
+G[node1][node2]['value_faulty'] 1
+***********
+@@@@@@@@@Forward Implication Gates
+***********
+@@@@@@@@@Forward Implication Gates
+**************************************************************
+faulty_edge_list ['fanout3', 'G17', 'sa0']
+G5 G15 x x
+G4 G9 x x
+G3 fanout1 1 1
+G2 G12 x x
+G1 G8 x x
+fanout1 G9 1 1
+fanout1 G8 1 1
+fanout2 G15 x x
+fanout2 G12 0 0
+fanout3 G17 1 0
+fanout3 G16 x x
+G9 fanout2 x x
+G8 G16 x x
+G17 output2 x x
+G16 output1 x x
+G15 G17 x x
+G12 fanout3 1 1
+One turn over try another
+**********************Objective ********************
+D_fronteir_list ['G17']
+D_fronteir_list ['G17']
+@@@@@@@@@@@ undefined_ip
+node_D_fronteir G17
+gate_ip_edge ('G15', 'G17')
+node1 node2 G15 G17
+**********************Backtrace ********************
+node1 G15
+Before Backtrace ('G5', 'G15') x x
+('fanout2', 'G15') x x
+None
+After Backtrace ('G5', 'G15') 0 0
+('fanout2', 'G15') x x
+None
+Backtrace node G5 G15 0 0
+I_Stack.peek() ('G3', 'fanout1') 1
+('G5', 'G15') 0
+None
+**********************Forward Implication 1st********************
+@@@@@@@@@Forward Implication Gates
+@@@@@@@@@Forward Implication Gates
+Fault at primary output_non_faulty
+**************************************************************
+faulty_edge_list ['fanout3', 'G17', 'sa0']
+G5 G15 0 0
+G4 G9 x x
+G3 fanout1 1 1
+G2 G12 x x
+G1 G8 x x
+fanout1 G9 1 1
+fanout1 G8 1 1
+fanout2 G15 x x
+fanout2 G12 0 0
+fanout3 G17 1 0
+fanout3 G16 x x
+G9 fanout2 x x
+G8 G16 x x
+G17 output2 0 1
+G16 output1 x x
+G15 G17 1 1
+G12 fanout3 1 1
+One turn over try another
