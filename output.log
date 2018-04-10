@@ -1,684 +1,742 @@
-['A', 'B', 'G3', 'G2', 'G1', 'fanout1', 'fanout2', 'fanout3', 'FF3', 'FF2', 'FF1', 'G4', 'output1']
-[('A', 'fanout1'), ('B', 'FF1'), ('G3', 'G4'), ('G2', 'fanout3'), ('G1', 'FF2'), ('fanout1', 'G3'), ('fanout1', 'G1'), ('fanout2', 'G2'), ('fanout2', 'G1'), ('fanout3', 'G4'), ('fanout3', 'FF3'), ('FF3', 'G4'), ('FF2', 'G2'), ('FF1', 'fanout2'), ('G4', 'output1')]
+########################################################################################
+########################################################################################
+('A', 'fanout1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B', 'FF1_ip', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3', 'G4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2', 'fanout3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1', 'FF2_ip', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1', 'G3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1', 'G1', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout2', 'G2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2', 'G1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3', 'G4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3', 'FF3_ip', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF1_op', 'fanout2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4', 'output1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF2_op', 'G2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF3_op', 'G4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+No_of_Unroll 1
+faulty_node1_list []
 ########################################################################################
 ########################################################################################
 ##########################################################
-***********************************
-Length of Graph 76
-test_not_possible_with_this_val() False
-**********************Objective ********************
-D_fronteir_list []
-node1 node2 fanout1_4 G1_4
-**********************Backtrace ********************
-node1 fanout1_4
-Before Backtrace ('A_4', 'fanout1_4') x x
-None
-After Backtrace ('A_4', 'fanout1_4') 0 0
-None
-Backtrace node A_4 fanout1_4 0 0
-I_Stack.peek() ('A_4', 'fanout1_4') 0
-None
-**********************Forward Implication 1st********************
-new_node1 new_node2 fanout1_4 G1_4
-new_node1 new_node2 fanout3_5 G4_5
-new_node1 new_node2 fanout3_5 G4_6
-new_node1 new_node2 fanout1_4 G3_4
-**************************************************************
-faulty_edge_list ['fanout1_4', 'G1_4', 'sa1']
-FF3_op_0 x x
-FF2_op_0 x x
-fanout3_0 x x
-fanout3_0 x x
-fanout3_1 x x
-fanout3_1 x x
-fanout3_2 x x
-fanout3_2 x x
-fanout3_3 x x
-fanout3_3 x x
-fanout3_4 x x
-fanout3_4 x x
-fanout3_5 x x
-fanout3_5 x x
-fanout3_6 x x
-fanout3_6 x x
-fanout1_6 x x
-fanout1_6 x x
-fanout1_4 0 1
-fanout1_4 0 0
-fanout1_5 x x
-fanout1_5 x x
-fanout1_2 x x
-fanout1_2 x x
-fanout1_3 x x
-fanout1_3 x x
-fanout1_0 x x
-fanout1_0 x x
-fanout1_1 x x
-fanout1_1 x x
-G1_5 x x
-G1_4 x 1
-G1_6 x x
-G1_1 x x
-G1_0 x x
-G1_3 x x
-G1_2 x x
-G3_3 x x
-G3_2 x x
-G3_1 x x
-G3_0 x x
-G3_6 x x
-G3_5 x x
-G3_4 1 1
-A_6 x x
-A_5 x x
-A_4 0 0
-A_3 x x
-A_2 x x
-A_1 x x
-A_0 x x
-B_0 x x
-B_1 x x
-B_2 x x
-B_3 x x
-B_4 x x
-B_5 x x
-B_6 x x
-G2_2 x x
-G2_3 x x
-G2_0 x x
-G2_1 x x
-G2_6 x x
-G2_4 x x
-G2_5 x x
-FF1_op_0 x x
-G4_0 x x
-G4_1 x x
-G4_2 x x
-G4_3 x x
-G4_4 1 1
-G4_5 x x
-G4_6 x x
-fanout2_1 x x
-fanout2_1 x x
-fanout2_0 x x
-fanout2_0 x x
-fanout2_3 x x
-fanout2_3 x x
-fanout2_2 x x
-fanout2_2 x x
-fanout2_5 x x
-fanout2_5 x x
-fanout2_4 x x
-fanout2_4 x x
-fanout2_6 x x
-fanout2_6 x x
-One turn over try another
-test_not_possible_with_this_val() False
-**********************Objective ********************
-D_fronteir_list ['G1_4']
-D_fronteir []
-sort_D_fronteir
-D_fronteir_list [('G1_4', 3)]
-@@@@@@@@@@@ undefined_ip
-node_D_fronteir G1_4
-node1 node2 fanout2_4 G1_4
-**********************Backtrace ********************
-node1 fanout2_4
-Before Backtrace ('B_3', 'fanout2_4') x x
-None
-After Backtrace ('B_3', 'fanout2_4') 0 0
-None
-Backtrace node B_3 fanout2_4 0 0
-I_Stack.peek() ('A_4', 'fanout1_4') 0
-('B_3', 'fanout2_4') 0
-None
-**********************Forward Implication 1st********************
-new_node1 new_node2 fanout2_4 G1_4
-new_node1 new_node2 fanout3_5 G4_5
-new_node1 new_node2 fanout3_5 G4_6
-new_node1 new_node2 fanout2_4 G2_4
-new_node1 new_node2 fanout3_4 G4_4
-new_node1 new_node2 fanout3_4 G4_5
-**************************************************************
-faulty_edge_list ['fanout1_4', 'G1_4', 'sa1']
-FF3_op_0 x x
-FF2_op_0 x x
-fanout3_0 x x
-fanout3_0 x x
-fanout3_1 x x
-fanout3_1 x x
-fanout3_2 x x
-fanout3_2 x x
-fanout3_3 x x
-fanout3_3 x x
-fanout3_4 1 1
-fanout3_4 1 1
-fanout3_5 1 x
-fanout3_5 1 x
-fanout3_6 x x
-fanout3_6 x x
-fanout1_6 x x
-fanout1_6 x x
-fanout1_4 0 1
-fanout1_4 0 0
-fanout1_5 x x
-fanout1_5 x x
-fanout1_2 x x
-fanout1_2 x x
-fanout1_3 x x
-fanout1_3 x x
-fanout1_0 x x
-fanout1_0 x x
-fanout1_1 x x
-fanout1_1 x x
-G1_5 x x
-G1_4 0 1
-G1_6 x x
-G1_1 x x
-G1_0 x x
-G1_3 x x
-G1_2 x x
-G3_3 x x
-G3_2 x x
-G3_1 x x
-G3_0 x x
-G3_6 x x
-G3_5 x x
-G3_4 1 1
-A_6 x x
-A_5 x x
-A_4 0 0
-A_3 x x
-A_2 x x
-A_1 x x
-A_0 x x
-B_0 x x
-B_1 x x
-B_2 x x
-B_3 0 0
-B_4 x x
-B_5 x x
-B_6 x x
-G2_2 x x
-G2_3 x x
-G2_0 x x
-G2_1 x x
-G2_6 x x
-G2_4 1 1
-G2_5 1 x
-FF1_op_0 x x
-G4_0 x x
-G4_1 x x
-G4_2 x x
-G4_3 x x
-G4_4 1 1
-G4_5 1 1
-G4_6 1 x
-fanout2_1 x x
-fanout2_1 x x
-fanout2_0 x x
-fanout2_0 x x
-fanout2_3 x x
-fanout2_3 x x
-fanout2_2 x x
-fanout2_2 x x
-fanout2_5 x x
-fanout2_5 x x
-fanout2_4 0 0
-fanout2_4 0 0
-fanout2_6 x x
-fanout2_6 x x
-One turn over try another
-test_not_possible_with_this_val() False
-**********************Objective ********************
-D_fronteir_list [('G1_4', 3)]
-D_fronteir []
-sort_D_fronteir
-D_fronteir_list [('G2_5', 4)]
-@@@@@@@@@@@ undefined_ip
-node_D_fronteir G2_5
-node1 node2 fanout2_5 G2_5
-**********************Backtrace ********************
-node1 fanout2_5
-Before Backtrace ('B_4', 'fanout2_5') x x
-None
-After Backtrace ('B_4', 'fanout2_5') 1 1
-None
-Backtrace node B_4 fanout2_5 1 0
-I_Stack.peek() ('A_4', 'fanout1_4') 0
-('B_3', 'fanout2_4') 0
-('B_4', 'fanout2_5') 1
-None
-**********************Forward Implication 1st********************
-new_node1 new_node2 fanout2_5 G1_5
-new_node1 new_node2 fanout3_6 G4_6
-new_node1 new_node2 fanout3_6 FF3_ip_6
-new_node1 new_node2 fanout2_5 G2_5
-new_node1 new_node2 fanout3_5 G4_5
-new_node1 new_node2 fanout3_5 G4_6
-**************************************************************
-faulty_edge_list ['fanout1_4', 'G1_4', 'sa1']
-FF3_op_0 x x
-FF2_op_0 x x
-fanout3_0 x x
-fanout3_0 x x
-fanout3_1 x x
-fanout3_1 x x
-fanout3_2 x x
-fanout3_2 x x
-fanout3_3 x x
-fanout3_3 x x
-fanout3_4 1 1
-fanout3_4 1 1
-fanout3_5 1 0
-fanout3_5 1 0
-fanout3_6 x x
-fanout3_6 x x
-fanout1_6 x x
-fanout1_6 x x
-fanout1_4 0 1
-fanout1_4 0 0
-fanout1_5 x x
-fanout1_5 x x
-fanout1_2 x x
-fanout1_2 x x
-fanout1_3 x x
-fanout1_3 x x
-fanout1_0 x x
-fanout1_0 x x
-fanout1_1 x x
-fanout1_1 x x
-G1_5 1 1
-G1_4 0 1
-G1_6 x x
-G1_1 x x
-G1_0 x x
-G1_3 x x
-G1_2 x x
-G3_3 x x
-G3_2 x x
-G3_1 x x
-G3_0 x x
-G3_6 x x
-G3_5 x x
-G3_4 1 1
-A_6 x x
-A_5 x x
-A_4 0 0
-A_3 x x
-A_2 x x
-A_1 x x
-A_0 x x
-B_0 x x
-B_1 x x
-B_2 x x
-B_3 0 0
-B_4 1 1
-B_5 x x
-B_6 x x
-G2_2 x x
-G2_3 x x
-G2_0 x x
-G2_1 x x
-G2_6 x x
-G2_4 1 1
-G2_5 1 0
-FF1_op_0 x x
-G4_0 x x
-G4_1 x x
-G4_2 x x
-G4_3 x x
-G4_4 1 1
-G4_5 1 1
-G4_6 1 x
-fanout2_1 x x
-fanout2_1 x x
-fanout2_0 x x
-fanout2_0 x x
-fanout2_3 x x
-fanout2_3 x x
-fanout2_2 x x
-fanout2_2 x x
-fanout2_5 1 1
-fanout2_5 1 1
-fanout2_4 0 0
-fanout2_4 0 0
-fanout2_6 x x
-fanout2_6 x x
-One turn over try another
-test_not_possible_with_this_val() False
-**********************Objective ********************
-D_fronteir_list [('G2_5', 4)]
-D_fronteir []
-sort_D_fronteir
-D_fronteir_list [('G4_6', 6)]
-@@@@@@@@@@@ undefined_ip
-node_D_fronteir G4_6
-node1 node2 G3_6 G4_6
-**********************Backtrace ********************
-node1 G3_6
-Before Backtrace ('fanout1_6', 'G3_6') x x
-None
-After Backtrace ('fanout1_6', 'G3_6') 1 1
-None
-node1 fanout1_6
-Before Backtrace ('A_6', 'fanout1_6') x x
-None
-After Backtrace ('A_6', 'fanout1_6') 1 1
-None
-Backtrace node A_6 fanout1_6 1 0
-I_Stack.peek() ('A_4', 'fanout1_4') 0
-('B_3', 'fanout2_4') 0
-('B_4', 'fanout2_5') 1
-('A_6', 'fanout1_6') 1
-None
-**********************Forward Implication 1st********************
-new_node1 new_node2 fanout1_6 G1_6
-new_node1 new_node2 fanout1_6 G3_6
-**************************************************************
-faulty_edge_list ['fanout1_4', 'G1_4', 'sa1']
-FF3_op_0 x x
-FF2_op_0 x x
-fanout3_0 x x
-fanout3_0 x x
-fanout3_1 x x
-fanout3_1 x x
-fanout3_2 x x
-fanout3_2 x x
-fanout3_3 x x
-fanout3_3 x x
-fanout3_4 1 1
-fanout3_4 1 1
-fanout3_5 1 0
-fanout3_5 1 0
-fanout3_6 x x
-fanout3_6 x x
-fanout1_6 1 1
-fanout1_6 1 1
-fanout1_4 0 1
-fanout1_4 0 0
-fanout1_5 x x
-fanout1_5 x x
-fanout1_2 x x
-fanout1_2 x x
-fanout1_3 x x
-fanout1_3 x x
-fanout1_0 x x
-fanout1_0 x x
-fanout1_1 x x
-fanout1_1 x x
-G1_5 1 1
-G1_4 0 1
-G1_6 1 1
-G1_1 x x
-G1_0 x x
-G1_3 x x
-G1_2 x x
-G3_3 x x
-G3_2 x x
-G3_1 x x
-G3_0 x x
-G3_6 0 0
-G3_5 x x
-G3_4 1 1
-A_6 1 1
-A_5 x x
-A_4 0 0
-A_3 x x
-A_2 x x
-A_1 x x
-A_0 x x
-B_0 x x
-B_1 x x
-B_2 x x
-B_3 0 0
-B_4 1 1
-B_5 x x
-B_6 x x
-G2_2 x x
-G2_3 x x
-G2_0 x x
-G2_1 x x
-G2_6 x x
-G2_4 1 1
-G2_5 1 0
-FF1_op_0 x x
-G4_0 x x
-G4_1 x x
-G4_2 x x
-G4_3 x x
-G4_4 1 1
-G4_5 1 1
-G4_6 1 x
-fanout2_1 x x
-fanout2_1 x x
-fanout2_0 x x
-fanout2_0 x x
-fanout2_3 x x
-fanout2_3 x x
-fanout2_2 x x
-fanout2_2 x x
-fanout2_5 1 1
-fanout2_5 1 1
-fanout2_4 0 0
-fanout2_4 0 0
-fanout2_6 x x
-fanout2_6 x x
-One turn over try another
-test_not_possible_with_this_val() False
-**********************Objective ********************
-D_fronteir_list [('G4_6', 6)]
-D_fronteir []
-sort_D_fronteir
-D_fronteir_list [('G4_6', 6)]
-@@@@@@@@@@@ undefined_ip
-node_D_fronteir G4_6
-node1 node2 fanout3_6 G4_6
-**********************Backtrace ********************
-node1 fanout3_6
-Before Backtrace ('G2_6', 'fanout3_6') x x
-None
-After Backtrace ('G2_6', 'fanout3_6') 0 0
-None
-node1 G2_6
-Before Backtrace ('G1_5', 'G2_6') 1 1
-('fanout2_6', 'G2_6') x x
-None
-After Backtrace ('G1_5', 'G2_6') 1 1
-('fanout2_6', 'G2_6') 1 1
-None
-node1 fanout2_6
-Before Backtrace ('B_5', 'fanout2_6') x x
-None
-After Backtrace ('B_5', 'fanout2_6') 1 1
-None
-Backtrace node B_5 fanout2_6 1 0
-I_Stack.peek() ('A_4', 'fanout1_4') 0
-('B_3', 'fanout2_4') 0
-('B_4', 'fanout2_5') 1
-('A_6', 'fanout1_6') 1
-('B_5', 'fanout2_6') 1
-None
-**********************Forward Implication 1st********************
-new_node1 new_node2 fanout2_6 G1_6
-new_node1 new_node2 fanout2_6 G2_6
-new_node1 new_node2 fanout3_6 G4_6
-new_node1 new_node2 fanout3_6 FF3_ip_6
-**************************************************************
-faulty_edge_list ['fanout1_4', 'G1_4', 'sa1']
-FF3_op_0 x x
-FF2_op_0 x x
-fanout3_0 x x
-fanout3_0 x x
-fanout3_1 x x
-fanout3_1 x x
-fanout3_2 x x
-fanout3_2 x x
-fanout3_3 x x
-fanout3_3 x x
-fanout3_4 1 1
-fanout3_4 1 1
-fanout3_5 1 0
-fanout3_5 1 0
-fanout3_6 0 0
-fanout3_6 0 0
-fanout1_6 1 1
-fanout1_6 1 1
-fanout1_4 0 1
-fanout1_4 0 0
-fanout1_5 x x
-fanout1_5 x x
-fanout1_2 x x
-fanout1_2 x x
-fanout1_3 x x
-fanout1_3 x x
-fanout1_0 x x
-fanout1_0 x x
-fanout1_1 x x
-fanout1_1 x x
-G1_5 1 1
-G1_4 0 1
-G1_6 1 1
-G1_1 x x
-G1_0 x x
-G1_3 x x
-G1_2 x x
-G3_3 x x
-G3_2 x x
-G3_1 x x
-G3_0 x x
-G3_6 0 0
-G3_5 x x
-G3_4 1 1
-A_6 1 1
-A_5 x x
-A_4 0 0
-A_3 x x
-A_2 x x
-A_1 x x
-A_0 x x
-B_0 x x
-B_1 x x
-B_2 x x
-B_3 0 0
-B_4 1 1
-B_5 1 1
-B_6 x x
-G2_2 x x
-G2_3 x x
-G2_0 x x
-G2_1 x x
-G2_6 0 0
-G2_4 1 1
-G2_5 1 0
-FF1_op_0 x x
-G4_0 x x
-G4_1 x x
-G4_2 x x
-G4_3 x x
-G4_4 1 1
-G4_5 1 1
-G4_6 1 0
-fanout2_1 x x
-fanout2_1 x x
-fanout2_0 x x
-fanout2_0 x x
-fanout2_3 x x
-fanout2_3 x x
-fanout2_2 x x
-fanout2_2 x x
-fanout2_5 1 1
-fanout2_5 1 1
-fanout2_4 0 0
-fanout2_4 0 0
-fanout2_6 1 1
-fanout2_6 1 1
-One turn over try another
-faulty_edge_list ['fanout1_4', 'G1_4', 'sa1']
-FF3_op_0 x x
-FF2_op_0 x x
-fanout3_0 x x
-fanout3_0 x x
-fanout3_1 x x
-fanout3_1 x x
-fanout3_2 x x
-fanout3_2 x x
-fanout3_3 x x
-fanout3_3 x x
-fanout3_4 1 1
-fanout3_4 1 1
-fanout3_5 1 0
-fanout3_5 1 0
-fanout3_6 0 0
-fanout3_6 0 0
-fanout1_6 1 1
-fanout1_6 1 1
-fanout1_4 0 1
-fanout1_4 0 0
-fanout1_5 x x
-fanout1_5 x x
-fanout1_2 x x
-fanout1_2 x x
-fanout1_3 x x
-fanout1_3 x x
-fanout1_0 x x
-fanout1_0 x x
-fanout1_1 x x
-fanout1_1 x x
-G1_5 1 1
-G1_4 0 1
-G1_6 1 1
-G1_1 x x
-G1_0 x x
-G1_3 x x
-G1_2 x x
-G3_3 x x
-G3_2 x x
-G3_1 x x
-G3_0 x x
-G3_6 0 0
-G3_5 x x
-G3_4 1 1
-A_6 1 1
-A_5 x x
-A_4 0 0
-A_3 x x
-A_2 x x
-A_1 x x
-A_0 x x
-B_0 x x
-B_1 x x
-B_2 x x
-B_3 0 0
-B_4 1 1
-B_5 1 1
-B_6 x x
-G2_2 x x
-G2_3 x x
-G2_0 x x
-G2_1 x x
-G2_6 0 0
-G2_4 1 1
-G2_5 1 0
-FF1_op_0 x x
-G4_0 x x
-G4_1 x x
-G4_2 x x
-G4_3 x x
-G4_4 1 1
-G4_5 1 1
-G4_6 1 0
-fanout2_1 x x
-fanout2_1 x x
-fanout2_0 x x
-fanout2_0 x x
-fanout2_3 x x
-fanout2_3 x x
-fanout2_2 x x
-fanout2_2 x x
-fanout2_5 1 1
-fanout2_5 1 1
-fanout2_4 0 0
-fanout2_4 0 0
-fanout2_6 1 1
-fanout2_6 1 1
+('G2_0', 'fanout3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_1', 'fanout3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF3_op_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_1', 'fanout1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_0', 'fanout1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF1_op_0', 'fanout2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_0', 'fanout2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_1', 'FF1_ip_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_0', 'output1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_1', 'output1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF2_op_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'FF3_ip_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_0', 'G3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_0', 'G1_0', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_1', 'G3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_1', 'G1_1', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('G1_1', 'FF2_ip_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_0', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+No_of_Unroll 2
+faulty_node1_list []
+########################################################################################
+########################################################################################
+##########################################################
+('G2_0', 'fanout3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_1', 'fanout3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_2', 'output1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF3_op_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_2', 'fanout1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_1', 'fanout1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_0', 'fanout1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF1_op_0', 'fanout2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_2', 'fanout3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_0', 'fanout2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_1', 'fanout2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_2', 'FF1_ip_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_0', 'output1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_1', 'output1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF2_op_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'FF3_ip_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G1_2', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_0', 'G3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_0', 'G1_0', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout2_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_1', 'G3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_1', 'G1_1', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('G1_1', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_0', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_2', 'FF2_ip_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+No_of_Unroll 3
+faulty_node1_list []
+########################################################################################
+########################################################################################
+##########################################################
+('G4_1', 'output1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_2', 'fanout3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_0', 'fanout3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_1', 'fanout3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF3_op_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_1', 'G3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_1', 'G1_1', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('G4_3', 'output1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_3', 'fanout1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_2', 'fanout1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_1', 'fanout1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_0', 'fanout1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF1_op_0', 'fanout2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_3', 'G2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_3', 'G1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_3', 'fanout3_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_0', 'fanout2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_1', 'fanout2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_2', 'fanout2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_3', 'FF1_ip_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_0', 'output1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_2', 'output1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF2_op_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_3', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_3', 'FF3_ip_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G1_2', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_3', 'G3_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_3', 'G1_3', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_0', 'G3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_0', 'G1_0', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout2_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_1', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_0', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_3', 'FF2_ip_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_2', 'G2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_3', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+No_of_Unroll 4
+faulty_node1_list []
+########################################################################################
+########################################################################################
+##########################################################
+('G4_0', 'output1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_2', 'fanout3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_0', 'fanout3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_2', 'output1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_4', 'fanout3_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_0', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF3_op_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_4', 'output1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_3', 'output1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_4', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_4', 'fanout1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_3', 'fanout1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_2', 'fanout1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_1', 'fanout1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_0', 'fanout1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF1_op_0', 'fanout2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_3', 'fanout3_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_0', 'fanout2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_1', 'fanout2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_2', 'fanout2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_3', 'fanout2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_4', 'FF1_ip_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_1', 'output1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_1', 'fanout3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF2_op_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_3', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_3', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_4', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_4', 'FF3_ip_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_3', 'G2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_3', 'G1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_4', 'G1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_4', 'G2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_4', 'G1_4', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_4', 'G3_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G1_2', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_3', 'G3_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_3', 'G1_3', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_0', 'G3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_0', 'G1_0', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_1', 'G3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_1', 'G1_1', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('G1_1', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_3', 'G2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_2', 'G2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_3', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_4', 'FF2_ip_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+No_of_Unroll 5
+faulty_node1_list []
+########################################################################################
+########################################################################################
+##########################################################
+('FF3_op_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF2_op_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_3', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_3', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_4', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_4', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_5', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_5', 'FF3_ip_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_4', 'G1_4', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_4', 'G3_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_5', 'G1_5', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_5', 'G3_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G1_2', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_3', 'G3_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_3', 'G1_3', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_0', 'G3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_0', 'G1_0', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_1', 'G3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_1', 'G1_1', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('G1_5', 'FF2_ip_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_4', 'G2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_1', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_0', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_3', 'G2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_2', 'G2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_3', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_5', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_4', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_5', 'fanout1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_4', 'fanout1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_3', 'fanout1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_2', 'fanout1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_1', 'fanout1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_0', 'fanout1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_0', 'fanout2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_1', 'fanout2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_2', 'fanout2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_3', 'fanout2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_4', 'fanout2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_5', 'FF1_ip_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_2', 'fanout3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_3', 'fanout3_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_0', 'fanout3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_1', 'fanout3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_4', 'fanout3_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_5', 'fanout3_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF1_op_0', 'fanout2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_0', 'output1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_1', 'output1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_2', 'output1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_3', 'output1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_4', 'output1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_5', 'output1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_3', 'G2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_3', 'G1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_5', 'G1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_5', 'G2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_4', 'G1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_4', 'G2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+No_of_Unroll 6
+faulty_node1_list []
+########################################################################################
+########################################################################################
+##########################################################
+('FF3_op_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF2_op_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_3', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_3', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_4', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_4', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_5', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_5', 'G4_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_6', 'G4_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_6', 'FF3_ip_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_6', 'G1_6', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_6', 'G3_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_4', 'G1_4', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_4', 'G3_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_5', 'G1_5', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_5', 'G3_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G1_2', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_3', 'G3_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_3', 'G1_3', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_0', 'G3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_0', 'G1_0', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_1', 'G3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_1', 'G1_1', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('G1_5', 'G2_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_4', 'G2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_6', 'FF2_ip_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_1', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_0', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_3', 'G2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_2', 'G2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_3', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_6', 'G4_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_5', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_4', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_6', 'fanout1_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_5', 'fanout1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_4', 'fanout1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_3', 'fanout1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_2', 'fanout1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_1', 'fanout1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_0', 'fanout1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_0', 'fanout2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_1', 'fanout2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_2', 'fanout2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_3', 'fanout2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_4', 'fanout2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_5', 'fanout2_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_6', 'FF1_ip_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_2', 'fanout3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_3', 'fanout3_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_0', 'fanout3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_1', 'fanout3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_6', 'fanout3_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_4', 'fanout3_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_5', 'fanout3_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF1_op_0', 'fanout2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_0', 'output1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_1', 'output1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_2', 'output1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_3', 'output1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_4', 'output1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_5', 'output1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_6', 'output1_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_3', 'G2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_3', 'G1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_5', 'G1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_5', 'G2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_4', 'G1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_4', 'G2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_6', 'G1_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_6', 'G2_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+No_of_Unroll 7
+faulty_node1_list []
+########################################################################################
+########################################################################################
+##########################################################
+('FF3_op_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_3', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_3', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_4', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_4', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_5', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_5', 'G4_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_6', 'G4_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_6', 'G4_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_7', 'G4_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_7', 'FF3_ip_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_6', 'G1_6', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_6', 'G3_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_7', 'G1_7', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_7', 'G3_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_4', 'G1_4', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_4', 'G3_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_5', 'G1_5', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_5', 'G3_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G1_2', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_3', 'G3_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_3', 'G1_3', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_0', 'G3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_0', 'G1_0', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_1', 'G3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_1', 'G1_1', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('G1_5', 'G2_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_4', 'G2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_7', 'FF2_ip_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_6', 'G2_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_1', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_0', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_3', 'G2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_2', 'G2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_3', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_7', 'G4_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_6', 'G4_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_5', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_4', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_7', 'fanout1_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_6', 'fanout1_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_5', 'fanout1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_4', 'fanout1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_3', 'fanout1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_2', 'fanout1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_1', 'fanout1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_0', 'fanout1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_0', 'fanout2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_1', 'fanout2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_2', 'fanout2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_3', 'fanout2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_4', 'fanout2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_5', 'fanout2_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_6', 'fanout2_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_7', 'FF1_ip_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_7', 'fanout3_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_2', 'fanout3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_3', 'fanout3_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_0', 'fanout3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_1', 'fanout3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_6', 'fanout3_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_4', 'fanout3_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_5', 'fanout3_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF2_op_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF1_op_0', 'fanout2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_0', 'output1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_1', 'output1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_2', 'output1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_3', 'output1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_4', 'output1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_5', 'output1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_6', 'output1_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_7', 'output1_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_3', 'G2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_3', 'G1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_5', 'G1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_5', 'G2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_4', 'G1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_4', 'G2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_7', 'G1_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_7', 'G2_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_6', 'G1_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_6', 'G2_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+No_of_Unroll 8
+faulty_node1_list []
+########################################################################################
+########################################################################################
+##########################################################
+('FF3_op_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_3', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_3', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_4', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_4', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_5', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_5', 'G4_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_6', 'G4_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_6', 'G4_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_7', 'G4_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_7', 'G4_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_8', 'FF2_ip_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_6', 'G1_6', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_6', 'G3_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_7', 'G1_7', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_7', 'G3_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_4', 'G1_4', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_4', 'G3_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_5', 'G1_5', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_5', 'G3_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G1_2', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_3', 'G3_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_3', 'G1_3', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_0', 'G3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_0', 'G1_0', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_1', 'G3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_1', 'G1_1', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('G1_5', 'G2_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_4', 'G2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_7', 'G2_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_6', 'G2_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_1', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_0', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_3', 'G2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_2', 'G2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_3', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_7', 'G4_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_6', 'G4_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_5', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_4', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_8', 'G4_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_8', 'G3_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_8', 'G1_8', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('A_7', 'fanout1_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_6', 'fanout1_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_5', 'fanout1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_4', 'fanout1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_3', 'fanout1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_2', 'fanout1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_1', 'fanout1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_0', 'fanout1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_8', 'fanout1_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_8', 'FF1_ip_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_0', 'fanout2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_1', 'fanout2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_2', 'fanout2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_3', 'fanout2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_4', 'fanout2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_5', 'fanout2_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_6', 'fanout2_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_7', 'fanout2_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_8', 'fanout3_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_2', 'fanout3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_3', 'fanout3_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_0', 'fanout3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_1', 'fanout3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_6', 'fanout3_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_7', 'fanout3_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_4', 'fanout3_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_5', 'fanout3_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF2_op_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF1_op_0', 'fanout2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_0', 'output1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_1', 'output1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_2', 'output1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_3', 'output1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_4', 'output1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_5', 'output1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_6', 'output1_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_7', 'output1_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_8', 'output1_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_3', 'G2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_3', 'G1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_5', 'G1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_5', 'G2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_4', 'G1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_4', 'G2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_7', 'G1_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_7', 'G2_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_6', 'G1_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_6', 'G2_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_8', 'G2_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_8', 'G1_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_8', 'G4_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_8', 'FF3_ip_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+No_of_Unroll 9
+faulty_node1_list []
+########################################################################################
+########################################################################################
+##########################################################
+('FF3_op_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_0', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_1', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_2', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_3', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_3', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_4', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_4', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_5', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_5', 'G4_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_6', 'G4_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_6', 'G4_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_7', 'G4_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_7', 'G4_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_9', 'FF2_ip_9', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_8', 'G2_9', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_6', 'G1_6', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_6', 'G3_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_7', 'G1_7', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_7', 'G3_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_4', 'G1_4', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_4', 'G3_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_5', 'G1_5', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_5', 'G3_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_2', 'G1_2', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_3', 'G3_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_3', 'G1_3', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_0', 'G3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_0', 'G1_0', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('fanout1_1', 'G3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_1', 'G1_1', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('G1_5', 'G2_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_4', 'G2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_7', 'G2_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_6', 'G2_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_1', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_0', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_8', 'G3_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_8', 'G1_8', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('G1_2', 'G2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_3', 'G4_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_2', 'G4_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_1', 'G4_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_0', 'G4_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_7', 'G4_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_6', 'G4_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_5', 'G4_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_4', 'G4_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_9', 'G4_9', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G3_8', 'G4_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_3', 'output1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G1_3', 'G2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_9', 'G3_9', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout1_9', 'G1_9', {'fault': 'sa0', 'value_faulty': 'x', 'value_non_fault': 'x'})
+('A_7', 'fanout1_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_6', 'fanout1_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_5', 'fanout1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_4', 'fanout1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_3', 'fanout1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_2', 'fanout1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_1', 'fanout1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_0', 'fanout1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_9', 'fanout1_9', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('A_8', 'fanout1_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_8', 'fanout2_9', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_9', 'FF1_ip_9', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_0', 'fanout2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_1', 'fanout2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_2', 'fanout2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_3', 'fanout2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_4', 'fanout2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_5', 'fanout2_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_6', 'fanout2_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('B_7', 'fanout2_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_7', 'fanout3_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_8', 'fanout3_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_9', 'fanout3_9', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_2', 'fanout3_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_3', 'fanout3_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_0', 'fanout3_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_1', 'fanout3_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_6', 'fanout3_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_4', 'fanout3_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G2_5', 'fanout3_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF2_op_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_9', 'G4_9', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_9', 'FF3_ip_9', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('FF1_op_0', 'fanout2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_0', 'output1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_1', 'output1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_2', 'output1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_4', 'output1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_5', 'output1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_6', 'output1_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_7', 'output1_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_8', 'output1_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('G4_9', 'output1_9', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G2_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_1', 'G1_1', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G2_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_0', 'G1_0', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_3', 'G2_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_3', 'G1_3', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G2_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_2', 'G1_2', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_5', 'G1_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_5', 'G2_5', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_4', 'G1_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_4', 'G2_4', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_7', 'G1_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_7', 'G2_7', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_6', 'G1_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_6', 'G2_6', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_9', 'G2_9', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_9', 'G1_9', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_8', 'G2_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout2_8', 'G1_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_8', 'G4_8', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+('fanout3_8', 'G4_9', {'value_non_fault': 'x', 'value_faulty': 'x', 'fault': ''})
+No_of_Unroll 10
+faulty_node1_list []
+########################################################################################
+########################################################################################
+##########################################################

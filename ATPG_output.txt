@@ -6947,3 +6947,5358 @@ fanout2_4 G2_4 0 0
 fanout2_6 G1_6 1 1
 fanout2_6 G2_6 1 1
 
+['fanout1_0', 'G1_0', 'sa1']
+G2_0 fanout3_0 x x
+G2_1 fanout3_1 x x
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 G4_0 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 G4_1 x x
+fanout3_1 FF3_ip_1 x x
+fanout2_0 G2_0 x x
+fanout2_0 G1_0 x x
+fanout2_1 G2_1 x x
+fanout2_1 G1_1 x x
+fanout1_0 G3_0 0 0
+fanout1_0 G1_0 0 1
+fanout1_1 G3_1 x x
+fanout1_1 G1_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+G3_1 G4_1 x x
+G3_0 G4_0 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+G2_0 fanout3_0 1 1
+G2_1 fanout3_1 x x
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 G4_0 1 1
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 G4_1 x x
+fanout3_1 FF3_ip_1 x x
+fanout2_0 G2_0 0 0
+fanout2_0 G1_0 0 0
+fanout2_1 G2_1 x x
+fanout2_1 G1_1 x x
+fanout1_0 G3_0 0 0
+fanout1_0 G1_0 0 1
+fanout1_1 G3_1 x x
+fanout1_1 G1_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+G3_1 G4_1 x x
+G3_0 G4_0 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+G2_0 fanout3_0 1 1
+G2_1 fanout3_1 x x
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 G4_0 1 1
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 G4_1 x x
+fanout3_1 FF3_ip_1 x x
+fanout2_0 G2_0 0 0
+fanout2_0 G1_0 0 0
+fanout2_1 G2_1 x x
+fanout2_1 G1_1 x x
+fanout1_0 G3_0 0 0
+fanout1_0 G1_0 0 1
+fanout1_1 G3_1 x x
+fanout1_1 G1_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+G3_1 G4_1 x x
+G3_0 G4_0 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+FF3_op_1 G4_1 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+FF1_op_1 fanout2_1 x x
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_1 G2_1 x x
+FF2_op_0 G2_0 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+fanout3_0 FF3_ip_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 x 1
+
+['fanout1_0', 'G1_0', 'sa1']
+B_0 FF1_ip_0 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+fanout3_0 FF3_ip_0 1 1
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+G1_0 FF2_ip_0 0 1
+
+['fanout1_0', 'G1_0', 'sa1']
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+A fanout1 x x
+B FF1_ip x x
+G1 FF2_ip x x
+fanout3 FF3_ip x x
+FF1_op fanout2 x x
+G4 output1 x x
+FF2_op G2 x x
+FF3_op G4 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+G4_2 output1_2 x x
+FF3_op_0 G4_0 x x
+A_2 fanout1_2 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 fanout2_2 x x
+B_2 FF1_ip_2 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_2 FF3_ip_2 x x
+G1_2 FF2_ip_2 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+G4_2 output1_2 x x
+FF3_op_0 G4_0 x x
+A_2 fanout1_2 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 fanout2_2 x x
+B_2 FF1_ip_2 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_2 FF3_ip_2 x x
+G1_2 FF2_ip_2 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+G4_2 output1_2 x x
+FF3_op_0 G4_0 x x
+A_2 fanout1_2 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 fanout2_2 x x
+B_2 FF1_ip_2 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_2 FF3_ip_2 x x
+G1_2 FF2_ip_2 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+G4_2 output1_2 x x
+FF3_op_0 G4_0 x x
+A_2 fanout1_2 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 fanout2_2 x x
+B_2 FF1_ip_2 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_2 FF3_ip_2 x x
+G1_2 FF2_ip_2 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+G4_2 output1_2 x x
+FF3_op_0 G4_0 x x
+A_2 fanout1_2 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 fanout2_2 x x
+B_2 FF1_ip_2 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_2 FF3_ip_2 x x
+G1_2 FF2_ip_2 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+G4_2 output1_2 x x
+FF3_op_0 G4_0 x x
+A_2 fanout1_2 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 fanout2_2 x x
+B_2 FF1_ip_2 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_2 FF3_ip_2 x x
+G1_2 FF2_ip_2 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+G4_2 output1_2 x x
+FF3_op_0 G4_0 x x
+A_2 fanout1_2 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 fanout2_2 x x
+B_2 FF1_ip_2 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_2 FF3_ip_2 x x
+G1_2 FF2_ip_2 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 x x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 x x
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 x
+G1_1 FF2_ip_1 x x
+
+['fanout1_0', 'G1_0', 'sa1']
+FF3_op_0 G4_0 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 0 0
+FF1_op_0 fanout2_0 0 0
+B_0 fanout2_1 1 1
+B_1 FF1_ip_1 x x
+G4_0 output1_0 1 1
+G4_1 output1_1 1 1
+FF2_op_0 G2_0 x x
+fanout3_1 FF3_ip_1 1 0
+G1_1 FF2_ip_1 1 1
+
+['fanout1_0', 'G1_0', 'sa1']
+G4_2 output1_2 x x
+FF3_op_0 G4_0 x x
+A_2 fanout1_2 x x
+A_1 fanout1_1 x x
+A_0 fanout1_0 x x
+FF1_op_0 fanout2_0 x x
+B_0 fanout2_1 x x
+B_1 fanout2_2 x x
+B_2 FF1_ip_2 x x
+G4_0 output1_0 x x
+G4_1 output1_1 x x
+FF2_op_0 G2_0 x x
+fanout3_2 FF3_ip_2 x x
+G1_2 FF2_ip_2 x x
+

@@ -2,8 +2,8 @@ import networkx as nx
 import networkx as nz
 
 G = nx.DiGraph()
-G.add_node('A',type='input')
-G.add_node('B',type='input')
+G.add_node('A',type='input',op_type='Primary_ip')
+G.add_node('B',type='input',op_type='Primary_ip')
 
 
 G.add_node('fanout1',type='fanout')
@@ -23,100 +23,132 @@ G.add_node('FF1',type='FF')
 G.add_node('FF2',type='FF')
 G.add_node('FF3',type='FF')
 
-G.add_node('output1',type='output')
+G.add_node('output1',type='output',op_type='Primary_op')
 
 
 G.add_edges_from([('A', 'fanout1'),('fanout1', 'G1'),('fanout1','G3'),('B','FF1'),('FF1','fanout2'),('fanout2','G2'),('fanout2','G1'),
 					('G1','FF2'),('FF2','G2'),('G2','fanout3'),('fanout3','G4'),('fanout3','FF3'),('FF3','G4'),('G3','G4'),('G4','output1')
 						], value_non_fault='x',value_faulty='x', fault='')
 
-G.add_edge('fanout1','G1', value_non_fault='x',value_faulty='x',fault='sa0')
+G.add_edge('fanout1','G1', value_non_fault='x',value_faulty='0',fault='sa0')
 
 
 
 
 def print_Graph(Graph):
-	for i in  Graph.edges(data=False):
-		print i
-
+	print "OUTPUT NODE"
+	for i in  Graph.edges(data=True):
+		if(Graph.nodes[i[1]]['type']=='output'):
+			print i
+	print "INPUT NODE"
+	for i in  Graph.edges(data=True):
+		if(Graph.nodes[i[0]]['type']=='input'):
+			print i
+	print "GATE"		
+	for i in  Graph.edges(data=True):
+		if(Graph.nodes[i[0]]['type']=='gate'):
+			print i
+	print "FANOUT"	
+	for i in  Graph.edges(data=True):
+		if(Graph.nodes[i[1]]['type']=='fanout'):
+			print i
+	for i in  Graph.edges(data=True):
+		if(Graph.nodes[i[0]]['type']=='fanout'):
+			print i
+			
+			
 def print_Graph_nodes(Graph):
-	for i in Graph.nodes():
+	for i in Graph.nodes(data=True):
 		if(Graph.nodes[i]['type']=='FF_ip'):
 			print i
+
+
+
 
 #####################################################################################################################################
 #------------------------------------------------------------Loop Unrolling--------------------------------------------------------------------
 
-print G.nodes(data=False)
-print G.edges(data=False)
-
-
-
-GU = nx.DiGraph()
-GU=G.copy()
-
-
-
-print "########################################################################################"	
-for i in  G.edges:
-	if(G.nodes[i[0]]['type']=='FF'):
-		#print i
-		GU.remove_edge(i[0], i[1])
-		GU.add_edge(i[0]+"_op", i[1],value_non_fault='x',value_faulty='x', fault='')
-	if(G.nodes[i[1]]['type']=='FF'):
-		#print i
-		GU.remove_edge(i[0], i[1])
-		GU.add_edge(i[0], i[1]+"_ip",value_non_fault='x',value_faulty='x', fault='')
-print "########################################################################################"	
+#print G.nodes(data=False)
+#print G.edges(data=False)
 
 
 
 
-
-for i in G.nodes: 
-	if(G.nodes[i]['type']=='FF'):
-		GU.remove_node(i)
-		GU.add_node((i + "_ip"),type='FF_ip')
-		GU.add_node((i + "_op"),type='FF_op')
+def Loop_Unroll_Once(GU):
+	
+	
+	
+	
+	
+	print "########################################################################################"	
+	for i in  G.edges:
+		if(G.nodes[i[0]]['type']=='FF'):
+			#print i
+			GU.remove_edge(i[0], i[1])
+			GU.add_edge(i[0]+"_op", i[1],value_non_fault='x',value_faulty='x', fault='')
+		if(G.nodes[i[1]]['type']=='FF'):
+			#print i
+			GU.remove_edge(i[0], i[1])
+			GU.add_edge(i[0], i[1]+"_ip",value_non_fault='x',value_faulty='x', fault='')
+	print "########################################################################################"	
+	
+	
+	
+	
+	
+	for i in G.nodes: 
+		if(G.nodes[i]['type']=='FF'):
+			GU.remove_node(i)
+			GU.add_node((i + "_ip"),type='output',op_type='FF_ip')
+			GU.add_node((i + "_op"),type='input',op_type='FF_op')
+	return GU
 		
 #print_Graph(GU)
-###############################################################################################################################		
+#print "GU",GU.nodes(data=True)
+#############################################GUZ_creation(Unrolled graph by dseq+1)##################################################################################		
 
 #~ 
 #~ 
 
-def Total_Graph(Graph,No_of_Unroll):
+def Total_Graph(No_of_Unroll):
 	dic={}
 	global GUZ
-	for j in range(No_of_Unroll):
+	
+	GU = Loop_Unroll_Once(G.copy())
+	
+	if(No_of_Unroll >1):
+		for j in range(No_of_Unroll):
+			
+			for i in GU.nodes(data=False):
+				dic[i] =i+"_"+str(j)
+				H=nx.relabel_nodes(GU, dic)
+			if(j==0):
+				GUZ =H.copy()
+			else:
+				GUZ = nx.compose(GUZ,H)
+		print "##########################################################"
+		#Output of FF is the previous cycle input 
+		Connect_FF_op_FF_ip(GUZ,No_of_Unroll)
+	else:
 		
-		for i in Graph.nodes(data=False):
-			dic[i] =i+"_"+str(j)
-			H=nx.relabel_nodes(GU, dic)
-		if(j==0):
-			GUZ =H.copy()
-		else:
-			GUZ = nx.compose(GUZ,H)
-	print "##########################################################"
-	#print_Graph(GUZ)	
-	
-	
-	#Output of FF is the previous cycle input 
-	Connect_FF_op_FF_ip(GUZ,No_of_Unroll)
-	
+		GUZ=GU
+	print_Graph(GUZ)	
+	return GUZ
 
-		
+#-------------------------------Connect the FF i/p to the next time frame FF o/p---------------------------------------		
 def Connect_FF_op_FF_ip(Graph,No_of_Unroll):
 	list_ip_FF=[]
 	list_op_FF=[]
 	
 	for i in Graph.node(data= False):
-			if(Graph.nodes[i]['type']=='FF_ip'):
+			if(Graph.nodes[i]['type']=='output' and Graph.nodes[i]['op_type']=='FF_ip'):
 				
 				if(int(i[len(i)-1])<No_of_Unroll-1 and int(i[len(i)-1])>=0):
 					list_ip_FF.append(i)
 					
-			if(Graph.nodes[i]['type']=='FF_op'):
+			if(Graph.nodes[i]['type']=='input' and Graph.nodes[i]['op_type']=='FF_op'):
+				#print  Graph.nodes[i]['op_type']
+				#print  Graph.nodes[i]
 				if(int(i[len(i)-1])<No_of_Unroll and int(i[len(i)-1])>0):
 					list_op_FF.append(i)
 					
@@ -143,74 +175,25 @@ def Connect_FF_op_FF_ip(Graph,No_of_Unroll):
 			
 		#----------Adding edge between FF_in in previous cycle and FF o/p
 		
-	#print_Graph(Graph)
 	
 	
+	
 
 		
-No_of_Unroll=7
-Total_Graph(GU,No_of_Unroll)
+
+
 		
-#print_Graph_nodes(GUZ)
-#print_Graph(GUZ)
 
 
-#Dummy node for bfs
-#~ GU.add_node('PI',type='check')
-#~ for i in GU.nodes:
-	#~ if(GU.nodes[i]['type']=='input'or GU.nodes[i]['type']=='FF_op'):
-		#~ GU.add_edge('PI',i, value_non_fault='x',value_faulty='x',fault='')
-		#~ 
-#~ bfs=nx.single_source_shortest_path_length(GU,'PI')
-#bfs	=list(nx.dfs_edges(GU,'PI'))
-
-#heaviest_path = max(path for path in nx.all_simple_paths(GUZ, 'PI', 'output1_1'),key=lambda path: get_weight(path))
-
-print "***********************************"
-
-
-
-
-
-def check_path(Source,Destination):
-	for path in nx.all_simple_paths(GUZ, source=Source, target=Destination):
-			#print path
-			return True
-			
-def check_path_op(Source):
-	for item in GUZ.nodes(data=True):
 		
-		if(item[1]['type']=='output'):
-			if(check_path(Source,item[0])==True):
-				return True
 
 
-def faulty_edg(G):
-	stuck_at_list=[]	
-	faulty_node1_list=[]
-	faulty_node2_list=[]							
-	for item in G.edges(data=True):
-				
-		if(item[2]['fault']=='sa1' ):
-			if(check_path_op(item[1])==True):
-				stuck_at_list.append('sa1')
-				faulty_node1_list.append(item[0])
-				faulty_node2_list.append(item[1])			
-		elif(item[2]['fault']=='sa0'):
-			if(check_path_op(item[1])==True):
-				stuck_at_list.append('sa1')
-				faulty_node1_list.append(item[0])
-				faulty_node2_list.append(item[1])
-	#print stuck_at_list
-	#print faulty_node1_list
-	#print faulty_node2_list	
-#	return [faulty_node1,faulty_node2,stuck_at]
-
-faulty_edg(GUZ)
-
-#----------------------------------------------------------------------------------------------------------------------------------------------
 
 
+
+
+
+#-----------------------------------------------Levelization of the Graph-------------------------------------------------------------------------
 
 
 
@@ -238,19 +221,20 @@ def maxi(lis,dic):
 def Level (Graph):
 	global dic_level
 	dic_level={}
+	#print Graph.nodes(data=True)
 	for item in Graph.nodes():
-		#print item,Graph.nodes[item]['type']
 		
-		if(Graph.nodes[item]['type']=='input' or Graph.nodes[item]['type']=='FF_op'):
+		
+		if(Graph.nodes[item]['type']=='input' ):
 			dic_level[item]=1
-	print "Length of Graph",len(Graph)
+	#print "Length of Graph",len(Graph)
 	while (len(dic_level)<len(Graph)):	
 		for item in Graph.nodes():		
-			if(Graph.nodes[item]['type']=='fanout' or Graph.nodes[item]['type']=='FF_ip'):
+			if(Graph.nodes[item]['type']=='fanout'):
 				list_inedge =list(Graph.in_edges(nbunch=item, data=False))
 				if(list_inedge[0][0] in dic_level.keys()):	
 					dic_level[item]=dic_level[list_inedge[0][0]]+1
-			elif(Graph.nodes[item]['type']=='FF_ip' or Graph.nodes[item]['type']=='output'):
+			elif(Graph.nodes[item]['type']=='output'):
 				list_inedge =list(Graph.in_edges(nbunch=item, data=False))
 				if(list_inedge[0][0] in dic_level.keys()):	
 					dic_level[item]=dic_level[list_inedge[0][0]]
@@ -265,5 +249,9 @@ def Level (Graph):
 					continue
 				#dic_level[item]=maxi
 	return dic_level
-bfs = Level (GUZ)
-#print "bfs",bfs
+#---------------------------------------------------------------------------------------------------------------------------------------	
+
+
+
+
+#overall_Graph_Seq()

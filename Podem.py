@@ -1,43 +1,56 @@
+#The faulty and non fault output are computed seperately.The value to the faulty is assigned only when it is neither sa0 nor sa1. 
+
+
 import Gates
 import operator
-#from Graph_Abramovici import G,bfs
-from Graph_Sequential import  GUZ as G,bfs
+from Graph_Abramovici import G,bfs
+#from Time_frame import  GU as G,bfs
 import Implication_Stack as IS
 from S_graph import No_of_unroll
 
+PO_list =[]
 def primary_input():
+	global G
+	global PI_list
 	PI_list= []
-	
 	for item in G.nodes(data=True):
 		
 		if(item[1]['type']=='input'):
 				list_outedge =list(G.out_edges(nbunch=item[0], data=False))	
 				PI_list.append(list_outedge[0])
 	return PI_list
+
 	
 def primary_output():
+	global PO_list
 	PO_list= []
 	for item in G.nodes(data=True):
 		if(item[1]['type']=='output'):
 				list_outedge =list(G.in_edges(nbunch=item[0], data=False))	
 				PO_list.append(list_outedge[0])
-	return PO_list
+	
 	
 	
 def Forward_Implication_fanout(node1,node2,list_outedge):
+	
 	#print "@@@@@@@@@Forward Implication Fanout"
 	global G
-	#~ print "faulty_edge_list[:2]",faulty_edge_list[:2]
-	#~ print "G[node1][node2]['value_faulty']",G[node1][node2]['value_faulty']
+	print "node1 node2",node1,node2,G[node1][node2]['value_non_fault'],G[node1][node2]['value_faulty']	
+
 	for i in range(len(list_outedge)):
 	
 		G.edges[list_outedge[i]]['value_non_fault']  = G[node1][node2]['value_non_fault']
-		if(faulty_edge_list[:2]!=list(list_outedge[i])):
-			#~ print "***********"
-			G.edges[list_outedge[i]]['value_faulty']  = G[node1][node2]['value_faulty']
+		if(G.edges[list(list_outedge[i])]['fault']=='sa0'):  		
+		#Assign the computed value only if the edge is neither sao nor sa1
+			G.edges[list(list_outedge[i])]['value_faulty']    ='0'
+		elif(G.edges[list(list_outedge[i])]['fault']=='sa1'):
+			G.edges[list(list_outedge[i])]['value_faulty']    ='1'
+		else:
+			G.edges[list(list_outedge[i])]['value_faulty']	=G[node1][node2]['value_faulty']
+			
 		new_node1		=list_outedge[i][0]
 		new_node2		=list_outedge[i][1]
-		print "new_node1 new_node2",new_node1,new_node2	
+		
 		if(G.nodes[new_node2]['type']=='gate' or G.nodes[new_node2]['type']=='fanout'):
 			Forward_Implication(new_node1,new_node2)
 		
@@ -47,6 +60,7 @@ def Forward_Implication_fanout(node1,node2,list_outedge):
 def Forward_Implication_gates(node1,node2):
 	#print "@@@@@@@@@Forward Implication Gates"
 	global G
+	print "node1 node2",node1,node2,G[node1][node2]['value_non_fault'],G[node1][node2]['value_faulty']	
 	list_inedge =list(G.in_edges(nbunch=node2, data=False))
 	list_input_non_faulty =[]
 	list_input_faulty	  =[]	
@@ -80,10 +94,16 @@ def Forward_Implication_gates(node1,node2):
 	
 	G.edges[list(G.out_edges(nbunch=node2, data=False))[0]]['value_non_fault'] =output_non_faulty 
 			
-			
-	if(faulty_edge_list[:2] !=list(list(G.out_edges(nbunch=node2, data=False))[0])): 		
-		G.edges[list(G.out_edges(nbunch=node2, data=False))[0]]['value_faulty']    =output_faulty 
-	
+	print "faulty_edge_list[:2]",faulty_edge_list[:2]
+	print "list(list(G.out_edges(nbunch=node2, data=False))[0]",list(list(G.out_edges(nbunch=node2, data=False))[0])
+	edge_assign	=list(G.out_edges(nbunch=node2, data=False))[0]	
+	if(G.edges[edge_assign]['fault']=='sa0'):  		
+		#Assign the computed value only if the edge is neither sao nor sa1
+		G.edges[edge_assign]['value_faulty']    ='0'
+	elif(G.edges[edge_assign]['fault']=='sa1'):
+		G.edges[edge_assign]['value_faulty']    ='1'
+	else:
+		G.edges[edge_assign]['value_faulty']	=output_faulty
 	
 		
 	node1 =list(G.out_edges(nbunch=node2, data=False))[0][0]
@@ -94,6 +114,7 @@ def Forward_Implication_gates(node1,node2):
 
 
 def Forward_Implication(node1,node2):
+	
 	list_outedge =list(G.out_edges(nbunch=node2, data=False))				#Checking the forward implication of node2 as node1 is the Primary input
 
 	
@@ -213,7 +234,6 @@ def undefined_ip(node_D_fronteir):
 def Backtrace(node1,node2):
 		global G
 		backtrack=0
-		#for iter1 in range(No_of_unroll):
 		while(G.nodes[node1]['type']=='gate' or  G.nodes[node1]['type']=='fanout'):			# Checking whether PI is reached then terminate
 			l= list (G.in_edges(nbunch=node1, data=False))
 			print "node1",node1
@@ -246,15 +266,7 @@ def Backtrace(node1,node2):
 			if(backtrack ==True):
 				#print backtrack
 				break
-			#Assigning output of FF to input of FF		
-			#~ if(G.nodes[node1]['type']=='FF'):
-				#~ print "HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELLLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOOOOOOO"
-				#~ print (node1[0:3]+ "_ip")
-				#~ print list(G.in_edges(nbunch=node1[0:3]+"_ip", data=False))[0]
-				#~ G.edges[list(G.in_edges(nbunch=node1[0:3]+"_ip", data=False))[0]]['value_non_fault'] =	G[node1][node2]['value_non_fault']	
-				#~ G.edges[list(G.in_edges(nbunch=node1[0:3]+"_ip", data=False))[0]]['value_faulty'] =	G[node1][node2]['value_faulty']	
-				#~ print "BACTRACE_RESULT"
-				#~ print_Graph_edges()
+			
 				
 		return node1,node2,G[node1][node2]['value_non_fault'],backtrack
 						
@@ -300,19 +312,18 @@ def print_Backtrace_Graph_edges(l):
 		
 def print_Graph_edges():
 	global G	
-	output =str(faulty_edge_list) +"\n"
-	print "faulty_edge_list",faulty_edge_list
-	for item in G.edges(data=True):
-					#print item
-		#	if(G.nodes(data=True)[item[0]]['type'] =='input' or G.nodes(data=True)[item[1]]['type'] =='output' or  G.nodes(data=True)[item[0]]['type'] =='FF_op'):
-					
-					print item[0],item[2]['value_non_fault'] ,item[2]['value_faulty']
-					output +=str(item[0])+" " + str(item[1])+" " + str(item[2]['value_non_fault'])+" " +str(item[2]['value_faulty']) +"\n" 
 	
-	output += "\n" 
-	f = open("ATPG_output.txt", 'a+')
-	f.write(output)
-	f.close()
+	print "faulty_edge_list",faulty_edge_list
+	print "OUTPUT"
+	for item in G.edges(data=True):	
+			if(G.nodes(data=True)[item[1]]['type'] =='output'):
+					print item[0],item[1],item[2]['value_non_fault'] ,item[2]['value_faulty']
+					
+	print "INPUT"
+	for item in G.edges(data=True):	
+			if(G.nodes(data=True)[item[0]]['type'] =='input'):
+					print item[0],item[1],item[2]['value_non_fault'] ,item[2]['value_faulty']
+	
 	
 def error_at_PO():
 		global G
@@ -389,33 +400,50 @@ def atpg_PODEM():
 
 
 #Finding the Faulty edges
-def faulty_edg():								
-	for item in G.edges(data=True):
-				
-		if(item[2]['fault']=='sa1' ):
-				stuck_at 		='sa1'
-				faulty_node1 	=item[0]
-				faulty_node2 	=item[1]			
-		elif(item[2]['fault']=='sa0'):
-				stuck_at	 	='sa0'
-				faulty_node1 	=item[0]
-				faulty_node2 	=item[1]
-				
-	#return [faulty_node1,faulty_node2,stuck_at]
-	return ['fanout1_4','G1_4','sa1']
+#~ def faulty_edg():					
+	#~ global G			
+	#~ for item in G.edges(data=True):
+				#~ 
+		#~ if(item[2]['fault']=='sa1' ):
+				#~ stuck_at 		='sa1'
+				#~ faulty_node1 	=item[0]
+				#~ faulty_node2 	=item[1]			
+		#~ elif(item[2]['fault']=='sa0'):
+				#~ stuck_at	 	='sa0'
+				#~ faulty_node1 	=item[0]
+				#~ faulty_node2 	=item[1]
+				#~ 
+	#~ #return [faulty_node1,faulty_node2,stuck_at]
+	#~ return ['fanout1_0','G1_0','sa0']
 
 
 
-faulty_edge_list=faulty_edg()
-PI_list  = primary_input()
-PO_list  = primary_output()
+def overall_Podem_for_No_of_Unroll(GU,bfs1,faulty1_edge_list):
+	global faulty_edge_list
+	global D_fronteir_list
+	global I_Stack
+	global G
+	global bfs
+	G=GU
+	bfs=bfs1
+	faulty_edge_list	=faulty1_edge_list
+	primary_input()
+	primary_output()
+	
+
+	D_fronteir_list =[]
+
+	I_Stack=IS.Impl_Stack()
+
+	print_Graph_edges()
+	
+	atpg_PODEM()
+	return PO_list,PI_list
+	
 
 
-D_fronteir_list =[]
-
-I_Stack=IS.Impl_Stack()
-atpg_PODEM()
-print_Graph_edges()	
+#overall_Podem_for_No_of_Unroll(G,bfs)
+#print_Graph_edges()	
 
 
 
