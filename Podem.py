@@ -193,11 +193,11 @@ def D_fronteir():
 						flag1=True	
 					if(G.edges[j]['value_non_fault']=='x' or G.edges[j]['value_faulty']=='x'):							#Other Input is 'x'
 						flag2= True
-			
+			print "flag1,flag2",flag1,flag2,i
 			if(flag1==True and flag2 ==True):
 							print "D_fronteir", D_fronteir_li
 							D_fronteir_li.insert(0,i)
-	
+							print "D_fronteir", D_fronteir_li
 	return D_fronteir_li
 
 
@@ -220,6 +220,8 @@ def undefined_ip(node_D_fronteir):
 				control_val =0
 			elif(gate_type=='or' or  gate_type=='nor'):
 				control_val =1
+			elif(gate_type=='xor' or  gate_type=='xnor'):
+				control_val	=1
 			for i in range(len(gate_ip_edge)):
 					if(G.edges[gate_ip_edge[i]]['value_non_fault']=='x' or G.edges[gate_ip_edge[i]]['value_faulty']=='x'):
 						G.edges[gate_ip_edge[i]]['value_non_fault']	= str(int(not control_val))	
@@ -316,14 +318,14 @@ def print_Graph_edges():
 	print "faulty_edge_list",faulty_edge_list
 	print "OUTPUT"
 	for item in G.edges(data=True):	
-			#if(G.nodes(data=True)[item[1]]['type'] =='output'):
+			if(G.nodes(data=True)[item[1]]['type'] =='output'):
 					print item[0],item[1],item[2]['value_non_fault'] ,item[2]['value_faulty']
 					
-	#~ print "INPUT"
-	#~ for item in G.edges(data=True):	
-			#~ if(G.nodes(data=True)[item[0]]['type'] =='input'):
-					#~ print item[0],item[1],item[2]['value_non_fault'] ,item[2]['value_faulty']
-	
+	print "INPUT"
+	for item in G.edges(data=True):	
+			if(G.nodes(data=True)[item[0]]['type'] =='input'):
+					print item[0],item[1],item[2]['value_non_fault'] ,item[2]['value_faulty']
+	#~ 
 	
 def error_at_PO():
 		global G

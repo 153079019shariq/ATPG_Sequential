@@ -4,39 +4,40 @@ import operator
 G = nx.DiGraph()
 G.add_node('A',type='input',op_type='Primary_ip')
 G.add_node('B',type='input',op_type='Primary_ip')
+G.add_node('C',type='input',op_type='Primary_ip')
+G.add_node('D',type='input',op_type='Primary_ip')
 
 
 G.add_node('fanout1',type='fanout')
 G.add_node('fanout2',type='fanout')
-G.add_node('fanout3',type='fanout')
 
 
-G.add_node('G1',type='gate',gatetype='or')
-G.add_node('G2',type='gate',gatetype='nand')
-G.add_node('G3',type='gate',gatetype='not')
+
+G.add_node('G1',type='gate',gatetype='and')
+G.add_node('G2',type='gate',gatetype='nor')
+G.add_node('G3',type='gate',gatetype='or')
 G.add_node('G4',type='gate',gatetype='or')
 
 
-
-
 G.add_node('FF1',type='FF')
-G.add_node('FF2',type='FF')
-G.add_node('FF3',type='FF')
+
 
 G.add_node('output1',type='output',op_type='Primary_op')
+G.add_node('output2',type='output',op_type='Primary_op')
 
 
-G.add_edges_from([('A', 'fanout1'),('fanout1', 'G1'),('fanout1','G3'),('B','FF1'),('FF1','fanout2'),('fanout2','G2'),('fanout2','G1'),
-					('G1','FF2'),('FF2','G2'),('G2','fanout3'),('fanout3','G4'),('fanout3','FF3'),('FF3','G4'),('G3','G4'),('G4','output1')
-						], value_non_fault='x',value_faulty='x', fault='',cc0=0,cc1=0,dr1_0=10000,dr0_1=10000)
+G.add_edges_from([('G1','fanout1'),('fanout1','G2'),('fanout1','FF1'),('FF1','G4'),('G2','fanout2'),('fanout2','G3'),('fanout2','G4'),
+					('G3','output1'),('G4','output2')], value_non_fault='x',value_faulty='x', fault='',cc0=0,cc1=0,dr1_0=10000,dr0_1=10000)
 
 
-G.add_edge('A', 'fanout1', value_non_fault='x',value_faulty='x',fault='',cc0=1,cc1=1,dr1_0=10000,dr0_1=10000)
-G.add_edge('B','FF1', value_non_fault='x',value_faulty='x',fault='',cc0=1,cc1=1,dr1_0=10000,dr0_1=10000)
+G.add_edge('A','G1', value_non_fault='x',value_faulty='x',fault='',cc0=4,cc1=4, dr1_0=10000,dr0_1=10000)
+G.add_edge('B','G1', value_non_fault='x',value_faulty='x',fault='',cc0=6,cc1=4, dr1_0=10000,dr0_1=10000)
+G.add_edge('C','G2', value_non_fault='x',value_faulty='x',fault='',cc0=10,cc1=15,dr1_0=10000,dr0_1=10000)
+G.add_edge('D','G3', value_non_fault='x',value_faulty='x',fault='',cc0=11,cc1=16,dr1_0=10000,dr0_1=10000)
 
 
 
-G.add_edge('B','FF1', value_non_fault='x',value_faulty='0',fault='sa0',dr1_0=10000,dr0_1=10000)
+G.add_edge('A','G1', value_non_fault='x',value_faulty='0',fault='sa1',dr1_0=10000,dr0_1=10000)
 
 
 def print_Graph(Graph):

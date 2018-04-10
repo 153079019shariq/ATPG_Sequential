@@ -1,6 +1,6 @@
 #import Podem as Podem
 from Podem import *
-from Graph_Seq_Figure_8_5 import *
+from Graph_Seq_Figure_8_6 import *
 
 
 
@@ -104,8 +104,9 @@ def overall_Graph_Seq():
 		print"faulty_edge_select",faulty_edge_select
 		PO_list,PI_list=overall_Podem_for_No_of_Unroll(GU,bfs,faulty_list)
 		
-		
-		if(error_at_FF_ip_or_Primary_output(GU,PO_list)==True):
+		if(No_of_Unroll==10):
+				print "Fault not Testable"
+		elif(error_at_FF_ip_or_Primary_output(GU,PO_list)==True):
 				No_of_Unroll+=1					#Increase the number of Unroll
 				print "G_Seq.No_of_Unroll",No_of_Unroll
 				overall_Graph_Seq()            #Call the function recursively so that fault reaches PO
@@ -114,9 +115,8 @@ def overall_Graph_Seq():
 				print "G_Seq1.No_of_Unroll",No_of_Unroll
 				faulty_edge_select +=1
 				overall_Graph_Seq()            #Call the function recursively so that it bactrace it assignment from FF_op to Primary_ip
-			
-		print "Fault propagated"		  	
-		print "error_at_FF_op_or_Primary_input(GU,PI_list)",error_at_FF_op_or_Primary_input(GU,PI_list)
+		
+		
 
 
 overall_Graph_Seq()

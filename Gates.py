@@ -183,8 +183,19 @@ def NOT_Obser(edgeCO):
 	list_temp.append(edgeCO +1)
 	return list_temp
 
-list_predecessorCC0	=[1,2]	
-list_predecessorCC1 =[3,4]
+
+
+
+
+def AND_OR_Drive(list_drivibility1_0,list_predecessor_1):
+	return min ([x + y for x, y in zip(list_drivibility1_0, list_predecessor_1)])+1
+
+
+def NAND_NOR_Drive(list_drivibility1_0,list_predecessor_1):
+	return min ([x + y for x, y in zip(list_drivibility1_0, list_predecessor_1)])+1
+#AND_OR_Drive([10,100],[1,2])
+
+
 
 
 #print AND_Control(list_predecessorCC0,list_predecessorCC1)
