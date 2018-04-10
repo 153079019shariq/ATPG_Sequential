@@ -3,7 +3,7 @@
 
 import Gates
 import operator
-from Graph_Abramovici import G,bfs
+#from Graph_Abramovici import G,bfs
 #from Time_frame import  GU as G,bfs
 import Implication_Stack as IS
 from S_graph import No_of_unroll
