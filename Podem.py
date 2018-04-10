@@ -316,13 +316,13 @@ def print_Graph_edges():
 	print "faulty_edge_list",faulty_edge_list
 	print "OUTPUT"
 	for item in G.edges(data=True):	
-			if(G.nodes(data=True)[item[1]]['type'] =='output'):
+			#if(G.nodes(data=True)[item[1]]['type'] =='output'):
 					print item[0],item[1],item[2]['value_non_fault'] ,item[2]['value_faulty']
 					
-	print "INPUT"
-	for item in G.edges(data=True):	
-			if(G.nodes(data=True)[item[0]]['type'] =='input'):
-					print item[0],item[1],item[2]['value_non_fault'] ,item[2]['value_faulty']
+	#~ print "INPUT"
+	#~ for item in G.edges(data=True):	
+			#~ if(G.nodes(data=True)[item[0]]['type'] =='input'):
+					#~ print item[0],item[1],item[2]['value_non_fault'] ,item[2]['value_faulty']
 	
 	
 def error_at_PO():

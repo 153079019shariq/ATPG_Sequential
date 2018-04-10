@@ -1,6 +1,6 @@
 #import Podem as Podem
 from Podem import *
-from Graph_Sequential import *
+from Graph_Seq_Figure_8_5 import *
 
 
 
@@ -71,7 +71,7 @@ def faulty_edg_len(Graph):
 				
 	print "faulty_node1_list",sorted(faulty_node1_list)
 	print "faulty_node2_list",sorted(faulty_node2_list)
-	
+	print "stuck_at_list",sorted(stuck_at_list)
 	return sorted(faulty_node1_list),sorted(faulty_node2_list),sorted(stuck_at_list),fault_path_to_op
 
 
@@ -98,8 +98,9 @@ def overall_Graph_Seq():
 		
 		overall_Graph_Seq()
 	else:
-		print "faulty_list",faulty_list
+		
 		faulty_list =[faulty_node1_list[faulty_edge_select],faulty_node2_list[faulty_edge_select],stuck_at_list[faulty_edge_select]]
+		print "faulty_list",faulty_list
 		print"faulty_edge_select",faulty_edge_select
 		PO_list,PI_list=overall_Podem_for_No_of_Unroll(GU,bfs,faulty_list)
 		
