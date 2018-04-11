@@ -1,7 +1,7 @@
 #import Podem as Podem
 from Podem import *
 from Graph_Seq_8_3 import *
-
+from Controlability_Observability import *
 
 #Positive Time Frame
 def error_at_FF_ip_or_Primary_output(Graph,PO_list):
@@ -79,6 +79,22 @@ def faulty_edg_len(Graph):
 	return sorted(faulty_node1_list),sorted(faulty_node2_list),sorted(stuck_at_list),fault_path_to_op
 
 
+
+
+
+
+
+
+
+
+
+def lis(sorted_x):
+	list1=[]
+	for i in sorted_x:
+		list1.append(i[0])
+	return list1
+
+
 No_of_Unroll=1
 faulty_list=[]
 faulty_edge_select=0
@@ -92,11 +108,12 @@ def overall_Graph_Seq():
 	GU	=Total_Graph(No_of_Unroll)
 	print "No_of_Unroll",No_of_Unroll
 	faulty_node1_list,faulty_node2_list,stuck_at_list,fault_path_to_op = faulty_edg_len(GU)
-	print "fault_path_to_op",fault_path_to_op
-	print "faulty_node1_list",faulty_node1_list
-	print "faulty_node2_list",faulty_node2_list
+	
 	bfs = Level (GU)
-	print "bfs",bfs
+	sorted_x = sorted(bfs.items(), key=operator.itemgetter(1))
+	list1=lis(sorted_x)
+	overall_Controllability(GU,list1)
+	
 	if(fault_path_to_op==0):		#Check if the fault can be propagated to the Primary output with No_of_Unroll
 		No_of_Unroll +=1
 		

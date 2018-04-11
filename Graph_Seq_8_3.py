@@ -34,9 +34,12 @@ G.add_node('out1',type='output',op_type='Primary_op')
 G.add_edges_from([('A', 'fanout5'),('B','fanout6'),('fanout5','G1'),('fanout5','G2'),('fanout6','G1'),('fanout6','G2'),
 				('G1','fanout1'),('fanout1','G8'),('fanout1','G7'),('G8','G3'),('G2','G3'),('G3','fanout2'),('fanout2','G4'),('fanout2','G5'),
 				('fanout3','G4'),('fanout3','G5'),('G4','fanout4'),('fanout4','G9'),('fanout4','G7'),
-				('G9','G6'),('G5','G6'),('G6','out1'),('G7','FF1'),('FF1','fanout3')], value_non_fault='x',value_faulty='x', fault='')
+				('G9','G6'),('G5','G6'),('G6','out1'),('G7','FF1'),('FF1','fanout3')], value_non_fault='x',value_faulty='x', fault='',cc0=0,cc1=0,co=0)
 
-G.add_edge('fanout1','G5', value_non_fault='x',value_faulty='0',fault='sa0')
+G.add_edge('A', 'fanout5', value_non_fault='x',value_faulty='0',fault='',cc0=1,cc1=1,co=0)
+G.add_edge('B','fanout6', value_non_fault='x',value_faulty='0',fault='',cc0=1,cc1=1,co=0)
+
+G.add_edge('fanout1','G8', value_non_fault='x',value_faulty='0',fault='sa0',cc0=0,cc1=0,co=0)
 
 
 
@@ -91,11 +94,11 @@ def Loop_Unroll_Once(GU):
 		if(G.nodes[i[0]]['type']=='FF'):
 			#print i
 			GU.remove_edge(i[0], i[1])
-			GU.add_edge(i[0]+"_op", i[1],value_non_fault='x',value_faulty='x', fault='')
+			GU.add_edge(i[0]+"_op", i[1],value_non_fault='x',value_faulty='x', fault='',cc0=1,cc1=1,co=0)
 		if(G.nodes[i[1]]['type']=='FF'):
 			#print i
 			GU.remove_edge(i[0], i[1])
-			GU.add_edge(i[0], i[1]+"_ip",value_non_fault='x',value_faulty='x', fault='')
+			GU.add_edge(i[0], i[1]+"_ip",value_non_fault='x',value_faulty='x', fault='',cc0=0,cc1=0,co=0)
 	print "########################################################################################"	
 	
 	
@@ -138,14 +141,14 @@ def Total_Graph(No_of_Unroll):
 	else:
 		
 		GUZ=GU
-	print_Graph(GUZ)	
+	#print_Graph(GUZ)	
 	return GUZ
 
 #-------------------------------Connect the FF i/p to the next time frame FF o/p---------------------------------------		
 def Connect_FF_op_FF_ip(Graph,No_of_Unroll):
 	list_ip_FF=[]
 	list_op_FF=[]
-	print_Graph_nodes(Graph)
+	#print_Graph_nodes(Graph)
 	for i in Graph.node(data= False):
 			if(Graph.nodes[i]['type']=='output' and Graph.nodes[i]['op_type']=='FF_ip'):
 				
@@ -237,7 +240,7 @@ def Level (Graph):
 			dic_level[item]=1
 	#print "Length of Graph",len(Graph)
 	while (len(dic_level)<len(Graph)):	
-		for item in Graph.nodes():		
+		for item in Graph.nodes():	
 			if(Graph.nodes[item]['type']=='fanout'):
 				list_inedge =list(Graph.in_edges(nbunch=item, data=False))
 				if(list_inedge[0][0] in dic_level.keys()):	
@@ -260,18 +263,7 @@ def Level (Graph):
 #---------------------------------------------------------------------------------------------------------------------------------------	
 
 
-#~ bfs= Level (G)
-#~ print bfs
-#~ sorted_x = sorted(bfs.items(), key=operator.itemgetter(1))
-#~ 
-#~ list1=[]
-#~ def lis(sorted_x):
-	#~ global list1
-	#~ 
-	#~ for i in sorted_x:
-		#~ list1.append(i[0])
-		#~ 
-#~ lis(sorted_x)
+
 
 
 

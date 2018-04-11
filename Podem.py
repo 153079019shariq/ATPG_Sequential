@@ -6,8 +6,7 @@ import operator
 #from Graph_Abramovici import G,bfs
 #from Time_frame import  GU as G,bfs
 import Implication_Stack as IS
-from S_graph import No_of_unroll
-
+from  Controlability_Observability import *
 PO_list =[]
 def primary_input():
 	global G
@@ -165,11 +164,11 @@ def sort_D_fronteir(D_fronteir_list):			#Found the bfs(to levelise the circuit) 
 		print "sort_D_fronteir"
 		D_fronteir_level ={}
 		for i in D_fronteir_list:
-			for j in bfs.keys():
-				if(i==j):
-					D_fronteir_level[i]=bfs[j]
+			gate_out_edge = list(G.out_edges(nbunch=i, data=False))
+			print gate_out_edge
+			D_fronteir_level[i]=G.edges[gate_out_edge[0]]['co']
 		
-		D_fronteir_level_sorted = sorted(D_fronteir_level.items(), key=operator.itemgetter(1),reverse=True)
+		D_fronteir_level_sorted = sorted(D_fronteir_level.items(), key=operator.itemgetter(1))
 		return 	D_fronteir_level_sorted
 		
 		
@@ -230,51 +229,135 @@ def undefined_ip(node_D_fronteir):
 			
 			
 											
-						
+					
 
+def hardest_to_assign_val(Gate):
+	global setting_all_ip
+	if(Gate=='and'):
+		setting_all_ip		='1'		#Non_control_val
+	elif(Gate=='or'):
+		setting_all_ip		='0'
+	elif(Gate=='nand'):
+		setting_all_ip		='0'		
+	elif(Gate=='nor'):
+		setting_all_ip		='1'
+	
+
+
+def max_min_Controllability(l,node1,val_assign):
+		max_cc0_controllability	=0
+		edge_max_cc0_controllability =''
+		min_cc0_controllability	=10000 
+		edge_min_cc0_controllability =''
+		
+		max_cc1_controllability	=0
+		edge_max_cc1_controllability =''
+		min_cc1_controllability	=10000 
+		edge_min_cc1_controllability =''
+		if(G.nodes[node1]['type']=='gate'):
+			print "G.nodes[node1]['gatetype']",node1
+			print "val_assign",val_assign
+			for i in l:
+				if(G.edges[i]['value_non_fault']=='x'):
+					if(max_cc0_controllability < G.edges[i]['cc0']):
+						max_cc0_controllability 	=G.edges[i]['cc0']
+						edge_max_cc0_controllability =i
+					if(min_cc0_controllability > G.edges[i]['cc0']):
+						min_cc0_controllability	=G.edges[i]['cc0']
+						edge_min_cc0_controllability =i
 						
+					if(max_cc1_controllability < G.edges[i]['cc1']):
+						max_cc1_controllability 	=G.edges[i]['cc1']
+						edge_max_cc1_controllability =i
+					if(min_cc1_controllability > G.edges[i]['cc1']):
+						min_cc1_controllability	=G.edges[i]['cc1']
+						edge_min_cc1_controllability =i
+			
+			#~ print "edge_max_cc0_controllability",edge_max_cc0_controllability
+			#~ print "edge_min_cc0_controllability",edge_min_cc0_controllability
+			#~ print  "edge_max_cc1_controllability",edge_max_cc1_controllability
+			#~ print "edge_min_cc1_controllability",edge_min_cc1_controllability
+			
+			hardest_ip = hardest_to_assign_val(G.nodes[node1]['gatetype'])
+			print "G.nodes[node1]['gatetype']",G.nodes[node1]['gatetype']
+			
+			if(G.nodes[node1]['gatetype']=='and' or G.nodes[node1]['gatetype']=='nand'):
+				if(val_assign ==hardest_ip):
+					edge =edge_max_cc1_controllability
+				else:
+					edge =edge_min_cc0_controllability
+			if(G.nodes[node1]['gatetype']=='or' or G.nodes[node1]['gatetype']=='nor'):
+				if(val_assign ==hardest_ip):
+					edge =edge_max_cc0_controllability
+				else:
+					edge =edge_min_cc1_controllability
+					
+			if(G.nodes[node1]['gatetype']=='xor' or G.nodes[node1]['gatetype']=='xnor' ):
+				if(val_assign =='1'):
+					edge =edge_max_cc1_controllability
+				else:
+					edge =edge_max_cc1_controllability
+					
+			
+			
+			if(G.nodes[node1]['gatetype']=='not'):
+					edge =l[0]
+			
+			
+			return edge	
+				
+				
 def Backtrace(node1,node2):
 		global G
 		backtrack=0
-		while(G.nodes[node1]['type']=='gate' or  G.nodes[node1]['type']=='fanout'):			# Checking whether PI is reached then terminate
+		while(G.nodes[node1]['type']=='gate' or  G.nodes[node1]['type']=='fanout'):
 			l= list (G.in_edges(nbunch=node1, data=False))
-			print "node1",node1
+			print "node1,node2",node1 ,node2
 			print "Before Backtrace",print_Backtrace_Graph_edges(l)
 			
-			for i in l:
-				
-				if(G.nodes[node1]['type']=='gate'and G.edges[i]['value_non_fault']=='x'):										#For all the gates
-					if(G.nodes[node1]['gatetype']=='nand' or G.nodes[node1]['gatetype']=='nor' or G.nodes[node1]['gatetype']=='not'):
-						G.edges[i]['value_non_fault'] = str(int(not(int(G[node1][node2]['value_non_fault']))))				# Inversion parity =1
+			if(G.nodes[node1]['type']=='gate'):
+					edge_to_assign =max_min_Controllability(l,node1,G[node1][node2]['value_non_fault']	)
+					print "edge_to_assign",edge_to_assign
+			
+
+					if(G.nodes[node1]['gatetype']=='nand' or G.nodes[node1]['gatetype']=='nor' or G.nodes[node1]['gatetype']=='not' or G.nodes[node1]['gatetype']=='xnor'):
+						G.edges[edge_to_assign]['value_non_fault'] = str(int(not(int(G[node1][node2]['value_non_fault']))))				# Inversion parity =1
 						
 					else:
-						G.edges[i]['value_non_fault'] = 	G[node1][node2]['value_non_fault']						#  Inversion parity =0
-					backtrack=assign_faulty(i)																	#Assigning value to a non -faulty circuit 		
+						G.edges[edge_to_assign]['value_non_fault'] 	= 	G[node1][node2]['value_non_fault']						#  Inversion parity =0
+
+
+
+					backtrack=assign_faulty(edge_to_assign)																	#Assigning value to a non -faulty circuit 		
 					print "After Backtrace",print_Backtrace_Graph_edges(l)
-					node1 	=i[0]
-					node2 	=i[1]
+					#~ node1 	=i[0]
+					#~ node2 	=i[1]
 					
-					break
+					new_node1		=edge_to_assign[0]
+					new_node2		=edge_to_assign[1]
+					print "node1,node2"	,new_node1,new_node2
 					
-																			
-				elif(G.nodes[node1]['type']=='fanout'):											# For fanout branches
-					G.edges[i]['value_non_fault'] = G[node1][node2]['value_non_fault']	
-					backtrack=assign_faulty(i)		#Assigning value to a non -faulty circuit 		
-					print "After Backtrace",print_Backtrace_Graph_edges(l)
-					node1 	=i[0]
-					node2 	=i[1]	
+					
+																		
+			if(G.nodes[node1]['type']=='fanout'):	
+					for i in l:											# For fanout branches
+						G.edges[i]['value_non_fault'] = G[node1][node2]['value_non_fault']	
+						backtrack=assign_faulty(i)		#Assigning value to a non -faulty circuit 		
+						print "After Backtrace",print_Backtrace_Graph_edges(l)
+						new_node1 	=i[0]
+						new_node2 	=i[1]	
+						print "node1,node2"	,new_node1,new_node2
 					
 			
+			
+			node1 =new_node1
+			node2 =new_node2
 			if(backtrack ==True):
 				#print backtrack
 				break
 			
-				
-		return node1,node2,G[node1][node2]['value_non_fault'],backtrack
 						
-					
-					
-				
+		return node1,node2,G[node1][node2]['value_non_fault'],backtrack			
 			
 			
 			
