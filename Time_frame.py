@@ -1,9 +1,9 @@
 #import Podem as Podem
 from Podem import *
-from Graph_Seq_Figure_8_6 import *
+from Graph_Seq_8_3 import *
 
 
-
+#Positive Time Frame
 def error_at_FF_ip_or_Primary_output(Graph,PO_list):
 		
 		for i in PO_list:
@@ -11,10 +11,14 @@ def error_at_FF_ip_or_Primary_output(Graph,PO_list):
 				if(Graph.nodes[i[1]]['type']=='output' and  Graph.nodes[i[1]]['op_type']=='FF_ip'):
 					return True
 		return False 
+		
+
+
+
 #~ #----------------------------------------------Faulty edge(If Fault cannot be propagated to primary o/p then increase No of unroll)-------------------------------------------------------------------------------
 
 
-
+#Negative Time Frame
 def error_at_FF_op_or_Primary_input(Graph,PI_list):
 	for i in PI_list:
 			if(Graph.edges[i]['value_non_fault']!='x' and Graph.edges[i]['value_faulty']!='x'):
@@ -120,6 +124,7 @@ def overall_Graph_Seq():
 
 
 overall_Graph_Seq()
+
 
 
 
