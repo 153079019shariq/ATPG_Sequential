@@ -93,7 +93,7 @@ def overall_Graph_Seq():
 	print "faulty_node2_list",faulty_node2_list
 	bfs = Level (GU)
 	print "bfs",bfs
-	if(fault_path_to_op==0):
+	if(fault_path_to_op==0):		#Check if the fault can be propagated to the Primary output with No_of_Unroll
 		No_of_Unroll +=1
 		
 		overall_Graph_Seq()
@@ -105,7 +105,7 @@ def overall_Graph_Seq():
 		PO_list,PI_list=overall_Podem_for_No_of_Unroll(GU,bfs,faulty_list)
 		
 		if(No_of_Unroll==10):
-				print "Fault not Testable"
+				print "Current Time Frame not suitable to test the fault"
 		elif(error_at_FF_ip_or_Primary_output(GU,PO_list)==True):
 				No_of_Unroll+=1					#Increase the number of Unroll
 				print "G_Seq.No_of_Unroll",No_of_Unroll
