@@ -1,12 +1,17 @@
 ########################################################################################
+('G7', 'FF1')
 ########################################################################################
+Once unrolled graph
+############################
 No_of_Unroll 1
-faulty_node1_list ['fanout1']
-faulty_node2_list ['G8']
+item sa0
+item[1] out1
+faulty_node1_list ['G6']
+faulty_node2_list ['out1']
 stuck_at_list ['sa0']
 ('A', 'fanout5', {'value_faulty': '0', 'co': 5, 'fault': '', 'value_non_fault': 'x', 'cc1': 1, 'cc0': 1})
 A fanout5 1 1 5
-('G6', 'out1', {'value_faulty': 'x', 'co': 0, 'value_non_fault': 'x', 'fault': '', 'cc1': 6, 'cc0': 7})
+('G6', 'out1', {'value_faulty': '0', 'co': 0, 'fault': 'sa0', 'value_non_fault': 'x', 'cc1': 6, 'cc0': 7})
 G6 out1 7 6 0
 ('G5', 'G6', {'value_faulty': 'x', 'co': 4, 'value_non_fault': 'x', 'fault': '', 'cc1': 2, 'cc0': 6})
 G5 G6 6 2 4
@@ -22,7 +27,7 @@ G1 fanout1 2 3 3
 G7 FF1_ip 5 4 0
 ('fanout1', 'G7', {'value_faulty': 'x', 'co': 3, 'value_non_fault': 'x', 'fault': '', 'cc1': 3, 'cc0': 2})
 fanout1 G7 2 3 3
-('fanout1', 'G8', {'value_faulty': '0', 'co': 9, 'fault': 'sa0', 'value_non_fault': 'x', 'cc1': 3, 'cc0': 2})
+('fanout1', 'G8', {'value_faulty': 'x', 'co': 9, 'value_non_fault': 'x', 'fault': '', 'cc1': 3, 'cc0': 2})
 fanout1 G8 2 3 9
 ('fanout2', 'G5', {'value_faulty': 'x', 'co': 6, 'value_non_fault': 'x', 'fault': '', 'cc1': 6, 'cc0': 4})
 fanout2 G5 4 6 6
@@ -52,269 +57,270 @@ G9 G6 9 3 3
 FF1_op fanout3 1 1 9
 ('G4', 'fanout4', {'value_faulty': 'x', 'co': 3, 'value_non_fault': 'x', 'fault': '', 'cc1': 8, 'cc0': 2})
 G4 fanout4 2 8 3
-faulty_list ['fanout1', 'G8', 'sa0']
+fault_path_to_op True
 faulty_edge_select 0
-faulty_edge_list ['fanout1', 'G8', 'sa0']
+faulty_node1_list ['G6']
+faulty_node2_list ['out1']
+stuck_at_list ['sa0']
+faulty_list ['G6', 'out1', 'sa0']
+faulty_edge_list ['G6', 'out1', 'sa0']
 OUTPUT
-A fanout5 x 0
-G6 out1 x x
-G5 G6 x x
-B fanout6 x 0
-G3 fanout2 x x
-G2 G3 x x
-G1 fanout1 x x
+G6 out1 x 0
 G7 FF1_ip x x
-fanout1 G7 x x
-fanout1 G8 x 0
-fanout2 G5 x x
-fanout2 G4 x x
-fanout3 G5 x x
-fanout3 G4 x x
-fanout4 G7 x x
-fanout4 G9 x x
-fanout5 G2 x x
-fanout5 G1 x x
-fanout6 G2 x x
-fanout6 G1 x x
-G8 G3 x x
-G9 G6 x x
+A fanout5 x 0
+B fanout6 x 0
 FF1_op fanout3 x x
-G4 fanout4 x x
 PO_list [('G6', 'out1'), ('G7', 'FF1_ip')]
-faulty_edge_list ['fanout1', 'G8', 'sa0']
-['G8', 'G3', 'fanout2', 'G5', 'G6', 'out1']
-edges [('G8', 'G3'), ('G3', 'fanout2'), ('fanout2', 'G5'), ('G5', 'G6'), ('G6', 'out1')]
-i ('G8', 'G3')
-i ('G3', 'fanout2')
-i ('fanout2', 'G5')
-i ('G5', 'G6')
-i ('G6', 'out1')
-['G8', 'G3', 'fanout2', 'G4', 'fanout4', 'G9', 'G6', 'out1']
-edges [('G8', 'G3'), ('G3', 'fanout2'), ('fanout2', 'G4'), ('G4', 'fanout4'), ('fanout4', 'G9'), ('G9', 'G6'), ('G6', 'out1')]
-i ('G8', 'G3')
-i ('G3', 'fanout2')
-i ('fanout2', 'G4')
-i ('G4', 'fanout4')
-i ('fanout4', 'G9')
-i ('G9', 'G6')
-i ('G6', 'out1')
-G8 out1
+faulty_edge_list ['G6', 'out1', 'sa0']
+out1 out1
 X_path True
 **********************Objective ********************
 D_fronteir_list []
 **********************Backtrace ********************
-node1,node2 fanout1 G8
-Before Backtrace ('G1', 'fanout1') x x
+node1,node2 G6 out1
+Before Backtrace ('G5', 'G6') x x
+('G9', 'G6') x x
 None
-After Backtrace ('G1', 'fanout1') 1 1
-None
-node1,node2 G1 fanout1
-node1,node2 G1 fanout1
-Before Backtrace ('fanout5', 'G1') x x
-('fanout6', 'G1') x x
-None
-G.nodes[node1]['gatetype'] G1
+G.nodes[node1]['gatetype'] G6
 val_assign 1
 G.nodes[node1]['gatetype'] and
-edge_to_assign ('fanout5', 'G1')
-After Backtrace ('fanout5', 'G1') 1 1
-('fanout6', 'G1') x x
+edge_to_assign ('G5', 'G6')
+After Backtrace ('G5', 'G6') 1 1
+('G9', 'G6') x x
 None
-node1,node2 fanout5 G1
-node1,node2 fanout5 G1
-Before Backtrace ('A', 'fanout5') x 0
+node1,node2 G5 G6
+node1,node2 G5 G6
+Before Backtrace ('fanout2', 'G5') x x
+('fanout3', 'G5') x x
 None
-After Backtrace ('A', 'fanout5') 1 1
-None
-node1,node2 A fanout5
-Backtrace node A fanout5 1 0
-I_Stack.peek() ('A', 'fanout5') 1
-None
-**********************Forward Implication 1st********************
-**************************************************************
-faulty_edge_list ['fanout1', 'G8', 'sa0']
-OUTPUT
-A fanout5 1 1
-G6 out1 x x
-G5 G6 x 1
-B fanout6 x 0
-G3 fanout2 x 1
-G2 G3 1 1
-G1 fanout1 x x
-G7 FF1_ip x x
-fanout1 G7 x x
-fanout1 G8 x 0
-fanout2 G5 x 1
-fanout2 G4 x 1
-fanout3 G5 x x
-fanout3 G4 x x
-fanout4 G7 x x
-fanout4 G9 x x
-fanout5 G2 1 1
-fanout5 G1 1 1
-fanout6 G2 x x
-fanout6 G1 x x
-G8 G3 x 1
-G9 G6 x x
-FF1_op fanout3 x x
-G4 fanout4 x x
-One turn over try another
-PO_list [('G6', 'out1'), ('G7', 'FF1_ip')]
-faulty_edge_list ['fanout1', 'G8', 'sa0']
-['G8', 'G3', 'fanout2', 'G5', 'G6', 'out1']
-edges [('G8', 'G3'), ('G3', 'fanout2'), ('fanout2', 'G5'), ('G5', 'G6'), ('G6', 'out1')]
-i ('G8', 'G3')
-i ('G3', 'fanout2')
-i ('fanout2', 'G5')
-i ('G5', 'G6')
-i ('G6', 'out1')
-['G8', 'G3', 'fanout2', 'G4', 'fanout4', 'G9', 'G6', 'out1']
-edges [('G8', 'G3'), ('G3', 'fanout2'), ('fanout2', 'G4'), ('G4', 'fanout4'), ('fanout4', 'G9'), ('G9', 'G6'), ('G6', 'out1')]
-i ('G8', 'G3')
-i ('G3', 'fanout2')
-i ('fanout2', 'G4')
-i ('G4', 'fanout4')
-i ('fanout4', 'G9')
-i ('G9', 'G6')
-i ('G6', 'out1')
-G8 out1
-X_path True
-**********************Objective ********************
-D_fronteir_list ['G8']
-**********************Backtrace ********************
-node1,node2 fanout1 G8
-Before Backtrace ('G1', 'fanout1') x x
-None
-After Backtrace ('G1', 'fanout1') 1 1
-None
-node1,node2 G1 fanout1
-node1,node2 G1 fanout1
-Before Backtrace ('fanout5', 'G1') 1 1
-('fanout6', 'G1') x x
-None
-G.nodes[node1]['gatetype'] G1
+G.nodes[node1]['gatetype'] G5
 val_assign 1
-G.nodes[node1]['gatetype'] and
-edge_to_assign ('fanout6', 'G1')
-After Backtrace ('fanout5', 'G1') 1 1
-('fanout6', 'G1') 1 1
+G.nodes[node1]['gatetype'] or
+edge_to_assign ('fanout3', 'G5')
+After Backtrace ('fanout2', 'G5') x x
+('fanout3', 'G5') 1 1
 None
-node1,node2 fanout6 G1
-node1,node2 fanout6 G1
-Before Backtrace ('B', 'fanout6') x 0
-None
-After Backtrace ('B', 'fanout6') 1 1
-None
-node1,node2 B fanout6
-Backtrace node B fanout6 1 0
-I_Stack.peek() ('A', 'fanout5') 1
-('B', 'fanout6') 1
-None
-**********************Forward Implication 1st********************
-**************************************************************
-faulty_edge_list ['fanout1', 'G8', 'sa0']
-OUTPUT
-A fanout5 1 1
-G6 out1 x x
-G5 G6 x 1
-B fanout6 1 1
-G3 fanout2 0 1
-G2 G3 1 1
-G1 fanout1 1 1
-G7 FF1_ip 1 1
-fanout1 G7 1 1
-fanout1 G8 1 0
-fanout2 G5 0 1
-fanout2 G4 0 1
-fanout3 G5 x x
-fanout3 G4 x x
-fanout4 G7 0 x
-fanout4 G9 0 x
-fanout5 G2 1 1
-fanout5 G1 1 1
-fanout6 G2 1 1
-fanout6 G1 1 1
-G8 G3 0 1
-G9 G6 1 x
-FF1_op fanout3 x x
-G4 fanout4 0 x
-One turn over try another
-PO_list [('G6', 'out1'), ('G7', 'FF1_ip')]
-faulty_edge_list ['fanout1', 'G8', 'sa0']
-['G8', 'G3', 'fanout2', 'G5', 'G6', 'out1']
-edges [('G8', 'G3'), ('G3', 'fanout2'), ('fanout2', 'G5'), ('G5', 'G6'), ('G6', 'out1')]
-i ('G8', 'G3')
-i ('G3', 'fanout2')
-i ('fanout2', 'G5')
-i ('G5', 'G6')
-i ('G6', 'out1')
-['G8', 'G3', 'fanout2', 'G4', 'fanout4', 'G9', 'G6', 'out1']
-edges [('G8', 'G3'), ('G3', 'fanout2'), ('fanout2', 'G4'), ('G4', 'fanout4'), ('fanout4', 'G9'), ('G9', 'G6'), ('G6', 'out1')]
-i ('G8', 'G3')
-i ('G3', 'fanout2')
-i ('fanout2', 'G4')
-i ('G4', 'fanout4')
-i ('fanout4', 'G9')
-i ('G9', 'G6')
-i ('G6', 'out1')
-G8 out1
-X_path True
-**********************Objective ********************
-D_fronteir_list ['G8', 'G8']
-D_fronteir []
-D_fronteir ['G5']
-D_fronteir ['G5']
-D_fronteir ['G4', 'G5']
-sort_D_fronteir
-[('G4', 'fanout4')]
-[('G5', 'G6')]
-D_fronteir_list [('G4', 3), ('G5', 4)]
-@@@@@@@@@@@ undefined_ip
-node_D_fronteir G4
-**********************Backtrace ********************
-node1,node2 fanout3 G4
+node1,node2 fanout3 G5
+node1,node2 fanout3 G5
 Before Backtrace ('FF1_op', 'fanout3') x x
 None
 After Backtrace ('FF1_op', 'fanout3') 1 1
 None
 node1,node2 FF1_op fanout3
 Backtrace node FF1_op fanout3 1 0
-I_Stack.peek() ('A', 'fanout5') 1
-('B', 'fanout6') 1
-('FF1_op', 'fanout3') 1
+I_Stack.peek() ('FF1_op', 'fanout3') 1
 None
 **********************Forward Implication 1st********************
 **************************************************************
-faulty_edge_list ['fanout1', 'G8', 'sa0']
+faulty_edge_list ['G6', 'out1', 'sa0']
 OUTPUT
-A fanout5 1 1
-G6 out1 1 0
-G5 G6 1 1
-B fanout6 1 1
-G3 fanout2 0 1
-G2 G3 1 1
-G1 fanout1 1 1
-G7 FF1_ip 1 1
-fanout1 G7 1 1
-fanout1 G8 1 0
-fanout2 G5 0 1
-fanout2 G4 0 1
-fanout3 G5 1 1
-fanout3 G4 1 1
-fanout4 G7 0 1
-fanout4 G9 0 1
-fanout5 G2 1 1
-fanout5 G1 1 1
-fanout6 G2 1 1
-fanout6 G1 1 1
-G8 G3 0 1
-G9 G6 1 0
+G6 out1 x 0
+G7 FF1_ip x x
+A fanout5 x 0
+B fanout6 x 0
 FF1_op fanout3 1 1
-G4 fanout4 0 1
+One turn over try another
+PO_list [('G6', 'out1'), ('G7', 'FF1_ip')]
+faulty_edge_list ['G6', 'out1', 'sa0']
+out1 out1
+X_path True
+**********************Objective ********************
+D_fronteir_list ['out1']
+**********************Backtrace ********************
+node1,node2 G6 out1
+Before Backtrace ('G5', 'G6') 1 1
+('G9', 'G6') x x
+None
+G.nodes[node1]['gatetype'] G6
+val_assign 1
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G9', 'G6')
+After Backtrace ('G5', 'G6') 1 1
+('G9', 'G6') 1 1
+None
+node1,node2 G9 G6
+node1,node2 G9 G6
+Before Backtrace ('fanout4', 'G9') x x
+None
+G.nodes[node1]['gatetype'] G9
+val_assign 1
+G.nodes[node1]['gatetype'] not
+edge_to_assign ('fanout4', 'G9')
+After Backtrace ('fanout4', 'G9') 0 0
+None
+node1,node2 fanout4 G9
+node1,node2 fanout4 G9
+Before Backtrace ('G4', 'fanout4') x x
+None
+After Backtrace ('G4', 'fanout4') 0 0
+None
+node1,node2 G4 fanout4
+node1,node2 G4 fanout4
+Before Backtrace ('fanout2', 'G4') x x
+('fanout3', 'G4') 1 1
+None
+G.nodes[node1]['gatetype'] G4
+val_assign 0
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('fanout2', 'G4')
+After Backtrace ('fanout2', 'G4') 0 0
+('fanout3', 'G4') 1 1
+None
+node1,node2 fanout2 G4
+node1,node2 fanout2 G4
+Before Backtrace ('G3', 'fanout2') x x
+None
+After Backtrace ('G3', 'fanout2') 0 0
+None
+node1,node2 G3 fanout2
+node1,node2 G3 fanout2
+Before Backtrace ('G2', 'G3') x x
+('G8', 'G3') x x
+None
+G.nodes[node1]['gatetype'] G3
+val_assign 0
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G2', 'G3')
+After Backtrace ('G2', 'G3') 0 0
+('G8', 'G3') x x
+None
+node1,node2 G2 G3
+node1,node2 G2 G3
+Before Backtrace ('fanout5', 'G2') x x
+('fanout6', 'G2') x x
+None
+G.nodes[node1]['gatetype'] G2
+val_assign 0
+G.nodes[node1]['gatetype'] or
+edge_to_assign ('fanout5', 'G2')
+After Backtrace ('fanout5', 'G2') 0 0
+('fanout6', 'G2') x x
+None
+node1,node2 fanout5 G2
+node1,node2 fanout5 G2
+Before Backtrace ('A', 'fanout5') x 0
+None
+After Backtrace ('A', 'fanout5') 0 0
+None
+node1,node2 A fanout5
+Backtrace node A fanout5 0 0
+I_Stack.peek() ('FF1_op', 'fanout3') 1
+('A', 'fanout5') 0
+None
+**********************Forward Implication 1st********************
+**************************************************************
+faulty_edge_list ['G6', 'out1', 'sa0']
+OUTPUT
+G6 out1 x 0
+G7 FF1_ip x x
+A fanout5 0 0
+B fanout6 x 0
+FF1_op fanout3 1 1
+One turn over try another
+PO_list [('G6', 'out1'), ('G7', 'FF1_ip')]
+faulty_edge_list ['G6', 'out1', 'sa0']
+out1 out1
+X_path True
+**********************Objective ********************
+D_fronteir_list ['out1', 'out1']
+**********************Backtrace ********************
+node1,node2 G6 out1
+Before Backtrace ('G5', 'G6') 1 1
+('G9', 'G6') x x
+None
+G.nodes[node1]['gatetype'] G6
+val_assign 1
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G9', 'G6')
+After Backtrace ('G5', 'G6') 1 1
+('G9', 'G6') 1 1
+None
+node1,node2 G9 G6
+node1,node2 G9 G6
+Before Backtrace ('fanout4', 'G9') x x
+None
+G.nodes[node1]['gatetype'] G9
+val_assign 1
+G.nodes[node1]['gatetype'] not
+edge_to_assign ('fanout4', 'G9')
+After Backtrace ('fanout4', 'G9') 0 0
+None
+node1,node2 fanout4 G9
+node1,node2 fanout4 G9
+Before Backtrace ('G4', 'fanout4') x x
+None
+After Backtrace ('G4', 'fanout4') 0 0
+None
+node1,node2 G4 fanout4
+node1,node2 G4 fanout4
+Before Backtrace ('fanout2', 'G4') x x
+('fanout3', 'G4') 1 1
+None
+G.nodes[node1]['gatetype'] G4
+val_assign 0
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('fanout2', 'G4')
+After Backtrace ('fanout2', 'G4') 0 0
+('fanout3', 'G4') 1 1
+None
+node1,node2 fanout2 G4
+node1,node2 fanout2 G4
+Before Backtrace ('G3', 'fanout2') x x
+None
+After Backtrace ('G3', 'fanout2') 0 0
+None
+node1,node2 G3 fanout2
+node1,node2 G3 fanout2
+Before Backtrace ('G2', 'G3') x x
+('G8', 'G3') 1 1
+None
+G.nodes[node1]['gatetype'] G3
+val_assign 0
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G2', 'G3')
+After Backtrace ('G2', 'G3') 0 0
+('G8', 'G3') 1 1
+None
+node1,node2 G2 G3
+node1,node2 G2 G3
+Before Backtrace ('fanout5', 'G2') 0 0
+('fanout6', 'G2') x x
+None
+G.nodes[node1]['gatetype'] G2
+val_assign 0
+G.nodes[node1]['gatetype'] or
+edge_to_assign ('fanout6', 'G2')
+After Backtrace ('fanout5', 'G2') 0 0
+('fanout6', 'G2') 0 0
+None
+node1,node2 fanout6 G2
+node1,node2 fanout6 G2
+Before Backtrace ('B', 'fanout6') x 0
+None
+After Backtrace ('B', 'fanout6') 0 0
+None
+node1,node2 B fanout6
+Backtrace node B fanout6 0 0
+I_Stack.peek() ('FF1_op', 'fanout3') 1
+('A', 'fanout5') 0
+('B', 'fanout6') 0
+None
+**********************Forward Implication 1st********************
+**************************************************************
+faulty_edge_list ['G6', 'out1', 'sa0']
+OUTPUT
+G6 out1 1 0
+G7 FF1_ip 0 0
+A fanout5 0 0
+B fanout6 0 0
+FF1_op fanout3 1 1
 One turn over try another
 G_Seq1.No_of_Unroll 2
 ########################################################################################
+('G7', 'FF1')
 ########################################################################################
+Once unrolled graph
+############################
 ##########################################################
 FF_op
 FF1_op_0
@@ -322,12 +328,19 @@ FF_op
 FF1_op_1
 list_ip_FF ['FF1_ip_0']
 list_op_FF ['FF1_op_1']
+list_inedge ('G7_0', 'FF1_ip_0')
+sa0_sa1 
 0
 FF1_op_1
 list_outedge ('FF1_op_1', 'fanout3_1')
+sa0_sa1 
+sa0_sa1_FF 
 No_of_Unroll 2
-faulty_node1_list ['fanout1_0', 'fanout1_1']
-faulty_node2_list ['G8_0', 'G8_1']
+item sa0
+item sa0
+item[1] out1_0
+faulty_node1_list ['G6_0', 'G6_1']
+faulty_node2_list ['out1_0', 'out1_1']
 stuck_at_list ['sa0', 'sa0']
 ('G2_0', 'G3_0', {'value_faulty': 'x', 'co': 10, 'fault': '', 'value_non_fault': 'x', 'cc1': 2, 'cc0': 3})
 G2_0 G3_0 3 2 10
@@ -375,9 +388,9 @@ fanout2_1 G4_1 4 6 8
 fanout2_0 G4_0 4 6 6
 ('fanout2_0', 'G5_0', {'value_faulty': 'x', 'co': 6, 'fault': '', 'value_non_fault': 'x', 'cc1': 6, 'cc0': 4})
 fanout2_0 G5_0 4 6 6
-('G6_0', 'out1_0', {'value_faulty': 'x', 'co': 0, 'fault': '', 'value_non_fault': 'x', 'cc1': 6, 'cc0': 7})
+('G6_0', 'out1_0', {'value_faulty': '0', 'co': 0, 'value_non_fault': 'x', 'fault': 'sa0', 'cc1': 6, 'cc0': 7})
 G6_0 out1_0 7 6 0
-('G6_1', 'out1_1', {'value_faulty': 'x', 'co': 0, 'fault': '', 'value_non_fault': 'x', 'cc1': 12, 'cc0': 11})
+('G6_1', 'out1_1', {'value_faulty': '0', 'co': 0, 'value_non_fault': 'x', 'fault': 'sa0', 'cc1': 12, 'cc0': 11})
 G6_1 out1_1 11 12 0
 ('G7_1', 'FF1_ip_1', {'value_faulty': 'x', 'co': 0, 'fault': '', 'value_non_fault': 'x', 'cc1': 4, 'cc0': 8})
 G7_1 FF1_ip_1 8 4 0
@@ -387,11 +400,11 @@ G7_0 fanout3_1 5 4 10
 G9_1 G6_1 12 6 6
 ('G9_0', 'G6_0', {'value_faulty': 'x', 'co': 3, 'fault': '', 'value_non_fault': 'x', 'cc1': 3, 'cc0': 9})
 G9_0 G6_0 9 3 3
-('fanout1_0', 'G8_0', {'value_faulty': '0', 'co': 10, 'value_non_fault': 'x', 'fault': 'sa0', 'cc1': 3, 'cc0': 2})
+('fanout1_0', 'G8_0', {'value_faulty': 'x', 'co': 10, 'fault': '', 'value_non_fault': 'x', 'cc1': 3, 'cc0': 2})
 fanout1_0 G8_0 2 3 10
 ('fanout1_0', 'G7_0', {'value_faulty': 'x', 'co': 13, 'fault': '', 'value_non_fault': 'x', 'cc1': 3, 'cc0': 2})
 fanout1_0 G7_0 2 3 13
-('fanout1_1', 'G8_1', {'value_faulty': '0', 'co': 12, 'value_non_fault': 'x', 'fault': 'sa0', 'cc1': 3, 'cc0': 2})
+('fanout1_1', 'G8_1', {'value_faulty': 'x', 'co': 12, 'fault': '', 'value_non_fault': 'x', 'cc1': 3, 'cc0': 2})
 fanout1_1 G8_1 2 3 12
 ('fanout1_1', 'G7_1', {'value_faulty': 'x', 'co': 6, 'fault': '', 'value_non_fault': 'x', 'cc1': 3, 'cc0': 2})
 fanout1_1 G7_1 2 3 6
@@ -423,74 +436,727 @@ fanout5_1 G1_1 1 1 8
 G8_0 G3_0 4 3 9
 ('G8_1', 'G3_1', {'value_faulty': 'x', 'co': 11, 'fault': '', 'value_non_fault': 'x', 'cc1': 3, 'cc0': 4})
 G8_1 G3_1 4 3 11
-faulty_list ['fanout1_1', 'G8_1', 'sa0']
+fault_path_to_op True
 faulty_edge_select 1
-faulty_edge_list ['fanout1_1', 'G8_1', 'sa0']
+faulty_node1_list ['G6_0', 'G6_1']
+faulty_node2_list ['out1_0', 'out1_1']
+stuck_at_list ['sa0', 'sa0']
+faulty_list ['G6_0', 'out1_0', 'sa0']
+faulty_edge_list ['G6_0', 'out1_0', 'sa0']
 OUTPUT
-G2_0 G3_0 x x
-G2_1 G3_1 x x
+G6_0 out1_0 x 0
+G6_1 out1_1 x 0
+G7_1 FF1_ip_1 x x
 A_0 fanout5_0 x 0
 FF1_op_0 fanout3_0 x x
 A_1 fanout5_1 x 0
-G5_1 G6_1 x x
-fanout3_1 G5_1 x x
-fanout3_1 G4_1 x x
 B_0 fanout6_0 x 0
 B_1 fanout6_1 x 0
-G4_0 fanout4_0 x x
-G4_1 fanout4_1 x x
-fanout4_1 G9_1 x x
-fanout4_1 G7_1 x x
-fanout4_0 G9_0 x x
-fanout4_0 G7_0 x x
-fanout3_0 G4_0 x x
-fanout3_0 G5_0 x x
-G5_0 G6_0 x x
-fanout2_1 G5_1 x x
-fanout2_1 G4_1 x x
-fanout2_0 G4_0 x x
-fanout2_0 G5_0 x x
-G6_0 out1_0 x x
-G6_1 out1_1 x x
-G7_1 FF1_ip_1 x x
-G7_0 fanout3_1 x x
-G9_1 G6_1 x x
-G9_0 G6_0 x x
-fanout1_0 G8_0 x 0
-fanout1_0 G7_0 x x
-fanout1_1 G8_1 x 0
-fanout1_1 G7_1 x x
-G1_1 fanout1_1 x x
-G1_0 fanout1_0 x x
-G3_1 fanout2_1 x x
-G3_0 fanout2_0 x x
-fanout6_1 G2_1 x x
-fanout6_1 G1_1 x x
-fanout6_0 G2_0 x x
-fanout6_0 G1_0 x x
-fanout5_0 G2_0 x x
-fanout5_0 G1_0 x x
-fanout5_1 G2_1 x x
-fanout5_1 G1_1 x x
-G8_0 G3_0 x x
-G8_1 G3_1 x x
 PO_list [('G6_0', 'out1_0'), ('G7_1', 'FF1_ip_1'), ('G6_1', 'out1_1')]
-faulty_edge_list ['fanout1_1', 'G8_1', 'sa0']
-G8_1 out1_0
-['G8_1', 'G3_1', 'fanout2_1', 'G4_1', 'fanout4_1', 'G7_1', 'FF1_ip_1']
-edges [('G8_1', 'G3_1'), ('G3_1', 'fanout2_1'), ('fanout2_1', 'G4_1'), ('G4_1', 'fanout4_1'), ('fanout4_1', 'G7_1'), ('G7_1', 'FF1_ip_1')]
-i ('G8_1', 'G3_1')
-i ('G3_1', 'fanout2_1')
-i ('fanout2_1', 'G4_1')
-i ('G4_1', 'fanout4_1')
-i ('fanout4_1', 'G7_1')
-i ('G7_1', 'FF1_ip_1')
-G8_1 FF1_ip_1
+faulty_edge_list ['G6_0', 'out1_0', 'sa0']
+out1_0 out1_0
 X_path True
 **********************Objective ********************
 D_fronteir_list []
 **********************Backtrace ********************
-node1,node2 fanout1_1 G8_1
+node1,node2 G6_0 out1_0
+Before Backtrace ('G5_0', 'G6_0') x x
+('G9_0', 'G6_0') x x
+None
+G.nodes[node1]['gatetype'] G6_0
+val_assign 1
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G5_0', 'G6_0')
+After Backtrace ('G5_0', 'G6_0') 1 1
+('G9_0', 'G6_0') x x
+None
+node1,node2 G5_0 G6_0
+node1,node2 G5_0 G6_0
+Before Backtrace ('fanout3_0', 'G5_0') x x
+('fanout2_0', 'G5_0') x x
+None
+G.nodes[node1]['gatetype'] G5_0
+val_assign 1
+G.nodes[node1]['gatetype'] or
+edge_to_assign ('fanout3_0', 'G5_0')
+After Backtrace ('fanout3_0', 'G5_0') 1 1
+('fanout2_0', 'G5_0') x x
+None
+node1,node2 fanout3_0 G5_0
+node1,node2 fanout3_0 G5_0
+Before Backtrace ('FF1_op_0', 'fanout3_0') x x
+None
+After Backtrace ('FF1_op_0', 'fanout3_0') 1 1
+None
+node1,node2 FF1_op_0 fanout3_0
+Backtrace node FF1_op_0 fanout3_0 1 0
+I_Stack.peek() ('FF1_op_0', 'fanout3_0') 1
+None
+**********************Forward Implication 1st********************
+**************************************************************
+faulty_edge_list ['G6_0', 'out1_0', 'sa0']
+OUTPUT
+G6_0 out1_0 x 0
+G6_1 out1_1 x 0
+G7_1 FF1_ip_1 x x
+A_0 fanout5_0 x 0
+FF1_op_0 fanout3_0 1 1
+A_1 fanout5_1 x 0
+B_0 fanout6_0 x 0
+B_1 fanout6_1 x 0
+One turn over try another
+PO_list [('G6_0', 'out1_0'), ('G7_1', 'FF1_ip_1'), ('G6_1', 'out1_1')]
+faulty_edge_list ['G6_0', 'out1_0', 'sa0']
+out1_0 out1_0
+X_path True
+**********************Objective ********************
+D_fronteir_list ['out1_0']
+**********************Backtrace ********************
+node1,node2 G6_0 out1_0
+Before Backtrace ('G5_0', 'G6_0') 1 1
+('G9_0', 'G6_0') x x
+None
+G.nodes[node1]['gatetype'] G6_0
+val_assign 1
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G9_0', 'G6_0')
+After Backtrace ('G5_0', 'G6_0') 1 1
+('G9_0', 'G6_0') 1 1
+None
+node1,node2 G9_0 G6_0
+node1,node2 G9_0 G6_0
+Before Backtrace ('fanout4_0', 'G9_0') x x
+None
+G.nodes[node1]['gatetype'] G9_0
+val_assign 1
+G.nodes[node1]['gatetype'] not
+edge_to_assign ('fanout4_0', 'G9_0')
+After Backtrace ('fanout4_0', 'G9_0') 0 0
+None
+node1,node2 fanout4_0 G9_0
+node1,node2 fanout4_0 G9_0
+Before Backtrace ('G4_0', 'fanout4_0') x x
+None
+After Backtrace ('G4_0', 'fanout4_0') 0 0
+None
+node1,node2 G4_0 fanout4_0
+node1,node2 G4_0 fanout4_0
+Before Backtrace ('fanout3_0', 'G4_0') 1 1
+('fanout2_0', 'G4_0') x x
+None
+G.nodes[node1]['gatetype'] G4_0
+val_assign 0
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('fanout2_0', 'G4_0')
+After Backtrace ('fanout3_0', 'G4_0') 1 1
+('fanout2_0', 'G4_0') 0 0
+None
+node1,node2 fanout2_0 G4_0
+node1,node2 fanout2_0 G4_0
+Before Backtrace ('G3_0', 'fanout2_0') x x
+None
+After Backtrace ('G3_0', 'fanout2_0') 0 0
+None
+node1,node2 G3_0 fanout2_0
+node1,node2 G3_0 fanout2_0
+Before Backtrace ('G2_0', 'G3_0') x x
+('G8_0', 'G3_0') x x
+None
+G.nodes[node1]['gatetype'] G3_0
+val_assign 0
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G2_0', 'G3_0')
+After Backtrace ('G2_0', 'G3_0') 0 0
+('G8_0', 'G3_0') x x
+None
+node1,node2 G2_0 G3_0
+node1,node2 G2_0 G3_0
+Before Backtrace ('fanout5_0', 'G2_0') x x
+('fanout6_0', 'G2_0') x x
+None
+G.nodes[node1]['gatetype'] G2_0
+val_assign 0
+G.nodes[node1]['gatetype'] or
+edge_to_assign ('fanout5_0', 'G2_0')
+After Backtrace ('fanout5_0', 'G2_0') 0 0
+('fanout6_0', 'G2_0') x x
+None
+node1,node2 fanout5_0 G2_0
+node1,node2 fanout5_0 G2_0
+Before Backtrace ('A_0', 'fanout5_0') x 0
+None
+After Backtrace ('A_0', 'fanout5_0') 0 0
+None
+node1,node2 A_0 fanout5_0
+Backtrace node A_0 fanout5_0 0 0
+I_Stack.peek() ('FF1_op_0', 'fanout3_0') 1
+('A_0', 'fanout5_0') 0
+None
+**********************Forward Implication 1st********************
+**************************************************************
+faulty_edge_list ['G6_0', 'out1_0', 'sa0']
+OUTPUT
+G6_0 out1_0 x 0
+G6_1 out1_1 x 0
+G7_1 FF1_ip_1 x x
+A_0 fanout5_0 0 0
+FF1_op_0 fanout3_0 1 1
+A_1 fanout5_1 x 0
+B_0 fanout6_0 x 0
+B_1 fanout6_1 x 0
+One turn over try another
+PO_list [('G6_0', 'out1_0'), ('G7_1', 'FF1_ip_1'), ('G6_1', 'out1_1')]
+faulty_edge_list ['G6_0', 'out1_0', 'sa0']
+out1_0 out1_0
+X_path True
+**********************Objective ********************
+D_fronteir_list ['out1_0', 'out1_0']
+**********************Backtrace ********************
+node1,node2 G6_0 out1_0
+Before Backtrace ('G5_0', 'G6_0') 1 1
+('G9_0', 'G6_0') x x
+None
+G.nodes[node1]['gatetype'] G6_0
+val_assign 1
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G9_0', 'G6_0')
+After Backtrace ('G5_0', 'G6_0') 1 1
+('G9_0', 'G6_0') 1 1
+None
+node1,node2 G9_0 G6_0
+node1,node2 G9_0 G6_0
+Before Backtrace ('fanout4_0', 'G9_0') x x
+None
+G.nodes[node1]['gatetype'] G9_0
+val_assign 1
+G.nodes[node1]['gatetype'] not
+edge_to_assign ('fanout4_0', 'G9_0')
+After Backtrace ('fanout4_0', 'G9_0') 0 0
+None
+node1,node2 fanout4_0 G9_0
+node1,node2 fanout4_0 G9_0
+Before Backtrace ('G4_0', 'fanout4_0') x x
+None
+After Backtrace ('G4_0', 'fanout4_0') 0 0
+None
+node1,node2 G4_0 fanout4_0
+node1,node2 G4_0 fanout4_0
+Before Backtrace ('fanout3_0', 'G4_0') 1 1
+('fanout2_0', 'G4_0') x x
+None
+G.nodes[node1]['gatetype'] G4_0
+val_assign 0
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('fanout2_0', 'G4_0')
+After Backtrace ('fanout3_0', 'G4_0') 1 1
+('fanout2_0', 'G4_0') 0 0
+None
+node1,node2 fanout2_0 G4_0
+node1,node2 fanout2_0 G4_0
+Before Backtrace ('G3_0', 'fanout2_0') x x
+None
+After Backtrace ('G3_0', 'fanout2_0') 0 0
+None
+node1,node2 G3_0 fanout2_0
+node1,node2 G3_0 fanout2_0
+Before Backtrace ('G2_0', 'G3_0') x x
+('G8_0', 'G3_0') 1 1
+None
+G.nodes[node1]['gatetype'] G3_0
+val_assign 0
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G2_0', 'G3_0')
+After Backtrace ('G2_0', 'G3_0') 0 0
+('G8_0', 'G3_0') 1 1
+None
+node1,node2 G2_0 G3_0
+node1,node2 G2_0 G3_0
+Before Backtrace ('fanout5_0', 'G2_0') 0 0
+('fanout6_0', 'G2_0') x x
+None
+G.nodes[node1]['gatetype'] G2_0
+val_assign 0
+G.nodes[node1]['gatetype'] or
+edge_to_assign ('fanout6_0', 'G2_0')
+After Backtrace ('fanout5_0', 'G2_0') 0 0
+('fanout6_0', 'G2_0') 0 0
+None
+node1,node2 fanout6_0 G2_0
+node1,node2 fanout6_0 G2_0
+Before Backtrace ('B_0', 'fanout6_0') x 0
+None
+After Backtrace ('B_0', 'fanout6_0') 0 0
+None
+node1,node2 B_0 fanout6_0
+Backtrace node B_0 fanout6_0 0 0
+I_Stack.peek() ('FF1_op_0', 'fanout3_0') 1
+('A_0', 'fanout5_0') 0
+('B_0', 'fanout6_0') 0
+None
+**********************Forward Implication 1st********************
+**************************************************************
+faulty_edge_list ['G6_0', 'out1_0', 'sa0']
+OUTPUT
+G6_0 out1_0 1 0
+G6_1 out1_1 x 0
+G7_1 FF1_ip_1 x x
+A_0 fanout5_0 0 0
+FF1_op_0 fanout3_0 1 1
+A_1 fanout5_1 x 0
+B_0 fanout6_0 0 0
+B_1 fanout6_1 x 0
+One turn over try another
+G_Seq1.No_of_Unroll 3
+########################################################################################
+('G7', 'FF1')
+########################################################################################
+Once unrolled graph
+############################
+##########################################################
+FF_op
+FF1_op_0
+FF_op
+FF1_op_1
+FF_op
+FF1_op_2
+list_ip_FF ['FF1_ip_0', 'FF1_ip_1']
+list_op_FF ['FF1_op_1', 'FF1_op_2']
+list_inedge ('G7_0', 'FF1_ip_0')
+sa0_sa1 
+0
+FF1_op_1
+list_outedge ('FF1_op_1', 'fanout3_1')
+sa0_sa1 
+sa0_sa1_FF 
+list_inedge ('G7_1', 'FF1_ip_1')
+sa0_sa1 
+1
+FF1_op_2
+list_outedge ('FF1_op_2', 'fanout3_2')
+sa0_sa1 
+sa0_sa1_FF 
+No_of_Unroll 3
+item sa0
+item sa0
+item sa0
+item[1] out1_2
+faulty_node1_list ['G6_2', 'G6_0', 'G6_1']
+faulty_node2_list ['out1_2', 'out1_0', 'out1_1']
+stuck_at_list ['sa0', 'sa0', 'sa0']
+('fanout6_2', 'G2_2', {'value_faulty': 'x', 'co': 14, 'fault': '', 'value_non_fault': 'x', 'cc1': 1, 'cc0': 1})
+fanout6_2 G2_2 1 1 14
+('fanout6_2', 'G1_2', {'value_faulty': 'x', 'co': 8, 'fault': '', 'value_non_fault': 'x', 'cc1': 1, 'cc0': 1})
+fanout6_2 G1_2 1 1 8
+('fanout4_2', 'G7_2', {'value_faulty': 'x', 'co': 3, 'fault': '', 'value_non_fault': 'x', 'cc1': 11, 'cc0': 5})
+fanout4_2 G7_2 5 11 3
+('fanout4_2', 'G9_2', {'value_faulty': 'x', 'co': 7, 'fault': '', 'value_non_fault': 'x', 'cc1': 11, 'cc0': 5})
+fanout4_2 G9_2 5 11 7
+('G2_2', 'G3_2', {'value_faulty': 'x', 'co': 12, 'fault': '', 'value_non_fault': 'x', 'cc1': 2, 'cc0': 3})
+G2_2 G3_2 3 2 12
+('G2_0', 'G3_0', {'value_faulty': 'x', 'co': 10, 'value_non_fault': 'x', 'fault': '', 'cc1': 2, 'cc0': 3})
+G2_0 G3_0 3 2 10
+('G2_1', 'G3_1', {'value_faulty': 'x', 'co': 16, 'value_non_fault': 'x', 'fault': '', 'cc1': 2, 'cc0': 3})
+G2_1 G3_1 3 2 16
+('G4_2', 'fanout4_2', {'value_faulty': 'x', 'co': 3, 'fault': '', 'value_non_fault': 'x', 'cc1': 11, 'cc0': 5})
+G4_2 fanout4_2 5 11 3
+('G9_0', 'G6_0', {'value_faulty': 'x', 'co': 3, 'value_non_fault': 'x', 'fault': '', 'cc1': 3, 'cc0': 9})
+G9_0 G6_0 9 3 3
+('A_2', 'fanout5_2', {'value_faulty': '0', 'co': 8, 'value_non_fault': 'x', 'fault': '', 'cc1': 1, 'cc0': 1})
+A_2 fanout5_2 1 1 8
+('A_1', 'fanout5_1', {'value_faulty': '0', 'co': 18, 'fault': '', 'value_non_fault': 'x', 'cc1': 1, 'cc0': 1})
+A_1 fanout5_1 1 1 18
+('A_0', 'fanout5_0', {'value_faulty': '0', 'co': 12, 'fault': '', 'value_non_fault': 'x', 'cc1': 1, 'cc0': 1})
+A_0 fanout5_0 1 1 12
+('FF1_op_0', 'fanout3_0', {'value_faulty': 'x', 'co': 9, 'value_non_fault': 'x', 'fault': '', 'cc1': 1, 'cc0': 1})
+FF1_op_0 fanout3_0 1 1 9
+('fanout3_0', 'G4_0', {'value_faulty': 'x', 'co': 11, 'value_non_fault': 'x', 'fault': '', 'cc1': 1, 'cc0': 1})
+fanout3_0 G4_0 1 1 11
+('fanout3_0', 'G5_0', {'value_faulty': 'x', 'co': 9, 'value_non_fault': 'x', 'fault': '', 'cc1': 1, 'cc0': 1})
+fanout3_0 G5_0 1 1 9
+('G5_0', 'G6_0', {'value_faulty': 'x', 'co': 4, 'value_non_fault': 'x', 'fault': '', 'cc1': 2, 'cc0': 6})
+G5_0 G6_0 6 2 4
+('B_0', 'fanout6_0', {'value_faulty': '0', 'co': 12, 'fault': '', 'value_non_fault': 'x', 'cc1': 1, 'cc0': 1})
+B_0 fanout6_0 1 1 12
+('B_1', 'fanout6_1', {'value_faulty': '0', 'co': 18, 'fault': '', 'value_non_fault': 'x', 'cc1': 1, 'cc0': 1})
+B_1 fanout6_1 1 1 18
+('B_2', 'fanout6_2', {'value_faulty': '0', 'co': 8, 'value_non_fault': 'x', 'fault': '', 'cc1': 1, 'cc0': 1})
+B_2 fanout6_2 1 1 8
+('G4_0', 'fanout4_0', {'value_faulty': 'x', 'co': 4, 'value_non_fault': 'x', 'fault': '', 'cc1': 8, 'cc0': 2})
+G4_0 fanout4_0 2 8 4
+('G4_1', 'fanout4_1', {'value_faulty': 'x', 'co': 7, 'value_non_fault': 'x', 'fault': '', 'cc1': 11, 'cc0': 5})
+G4_1 fanout4_1 5 11 7
+('fanout4_1', 'G9_1', {'value_faulty': 'x', 'co': 7, 'value_non_fault': 'x', 'fault': '', 'cc1': 11, 'cc0': 5})
+fanout4_1 G9_1 5 11 7
+('fanout4_1', 'G7_1', {'value_faulty': 'x', 'co': 13, 'value_non_fault': 'x', 'fault': '', 'cc1': 11, 'cc0': 5})
+fanout4_1 G7_1 5 11 13
+('fanout4_0', 'G9_0', {'value_faulty': 'x', 'co': 4, 'value_non_fault': 'x', 'fault': '', 'cc1': 8, 'cc0': 2})
+fanout4_0 G9_0 2 8 4
+('fanout4_0', 'G7_0', {'value_faulty': 'x', 'co': 15, 'value_non_fault': 'x', 'fault': '', 'cc1': 8, 'cc0': 2})
+fanout4_0 G7_0 2 8 15
+('G5_1', 'G6_1', {'value_faulty': 'x', 'co': 7, 'value_non_fault': 'x', 'fault': '', 'cc1': 5, 'cc0': 10})
+G5_1 G6_1 10 5 7
+('fanout3_1', 'G5_1', {'value_faulty': 'x', 'co': 12, 'value_non_fault': 'x', 'fault': '', 'cc1': 4, 'cc0': 5})
+fanout3_1 G5_1 5 4 12
+('fanout3_1', 'G4_1', {'value_faulty': 'x', 'co': 14, 'value_non_fault': 'x', 'fault': '', 'cc1': 4, 'cc0': 5})
+fanout3_1 G4_1 5 4 14
+('fanout3_2', 'G4_2', {'value_faulty': 'x', 'co': 10, 'fault': '', 'value_non_fault': 'x', 'cc1': 4, 'cc0': 8})
+fanout3_2 G4_2 8 4 10
+('fanout3_2', 'G5_2', {'value_faulty': 'x', 'co': 12, 'fault': '', 'value_non_fault': 'x', 'cc1': 4, 'cc0': 8})
+fanout3_2 G5_2 8 4 12
+('G5_2', 'G6_2', {'value_faulty': 'x', 'co': 7, 'fault': '', 'value_non_fault': 'x', 'cc1': 5, 'cc0': 13})
+G5_2 G6_2 13 5 7
+('fanout2_1', 'G5_1', {'value_faulty': 'x', 'co': 13, 'value_non_fault': 'x', 'fault': '', 'cc1': 6, 'cc0': 4})
+fanout2_1 G5_1 4 6 13
+('fanout2_1', 'G4_1', {'value_faulty': 'x', 'co': 12, 'value_non_fault': 'x', 'fault': '', 'cc1': 6, 'cc0': 4})
+fanout2_1 G4_1 4 6 12
+('fanout2_0', 'G4_0', {'value_faulty': 'x', 'co': 6, 'value_non_fault': 'x', 'fault': '', 'cc1': 6, 'cc0': 4})
+fanout2_0 G4_0 4 6 6
+('fanout2_0', 'G5_0', {'value_faulty': 'x', 'co': 6, 'value_non_fault': 'x', 'fault': '', 'cc1': 6, 'cc0': 4})
+fanout2_0 G5_0 4 6 6
+('fanout2_2', 'G4_2', {'value_faulty': 'x', 'co': 8, 'fault': '', 'value_non_fault': 'x', 'cc1': 6, 'cc0': 4})
+fanout2_2 G4_2 4 6 8
+('fanout2_2', 'G5_2', {'value_faulty': 'x', 'co': 16, 'fault': '', 'value_non_fault': 'x', 'cc1': 6, 'cc0': 4})
+fanout2_2 G5_2 4 6 16
+('G6_2', 'out1_2', {'value_faulty': '0', 'co': 0, 'value_non_fault': 'x', 'fault': 'sa0', 'cc1': 12, 'cc0': 13})
+G6_2 out1_2 13 12 0
+('G6_0', 'out1_0', {'value_faulty': '0', 'co': 0, 'fault': 'sa0', 'value_non_fault': 'x', 'cc1': 6, 'cc0': 7})
+G6_0 out1_0 7 6 0
+('G6_1', 'out1_1', {'value_faulty': '0', 'co': 0, 'fault': 'sa0', 'value_non_fault': 'x', 'cc1': 12, 'cc0': 11})
+G6_1 out1_1 11 12 0
+('fanout1_2', 'G7_2', {'value_faulty': 'x', 'co': 6, 'fault': '', 'value_non_fault': 'x', 'cc1': 3, 'cc0': 2})
+fanout1_2 G7_2 2 3 6
+('fanout1_2', 'G8_2', {'value_faulty': 'x', 'co': 12, 'fault': '', 'value_non_fault': 'x', 'cc1': 3, 'cc0': 2})
+fanout1_2 G8_2 2 3 12
+('G9_2', 'G6_2', {'value_faulty': 'x', 'co': 6, 'fault': '', 'value_non_fault': 'x', 'cc1': 6, 'cc0': 12})
+G9_2 G6_2 12 6 6
+('G7_2', 'FF1_ip_2', {'value_faulty': 'x', 'co': 0, 'fault': '', 'value_non_fault': 'x', 'cc1': 4, 'cc0': 8})
+G7_2 FF1_ip_2 8 4 0
+('G7_1', 'fanout3_2', {'co': 10, 'fault': '', 'cc1': 4, 'cc0': 8, 'value_faulty': 'x', 'value_non_fault': 'x'})
+G7_1 fanout3_2 8 4 10
+('G7_0', 'fanout3_1', {'co': 12, 'fault': '', 'cc1': 4, 'cc0': 5, 'value_faulty': 'x', 'value_non_fault': 'x'})
+G7_0 fanout3_1 5 4 12
+('G9_1', 'G6_1', {'value_faulty': 'x', 'co': 6, 'value_non_fault': 'x', 'fault': '', 'cc1': 6, 'cc0': 12})
+G9_1 G6_1 12 6 6
+('fanout1_0', 'G8_0', {'value_faulty': 'x', 'co': 10, 'value_non_fault': 'x', 'fault': '', 'cc1': 3, 'cc0': 2})
+fanout1_0 G8_0 2 3 10
+('fanout1_0', 'G7_0', {'value_faulty': 'x', 'co': 15, 'value_non_fault': 'x', 'fault': '', 'cc1': 3, 'cc0': 2})
+fanout1_0 G7_0 2 3 15
+('fanout1_1', 'G8_1', {'value_faulty': 'x', 'co': 16, 'value_non_fault': 'x', 'fault': '', 'cc1': 3, 'cc0': 2})
+fanout1_1 G8_1 2 3 16
+('fanout1_1', 'G7_1', {'value_faulty': 'x', 'co': 16, 'value_non_fault': 'x', 'fault': '', 'cc1': 3, 'cc0': 2})
+fanout1_1 G7_1 2 3 16
+('G1_1', 'fanout1_1', {'value_faulty': 'x', 'co': 16, 'value_non_fault': 'x', 'fault': '', 'cc1': 3, 'cc0': 2})
+G1_1 fanout1_1 2 3 16
+('G1_0', 'fanout1_0', {'value_faulty': 'x', 'co': 10, 'value_non_fault': 'x', 'fault': '', 'cc1': 3, 'cc0': 2})
+G1_0 fanout1_0 2 3 10
+('G1_2', 'fanout1_2', {'value_faulty': 'x', 'co': 6, 'fault': '', 'value_non_fault': 'x', 'cc1': 3, 'cc0': 2})
+G1_2 fanout1_2 2 3 6
+('G3_1', 'fanout2_1', {'value_faulty': 'x', 'co': 12, 'value_non_fault': 'x', 'fault': '', 'cc1': 6, 'cc0': 4})
+G3_1 fanout2_1 4 6 12
+('G3_0', 'fanout2_0', {'value_faulty': 'x', 'co': 6, 'value_non_fault': 'x', 'fault': '', 'cc1': 6, 'cc0': 4})
+G3_0 fanout2_0 4 6 6
+('fanout6_1', 'G2_1', {'value_faulty': 'x', 'co': 18, 'value_non_fault': 'x', 'fault': '', 'cc1': 1, 'cc0': 1})
+fanout6_1 G2_1 1 1 18
+('fanout6_1', 'G1_1', {'value_faulty': 'x', 'co': 18, 'value_non_fault': 'x', 'fault': '', 'cc1': 1, 'cc0': 1})
+fanout6_1 G1_1 1 1 18
+('fanout6_0', 'G2_0', {'value_faulty': 'x', 'co': 12, 'value_non_fault': 'x', 'fault': '', 'cc1': 1, 'cc0': 1})
+fanout6_0 G2_0 1 1 12
+('fanout6_0', 'G1_0', {'value_faulty': 'x', 'co': 12, 'value_non_fault': 'x', 'fault': '', 'cc1': 1, 'cc0': 1})
+fanout6_0 G1_0 1 1 12
+('G3_2', 'fanout2_2', {'value_faulty': 'x', 'co': 8, 'fault': '', 'value_non_fault': 'x', 'cc1': 6, 'cc0': 4})
+G3_2 fanout2_2 4 6 8
+('fanout5_2', 'G2_2', {'value_faulty': 'x', 'co': 14, 'fault': '', 'value_non_fault': 'x', 'cc1': 1, 'cc0': 1})
+fanout5_2 G2_2 1 1 14
+('fanout5_2', 'G1_2', {'value_faulty': 'x', 'co': 8, 'fault': '', 'value_non_fault': 'x', 'cc1': 1, 'cc0': 1})
+fanout5_2 G1_2 1 1 8
+('fanout5_0', 'G2_0', {'value_faulty': 'x', 'co': 12, 'value_non_fault': 'x', 'fault': '', 'cc1': 1, 'cc0': 1})
+fanout5_0 G2_0 1 1 12
+('fanout5_0', 'G1_0', {'value_faulty': 'x', 'co': 12, 'value_non_fault': 'x', 'fault': '', 'cc1': 1, 'cc0': 1})
+fanout5_0 G1_0 1 1 12
+('fanout5_1', 'G2_1', {'value_faulty': 'x', 'co': 18, 'value_non_fault': 'x', 'fault': '', 'cc1': 1, 'cc0': 1})
+fanout5_1 G2_1 1 1 18
+('fanout5_1', 'G1_1', {'value_faulty': 'x', 'co': 18, 'value_non_fault': 'x', 'fault': '', 'cc1': 1, 'cc0': 1})
+fanout5_1 G1_1 1 1 18
+('G8_0', 'G3_0', {'value_faulty': 'x', 'co': 9, 'value_non_fault': 'x', 'fault': '', 'cc1': 3, 'cc0': 4})
+G8_0 G3_0 4 3 9
+('G8_1', 'G3_1', {'value_faulty': 'x', 'co': 15, 'value_non_fault': 'x', 'fault': '', 'cc1': 3, 'cc0': 4})
+G8_1 G3_1 4 3 15
+('G8_2', 'G3_2', {'value_faulty': 'x', 'co': 11, 'fault': '', 'value_non_fault': 'x', 'cc1': 3, 'cc0': 4})
+G8_2 G3_2 4 3 11
+fault_path_to_op True
+faulty_edge_select 2
+faulty_node1_list ['G6_2', 'G6_0', 'G6_1']
+faulty_node2_list ['out1_2', 'out1_0', 'out1_1']
+stuck_at_list ['sa0', 'sa0', 'sa0']
+faulty_list ['G6_2', 'out1_2', 'sa0']
+faulty_edge_list ['G6_2', 'out1_2', 'sa0']
+OUTPUT
+G6_2 out1_2 x 0
+G6_0 out1_0 x 0
+G6_1 out1_1 x 0
+G7_2 FF1_ip_2 x x
+A_2 fanout5_2 x 0
+A_1 fanout5_1 x 0
+A_0 fanout5_0 x 0
+FF1_op_0 fanout3_0 x x
+B_0 fanout6_0 x 0
+B_1 fanout6_1 x 0
+B_2 fanout6_2 x 0
+PO_list [('G6_2', 'out1_2'), ('G6_0', 'out1_0'), ('G7_2', 'FF1_ip_2'), ('G6_1', 'out1_1')]
+faulty_edge_list ['G6_2', 'out1_2', 'sa0']
+out1_2 out1_2
+X_path True
+**********************Objective ********************
+D_fronteir_list []
+**********************Backtrace ********************
+node1,node2 G6_2 out1_2
+Before Backtrace ('G5_2', 'G6_2') x x
+('G9_2', 'G6_2') x x
+None
+G.nodes[node1]['gatetype'] G6_2
+val_assign 1
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G9_2', 'G6_2')
+After Backtrace ('G5_2', 'G6_2') x x
+('G9_2', 'G6_2') 1 1
+None
+node1,node2 G9_2 G6_2
+node1,node2 G9_2 G6_2
+Before Backtrace ('fanout4_2', 'G9_2') x x
+None
+G.nodes[node1]['gatetype'] G9_2
+val_assign 1
+G.nodes[node1]['gatetype'] not
+edge_to_assign ('fanout4_2', 'G9_2')
+After Backtrace ('fanout4_2', 'G9_2') 0 0
+None
+node1,node2 fanout4_2 G9_2
+node1,node2 fanout4_2 G9_2
+Before Backtrace ('G4_2', 'fanout4_2') x x
+None
+After Backtrace ('G4_2', 'fanout4_2') 0 0
+None
+node1,node2 G4_2 fanout4_2
+node1,node2 G4_2 fanout4_2
+Before Backtrace ('fanout3_2', 'G4_2') x x
+('fanout2_2', 'G4_2') x x
+None
+G.nodes[node1]['gatetype'] G4_2
+val_assign 0
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('fanout2_2', 'G4_2')
+After Backtrace ('fanout3_2', 'G4_2') x x
+('fanout2_2', 'G4_2') 0 0
+None
+node1,node2 fanout2_2 G4_2
+node1,node2 fanout2_2 G4_2
+Before Backtrace ('G3_2', 'fanout2_2') x x
+None
+After Backtrace ('G3_2', 'fanout2_2') 0 0
+None
+node1,node2 G3_2 fanout2_2
+node1,node2 G3_2 fanout2_2
+Before Backtrace ('G2_2', 'G3_2') x x
+('G8_2', 'G3_2') x x
+None
+G.nodes[node1]['gatetype'] G3_2
+val_assign 0
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G2_2', 'G3_2')
+After Backtrace ('G2_2', 'G3_2') 0 0
+('G8_2', 'G3_2') x x
+None
+node1,node2 G2_2 G3_2
+node1,node2 G2_2 G3_2
+Before Backtrace ('fanout5_2', 'G2_2') x x
+('fanout6_2', 'G2_2') x x
+None
+G.nodes[node1]['gatetype'] G2_2
+val_assign 0
+G.nodes[node1]['gatetype'] or
+edge_to_assign ('fanout5_2', 'G2_2')
+After Backtrace ('fanout5_2', 'G2_2') 0 0
+('fanout6_2', 'G2_2') x x
+None
+node1,node2 fanout5_2 G2_2
+node1,node2 fanout5_2 G2_2
+Before Backtrace ('A_2', 'fanout5_2') x 0
+None
+After Backtrace ('A_2', 'fanout5_2') 0 0
+None
+node1,node2 A_2 fanout5_2
+Backtrace node A_2 fanout5_2 0 0
+I_Stack.peek() ('A_2', 'fanout5_2') 0
+None
+**********************Forward Implication 1st********************
+**************************************************************
+faulty_edge_list ['G6_2', 'out1_2', 'sa0']
+OUTPUT
+G6_2 out1_2 x 0
+G6_0 out1_0 x 0
+G6_1 out1_1 x 0
+G7_2 FF1_ip_2 x x
+A_2 fanout5_2 0 0
+A_1 fanout5_1 x 0
+A_0 fanout5_0 x 0
+FF1_op_0 fanout3_0 x x
+B_0 fanout6_0 x 0
+B_1 fanout6_1 x 0
+B_2 fanout6_2 x 0
+One turn over try another
+PO_list [('G6_2', 'out1_2'), ('G6_0', 'out1_0'), ('G7_2', 'FF1_ip_2'), ('G6_1', 'out1_1')]
+faulty_edge_list ['G6_2', 'out1_2', 'sa0']
+out1_2 out1_2
+X_path True
+**********************Objective ********************
+D_fronteir_list ['out1_2']
+**********************Backtrace ********************
+node1,node2 G6_2 out1_2
+Before Backtrace ('G5_2', 'G6_2') x x
+('G9_2', 'G6_2') x x
+None
+G.nodes[node1]['gatetype'] G6_2
+val_assign 1
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G9_2', 'G6_2')
+After Backtrace ('G5_2', 'G6_2') x x
+('G9_2', 'G6_2') 1 1
+None
+node1,node2 G9_2 G6_2
+node1,node2 G9_2 G6_2
+Before Backtrace ('fanout4_2', 'G9_2') x x
+None
+G.nodes[node1]['gatetype'] G9_2
+val_assign 1
+G.nodes[node1]['gatetype'] not
+edge_to_assign ('fanout4_2', 'G9_2')
+After Backtrace ('fanout4_2', 'G9_2') 0 0
+None
+node1,node2 fanout4_2 G9_2
+node1,node2 fanout4_2 G9_2
+Before Backtrace ('G4_2', 'fanout4_2') x x
+None
+After Backtrace ('G4_2', 'fanout4_2') 0 0
+None
+node1,node2 G4_2 fanout4_2
+node1,node2 G4_2 fanout4_2
+Before Backtrace ('fanout3_2', 'G4_2') x x
+('fanout2_2', 'G4_2') x x
+None
+G.nodes[node1]['gatetype'] G4_2
+val_assign 0
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('fanout2_2', 'G4_2')
+After Backtrace ('fanout3_2', 'G4_2') x x
+('fanout2_2', 'G4_2') 0 0
+None
+node1,node2 fanout2_2 G4_2
+node1,node2 fanout2_2 G4_2
+Before Backtrace ('G3_2', 'fanout2_2') x x
+None
+After Backtrace ('G3_2', 'fanout2_2') 0 0
+None
+node1,node2 G3_2 fanout2_2
+node1,node2 G3_2 fanout2_2
+Before Backtrace ('G2_2', 'G3_2') x x
+('G8_2', 'G3_2') 1 1
+None
+G.nodes[node1]['gatetype'] G3_2
+val_assign 0
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G2_2', 'G3_2')
+After Backtrace ('G2_2', 'G3_2') 0 0
+('G8_2', 'G3_2') 1 1
+None
+node1,node2 G2_2 G3_2
+node1,node2 G2_2 G3_2
+Before Backtrace ('fanout5_2', 'G2_2') 0 0
+('fanout6_2', 'G2_2') x x
+None
+G.nodes[node1]['gatetype'] G2_2
+val_assign 0
+G.nodes[node1]['gatetype'] or
+edge_to_assign ('fanout6_2', 'G2_2')
+After Backtrace ('fanout5_2', 'G2_2') 0 0
+('fanout6_2', 'G2_2') 0 0
+None
+node1,node2 fanout6_2 G2_2
+node1,node2 fanout6_2 G2_2
+Before Backtrace ('B_2', 'fanout6_2') x 0
+None
+After Backtrace ('B_2', 'fanout6_2') 0 0
+None
+node1,node2 B_2 fanout6_2
+Backtrace node B_2 fanout6_2 0 0
+I_Stack.peek() ('A_2', 'fanout5_2') 0
+('B_2', 'fanout6_2') 0
+None
+**********************Forward Implication 1st********************
+**************************************************************
+faulty_edge_list ['G6_2', 'out1_2', 'sa0']
+OUTPUT
+G6_2 out1_2 x 0
+G6_0 out1_0 x 0
+G6_1 out1_1 x 0
+G7_2 FF1_ip_2 0 0
+A_2 fanout5_2 0 0
+A_1 fanout5_1 x 0
+A_0 fanout5_0 x 0
+FF1_op_0 fanout3_0 x x
+B_0 fanout6_0 x 0
+B_1 fanout6_1 x 0
+B_2 fanout6_2 0 0
+One turn over try another
+PO_list [('G6_2', 'out1_2'), ('G6_0', 'out1_0'), ('G7_2', 'FF1_ip_2'), ('G6_1', 'out1_1')]
+faulty_edge_list ['G6_2', 'out1_2', 'sa0']
+out1_2 out1_2
+X_path True
+**********************Objective ********************
+D_fronteir_list ['out1_2', 'out1_2']
+**********************Backtrace ********************
+node1,node2 G6_2 out1_2
+Before Backtrace ('G5_2', 'G6_2') x x
+('G9_2', 'G6_2') 1 1
+None
+G.nodes[node1]['gatetype'] G6_2
+val_assign 1
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G5_2', 'G6_2')
+After Backtrace ('G5_2', 'G6_2') 1 1
+('G9_2', 'G6_2') 1 1
+None
+node1,node2 G5_2 G6_2
+node1,node2 G5_2 G6_2
+Before Backtrace ('fanout3_2', 'G5_2') x x
+('fanout2_2', 'G5_2') 0 0
+None
+G.nodes[node1]['gatetype'] G5_2
+val_assign 1
+G.nodes[node1]['gatetype'] or
+edge_to_assign ('fanout3_2', 'G5_2')
+After Backtrace ('fanout3_2', 'G5_2') 1 1
+('fanout2_2', 'G5_2') 0 0
+None
+node1,node2 fanout3_2 G5_2
+node1,node2 fanout3_2 G5_2
+Before Backtrace ('G7_1', 'fanout3_2') x x
+None
+After Backtrace ('G7_1', 'fanout3_2') 1 1
+None
+node1,node2 G7_1 fanout3_2
+node1,node2 G7_1 fanout3_2
+Before Backtrace ('fanout4_1', 'G7_1') x x
+('fanout1_1', 'G7_1') x x
+None
+G.nodes[node1]['gatetype'] G7_1
+val_assign 1
+G.nodes[node1]['gatetype'] or
+edge_to_assign ('fanout1_1', 'G7_1')
+After Backtrace ('fanout4_1', 'G7_1') x x
+('fanout1_1', 'G7_1') 1 1
+None
+node1,node2 fanout1_1 G7_1
+node1,node2 fanout1_1 G7_1
 Before Backtrace ('G1_1', 'fanout1_1') x x
 None
 After Backtrace ('G1_1', 'fanout1_1') 1 1
@@ -515,77 +1181,76 @@ After Backtrace ('A_1', 'fanout5_1') 1 1
 None
 node1,node2 A_1 fanout5_1
 Backtrace node A_1 fanout5_1 1 0
-I_Stack.peek() ('A_1', 'fanout5_1') 1
+I_Stack.peek() ('A_2', 'fanout5_2') 0
+('B_2', 'fanout6_2') 0
+('A_1', 'fanout5_1') 1
 None
 **********************Forward Implication 1st********************
 **************************************************************
-faulty_edge_list ['fanout1_1', 'G8_1', 'sa0']
+faulty_edge_list ['G6_2', 'out1_2', 'sa0']
 OUTPUT
-G2_0 G3_0 x x
-G2_1 G3_1 1 1
+G6_2 out1_2 x 0
+G6_0 out1_0 x 0
+G6_1 out1_1 x 0
+G7_2 FF1_ip_2 0 0
+A_2 fanout5_2 0 0
+A_1 fanout5_1 1 1
 A_0 fanout5_0 x 0
 FF1_op_0 fanout3_0 x x
-A_1 fanout5_1 1 1
-G5_1 G6_1 x 1
-fanout3_1 G5_1 x x
-fanout3_1 G4_1 x x
 B_0 fanout6_0 x 0
 B_1 fanout6_1 x 0
-G4_0 fanout4_0 x x
-G4_1 fanout4_1 x x
-fanout4_1 G9_1 x x
-fanout4_1 G7_1 x x
-fanout4_0 G9_0 x x
-fanout4_0 G7_0 x x
-fanout3_0 G4_0 x x
-fanout3_0 G5_0 x x
-G5_0 G6_0 x x
-fanout2_1 G5_1 x 1
-fanout2_1 G4_1 x 1
-fanout2_0 G4_0 x x
-fanout2_0 G5_0 x x
-G6_0 out1_0 x x
-G6_1 out1_1 x x
-G7_1 FF1_ip_1 x x
-G7_0 fanout3_1 x x
-G9_1 G6_1 x x
-G9_0 G6_0 x x
-fanout1_0 G8_0 x 0
-fanout1_0 G7_0 x x
-fanout1_1 G8_1 x 0
-fanout1_1 G7_1 x x
-G1_1 fanout1_1 x x
-G1_0 fanout1_0 x x
-G3_1 fanout2_1 x 1
-G3_0 fanout2_0 x x
-fanout6_1 G2_1 x x
-fanout6_1 G1_1 x x
-fanout6_0 G2_0 x x
-fanout6_0 G1_0 x x
-fanout5_0 G2_0 x x
-fanout5_0 G1_0 x x
-fanout5_1 G2_1 1 1
-fanout5_1 G1_1 1 1
-G8_0 G3_0 x x
-G8_1 G3_1 x 1
+B_2 fanout6_2 0 0
 One turn over try another
-PO_list [('G6_0', 'out1_0'), ('G7_1', 'FF1_ip_1'), ('G6_1', 'out1_1')]
-faulty_edge_list ['fanout1_1', 'G8_1', 'sa0']
-G8_1 out1_0
-['G8_1', 'G3_1', 'fanout2_1', 'G4_1', 'fanout4_1', 'G7_1', 'FF1_ip_1']
-edges [('G8_1', 'G3_1'), ('G3_1', 'fanout2_1'), ('fanout2_1', 'G4_1'), ('G4_1', 'fanout4_1'), ('fanout4_1', 'G7_1'), ('G7_1', 'FF1_ip_1')]
-i ('G8_1', 'G3_1')
-i ('G3_1', 'fanout2_1')
-i ('fanout2_1', 'G4_1')
-i ('G4_1', 'fanout4_1')
-i ('fanout4_1', 'G7_1')
-i ('G7_1', 'FF1_ip_1')
-G8_1 FF1_ip_1
+PO_list [('G6_2', 'out1_2'), ('G6_0', 'out1_0'), ('G7_2', 'FF1_ip_2'), ('G6_1', 'out1_1')]
+faulty_edge_list ['G6_2', 'out1_2', 'sa0']
+out1_2 out1_2
 X_path True
 **********************Objective ********************
-D_fronteir_list ['G8_1']
+D_fronteir_list ['out1_2', 'out1_2', 'out1_2']
 **********************Backtrace ********************
-node1,node2 fanout1_1 G8_1
+node1,node2 G6_2 out1_2
+Before Backtrace ('G5_2', 'G6_2') x x
+('G9_2', 'G6_2') 1 1
+None
+G.nodes[node1]['gatetype'] G6_2
+val_assign 1
+G.nodes[node1]['gatetype'] and
+edge_to_assign ('G5_2', 'G6_2')
+After Backtrace ('G5_2', 'G6_2') 1 1
+('G9_2', 'G6_2') 1 1
+None
+node1,node2 G5_2 G6_2
+node1,node2 G5_2 G6_2
+Before Backtrace ('fanout3_2', 'G5_2') x x
+('fanout2_2', 'G5_2') 0 0
+None
+G.nodes[node1]['gatetype'] G5_2
+val_assign 1
+G.nodes[node1]['gatetype'] or
+edge_to_assign ('fanout3_2', 'G5_2')
+After Backtrace ('fanout3_2', 'G5_2') 1 1
+('fanout2_2', 'G5_2') 0 0
+None
+node1,node2 fanout3_2 G5_2
+node1,node2 fanout3_2 G5_2
+Before Backtrace ('G7_1', 'fanout3_2') x x
+None
+After Backtrace ('G7_1', 'fanout3_2') 1 1
+None
+node1,node2 G7_1 fanout3_2
+node1,node2 G7_1 fanout3_2
+Before Backtrace ('fanout4_1', 'G7_1') x x
+('fanout1_1', 'G7_1') x x
+None
+G.nodes[node1]['gatetype'] G7_1
+val_assign 1
+G.nodes[node1]['gatetype'] or
+edge_to_assign ('fanout1_1', 'G7_1')
+After Backtrace ('fanout4_1', 'G7_1') x x
+('fanout1_1', 'G7_1') 1 1
+None
+node1,node2 fanout1_1 G7_1
+node1,node2 fanout1_1 G7_1
 Before Backtrace ('G1_1', 'fanout1_1') x x
 None
 After Backtrace ('G1_1', 'fanout1_1') 1 1
@@ -610,343 +1275,24 @@ After Backtrace ('B_1', 'fanout6_1') 1 1
 None
 node1,node2 B_1 fanout6_1
 Backtrace node B_1 fanout6_1 1 0
-I_Stack.peek() ('A_1', 'fanout5_1') 1
+I_Stack.peek() ('A_2', 'fanout5_2') 0
+('B_2', 'fanout6_2') 0
+('A_1', 'fanout5_1') 1
 ('B_1', 'fanout6_1') 1
 None
 **********************Forward Implication 1st********************
 **************************************************************
-faulty_edge_list ['fanout1_1', 'G8_1', 'sa0']
+faulty_edge_list ['G6_2', 'out1_2', 'sa0']
 OUTPUT
-G2_0 G3_0 x x
-G2_1 G3_1 1 1
+G6_2 out1_2 1 0
+G6_0 out1_0 x 0
+G6_1 out1_1 x 0
+G7_2 FF1_ip_2 0 0
+A_2 fanout5_2 0 0
+A_1 fanout5_1 1 1
 A_0 fanout5_0 x 0
 FF1_op_0 fanout3_0 x x
-A_1 fanout5_1 1 1
-G5_1 G6_1 x 1
-fanout3_1 G5_1 x x
-fanout3_1 G4_1 x x
 B_0 fanout6_0 x 0
 B_1 fanout6_1 1 1
-G4_0 fanout4_0 x x
-G4_1 fanout4_1 0 x
-fanout4_1 G9_1 0 x
-fanout4_1 G7_1 0 x
-fanout4_0 G9_0 x x
-fanout4_0 G7_0 x x
-fanout3_0 G4_0 x x
-fanout3_0 G5_0 x x
-G5_0 G6_0 x x
-fanout2_1 G5_1 0 1
-fanout2_1 G4_1 0 1
-fanout2_0 G4_0 x x
-fanout2_0 G5_0 x x
-G6_0 out1_0 x x
-G6_1 out1_1 x x
-G7_1 FF1_ip_1 1 1
-G7_0 fanout3_1 x x
-G9_1 G6_1 1 x
-G9_0 G6_0 x x
-fanout1_0 G8_0 x 0
-fanout1_0 G7_0 x x
-fanout1_1 G8_1 1 0
-fanout1_1 G7_1 1 1
-G1_1 fanout1_1 1 1
-G1_0 fanout1_0 x x
-G3_1 fanout2_1 0 1
-G3_0 fanout2_0 x x
-fanout6_1 G2_1 1 1
-fanout6_1 G1_1 1 1
-fanout6_0 G2_0 x x
-fanout6_0 G1_0 x x
-fanout5_0 G2_0 x x
-fanout5_0 G1_0 x x
-fanout5_1 G2_1 1 1
-fanout5_1 G1_1 1 1
-G8_0 G3_0 x x
-G8_1 G3_1 0 1
-One turn over try another
-PO_list [('G6_0', 'out1_0'), ('G7_1', 'FF1_ip_1'), ('G6_1', 'out1_1')]
-faulty_edge_list ['fanout1_1', 'G8_1', 'sa0']
-G8_1 out1_0
-['G8_1', 'G3_1', 'fanout2_1', 'G4_1', 'fanout4_1', 'G7_1', 'FF1_ip_1']
-edges [('G8_1', 'G3_1'), ('G3_1', 'fanout2_1'), ('fanout2_1', 'G4_1'), ('G4_1', 'fanout4_1'), ('fanout4_1', 'G7_1'), ('G7_1', 'FF1_ip_1')]
-i ('G8_1', 'G3_1')
-i ('G3_1', 'fanout2_1')
-i ('fanout2_1', 'G4_1')
-i ('G4_1', 'fanout4_1')
-i ('fanout4_1', 'G7_1')
-i ('G7_1', 'FF1_ip_1')
-G8_1 FF1_ip_1
-['G8_1', 'G3_1', 'fanout2_1', 'G5_1', 'G6_1', 'out1_1']
-edges [('G8_1', 'G3_1'), ('G3_1', 'fanout2_1'), ('fanout2_1', 'G5_1'), ('G5_1', 'G6_1'), ('G6_1', 'out1_1')]
-i ('G8_1', 'G3_1')
-i ('G3_1', 'fanout2_1')
-i ('fanout2_1', 'G5_1')
-i ('G5_1', 'G6_1')
-i ('G6_1', 'out1_1')
-['G8_1', 'G3_1', 'fanout2_1', 'G4_1', 'fanout4_1', 'G9_1', 'G6_1', 'out1_1']
-edges [('G8_1', 'G3_1'), ('G3_1', 'fanout2_1'), ('fanout2_1', 'G4_1'), ('G4_1', 'fanout4_1'), ('fanout4_1', 'G9_1'), ('G9_1', 'G6_1'), ('G6_1', 'out1_1')]
-i ('G8_1', 'G3_1')
-i ('G3_1', 'fanout2_1')
-i ('fanout2_1', 'G4_1')
-i ('G4_1', 'fanout4_1')
-i ('fanout4_1', 'G9_1')
-i ('G9_1', 'G6_1')
-i ('G6_1', 'out1_1')
-G8_1 out1_1
-X_path True
-**********************Objective ********************
-D_fronteir_list ['G8_1', 'G8_1']
-D_fronteir []
-D_fronteir ['G5_1']
-D_fronteir ['G5_1']
-D_fronteir ['G4_1', 'G5_1']
-sort_D_fronteir
-[('G4_1', 'fanout4_1')]
-[('G5_1', 'G6_1')]
-D_fronteir_list [('G4_1', 3), ('G5_1', 7)]
-@@@@@@@@@@@ undefined_ip
-node_D_fronteir G4_1
-**********************Backtrace ********************
-node1,node2 fanout3_1 G4_1
-Before Backtrace ('G7_0', 'fanout3_1') x x
-None
-After Backtrace ('G7_0', 'fanout3_1') 1 1
-None
-node1,node2 G7_0 fanout3_1
-node1,node2 G7_0 fanout3_1
-Before Backtrace ('fanout4_0', 'G7_0') x x
-('fanout1_0', 'G7_0') x x
-None
-G.nodes[node1]['gatetype'] G7_0
-val_assign 1
-G.nodes[node1]['gatetype'] or
-edge_to_assign ('fanout1_0', 'G7_0')
-After Backtrace ('fanout4_0', 'G7_0') x x
-('fanout1_0', 'G7_0') 1 1
-None
-node1,node2 fanout1_0 G7_0
-node1,node2 fanout1_0 G7_0
-Before Backtrace ('G1_0', 'fanout1_0') x x
-None
-After Backtrace ('G1_0', 'fanout1_0') 1 1
-None
-node1,node2 G1_0 fanout1_0
-node1,node2 G1_0 fanout1_0
-Before Backtrace ('fanout5_0', 'G1_0') x x
-('fanout6_0', 'G1_0') x x
-None
-G.nodes[node1]['gatetype'] G1_0
-val_assign 1
-G.nodes[node1]['gatetype'] and
-edge_to_assign ('fanout5_0', 'G1_0')
-After Backtrace ('fanout5_0', 'G1_0') 1 1
-('fanout6_0', 'G1_0') x x
-None
-node1,node2 fanout5_0 G1_0
-node1,node2 fanout5_0 G1_0
-Before Backtrace ('A_0', 'fanout5_0') x 0
-None
-After Backtrace ('A_0', 'fanout5_0') 1 1
-None
-node1,node2 A_0 fanout5_0
-Backtrace node A_0 fanout5_0 1 0
-I_Stack.peek() ('A_1', 'fanout5_1') 1
-('B_1', 'fanout6_1') 1
-('A_0', 'fanout5_0') 1
-None
-**********************Forward Implication 1st********************
-**************************************************************
-faulty_edge_list ['fanout1_1', 'G8_1', 'sa0']
-OUTPUT
-G2_0 G3_0 1 1
-G2_1 G3_1 1 1
-A_0 fanout5_0 1 1
-FF1_op_0 fanout3_0 x x
-A_1 fanout5_1 1 1
-G5_1 G6_1 x 1
-fanout3_1 G5_1 x x
-fanout3_1 G4_1 x x
-B_0 fanout6_0 x 0
-B_1 fanout6_1 1 1
-G4_0 fanout4_0 x x
-G4_1 fanout4_1 0 x
-fanout4_1 G9_1 0 x
-fanout4_1 G7_1 0 x
-fanout4_0 G9_0 x x
-fanout4_0 G7_0 x x
-fanout3_0 G4_0 x x
-fanout3_0 G5_0 x x
-G5_0 G6_0 x 1
-fanout2_1 G5_1 0 1
-fanout2_1 G4_1 0 1
-fanout2_0 G4_0 x 1
-fanout2_0 G5_0 x 1
-G6_0 out1_0 x x
-G6_1 out1_1 x x
-G7_1 FF1_ip_1 1 1
-G7_0 fanout3_1 x x
-G9_1 G6_1 1 x
-G9_0 G6_0 x x
-fanout1_0 G8_0 x 0
-fanout1_0 G7_0 x x
-fanout1_1 G8_1 1 0
-fanout1_1 G7_1 1 1
-G1_1 fanout1_1 1 1
-G1_0 fanout1_0 x x
-G3_1 fanout2_1 0 1
-G3_0 fanout2_0 x 1
-fanout6_1 G2_1 1 1
-fanout6_1 G1_1 1 1
-fanout6_0 G2_0 x x
-fanout6_0 G1_0 x x
-fanout5_0 G2_0 1 1
-fanout5_0 G1_0 1 1
-fanout5_1 G2_1 1 1
-fanout5_1 G1_1 1 1
-G8_0 G3_0 x 1
-G8_1 G3_1 0 1
-One turn over try another
-PO_list [('G6_0', 'out1_0'), ('G7_1', 'FF1_ip_1'), ('G6_1', 'out1_1')]
-faulty_edge_list ['fanout1_1', 'G8_1', 'sa0']
-G8_1 out1_0
-['G8_1', 'G3_1', 'fanout2_1', 'G4_1', 'fanout4_1', 'G7_1', 'FF1_ip_1']
-edges [('G8_1', 'G3_1'), ('G3_1', 'fanout2_1'), ('fanout2_1', 'G4_1'), ('G4_1', 'fanout4_1'), ('fanout4_1', 'G7_1'), ('G7_1', 'FF1_ip_1')]
-i ('G8_1', 'G3_1')
-i ('G3_1', 'fanout2_1')
-i ('fanout2_1', 'G4_1')
-i ('G4_1', 'fanout4_1')
-i ('fanout4_1', 'G7_1')
-i ('G7_1', 'FF1_ip_1')
-G8_1 FF1_ip_1
-['G8_1', 'G3_1', 'fanout2_1', 'G5_1', 'G6_1', 'out1_1']
-edges [('G8_1', 'G3_1'), ('G3_1', 'fanout2_1'), ('fanout2_1', 'G5_1'), ('G5_1', 'G6_1'), ('G6_1', 'out1_1')]
-i ('G8_1', 'G3_1')
-i ('G3_1', 'fanout2_1')
-i ('fanout2_1', 'G5_1')
-i ('G5_1', 'G6_1')
-i ('G6_1', 'out1_1')
-['G8_1', 'G3_1', 'fanout2_1', 'G4_1', 'fanout4_1', 'G9_1', 'G6_1', 'out1_1']
-edges [('G8_1', 'G3_1'), ('G3_1', 'fanout2_1'), ('fanout2_1', 'G4_1'), ('G4_1', 'fanout4_1'), ('fanout4_1', 'G9_1'), ('G9_1', 'G6_1'), ('G6_1', 'out1_1')]
-i ('G8_1', 'G3_1')
-i ('G3_1', 'fanout2_1')
-i ('fanout2_1', 'G4_1')
-i ('G4_1', 'fanout4_1')
-i ('fanout4_1', 'G9_1')
-i ('G9_1', 'G6_1')
-i ('G6_1', 'out1_1')
-G8_1 out1_1
-X_path True
-**********************Objective ********************
-D_fronteir_list [('G4_1', 3), ('G5_1', 7)]
-D_fronteir []
-D_fronteir ['G5_1']
-D_fronteir ['G5_1']
-D_fronteir ['G4_1', 'G5_1']
-sort_D_fronteir
-[('G4_1', 'fanout4_1')]
-[('G5_1', 'G6_1')]
-D_fronteir_list [('G4_1', 3), ('G5_1', 7)]
-@@@@@@@@@@@ undefined_ip
-node_D_fronteir G4_1
-**********************Backtrace ********************
-node1,node2 fanout3_1 G4_1
-Before Backtrace ('G7_0', 'fanout3_1') x x
-None
-After Backtrace ('G7_0', 'fanout3_1') 1 1
-None
-node1,node2 G7_0 fanout3_1
-node1,node2 G7_0 fanout3_1
-Before Backtrace ('fanout4_0', 'G7_0') x x
-('fanout1_0', 'G7_0') x x
-None
-G.nodes[node1]['gatetype'] G7_0
-val_assign 1
-G.nodes[node1]['gatetype'] or
-edge_to_assign ('fanout1_0', 'G7_0')
-After Backtrace ('fanout4_0', 'G7_0') x x
-('fanout1_0', 'G7_0') 1 1
-None
-node1,node2 fanout1_0 G7_0
-node1,node2 fanout1_0 G7_0
-Before Backtrace ('G1_0', 'fanout1_0') x x
-None
-After Backtrace ('G1_0', 'fanout1_0') 1 1
-None
-node1,node2 G1_0 fanout1_0
-node1,node2 G1_0 fanout1_0
-Before Backtrace ('fanout5_0', 'G1_0') 1 1
-('fanout6_0', 'G1_0') x x
-None
-G.nodes[node1]['gatetype'] G1_0
-val_assign 1
-G.nodes[node1]['gatetype'] and
-edge_to_assign ('fanout6_0', 'G1_0')
-After Backtrace ('fanout5_0', 'G1_0') 1 1
-('fanout6_0', 'G1_0') 1 1
-None
-node1,node2 fanout6_0 G1_0
-node1,node2 fanout6_0 G1_0
-Before Backtrace ('B_0', 'fanout6_0') x 0
-None
-After Backtrace ('B_0', 'fanout6_0') 1 1
-None
-node1,node2 B_0 fanout6_0
-Backtrace node B_0 fanout6_0 1 0
-I_Stack.peek() ('A_1', 'fanout5_1') 1
-('B_1', 'fanout6_1') 1
-('A_0', 'fanout5_0') 1
-('B_0', 'fanout6_0') 1
-None
-**********************Forward Implication 1st********************
-**************************************************************
-faulty_edge_list ['fanout1_1', 'G8_1', 'sa0']
-OUTPUT
-G2_0 G3_0 1 1
-G2_1 G3_1 1 1
-A_0 fanout5_0 1 1
-FF1_op_0 fanout3_0 x x
-A_1 fanout5_1 1 1
-G5_1 G6_1 1 1
-fanout3_1 G5_1 1 1
-fanout3_1 G4_1 1 1
-B_0 fanout6_0 1 1
-B_1 fanout6_1 1 1
-G4_0 fanout4_0 0 x
-G4_1 fanout4_1 0 1
-fanout4_1 G9_1 0 1
-fanout4_1 G7_1 0 1
-fanout4_0 G9_0 0 x
-fanout4_0 G7_0 0 x
-fanout3_0 G4_0 x x
-fanout3_0 G5_0 x x
-G5_0 G6_0 x 1
-fanout2_1 G5_1 0 1
-fanout2_1 G4_1 0 1
-fanout2_0 G4_0 0 1
-fanout2_0 G5_0 0 1
-G6_0 out1_0 x x
-G6_1 out1_1 1 0
-G7_1 FF1_ip_1 1 1
-G7_0 fanout3_1 1 1
-G9_1 G6_1 1 0
-G9_0 G6_0 1 x
-fanout1_0 G8_0 1 0
-fanout1_0 G7_0 1 1
-fanout1_1 G8_1 1 0
-fanout1_1 G7_1 1 1
-G1_1 fanout1_1 1 1
-G1_0 fanout1_0 1 1
-G3_1 fanout2_1 0 1
-G3_0 fanout2_0 0 1
-fanout6_1 G2_1 1 1
-fanout6_1 G1_1 1 1
-fanout6_0 G2_0 1 1
-fanout6_0 G1_0 1 1
-fanout5_0 G2_0 1 1
-fanout5_0 G1_0 1 1
-fanout5_1 G2_1 1 1
-fanout5_1 G1_1 1 1
-G8_0 G3_0 0 1
-G8_1 G3_1 0 1
+B_2 fanout6_2 0 0
 One turn over try another
