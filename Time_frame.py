@@ -1,6 +1,6 @@
 #import Podem as Podem
 from Podem import *
-from Graph_Seq_Figure_8_6 import *
+from Graph_Seq_8_3 import *
 from Controlability_Observability import *
 
 #Positive Time Frame
@@ -106,6 +106,7 @@ def overall_Graph_Seq():
 	global faulty_edge_select
 	
 	GU	=Total_Graph(No_of_Unroll)
+	
 	print "No_of_Unroll",No_of_Unroll
 	faulty_node1_list,faulty_node2_list,stuck_at_list,fault_path_to_op = faulty_edg_len(GU)
 	

@@ -26,6 +26,13 @@ G.add_edge('A','G1', value_non_fault='x',value_faulty='0',fault='sa0',cc0=1,cc1=
 
 
 
+
+
+
+
+
+#######################################PRINT_Graph###################################################################################
+
 def print_Graph(Graph):
 	print "OUTPUT NODE"
 	for i in  Graph.edges(data=True):
@@ -92,9 +99,10 @@ def Loop_Unroll_Once(GU):
 			GU.remove_node(i)
 			GU.add_node((i + "_ip"),type='output',op_type='FF_ip')
 			GU.add_node((i + "_op"),type='input',op_type='FF_op')
+	print "Unrolled_Graph"		
+	print_Graph(GU)
 	return GU
-		
-#print_Graph(GU)
+	
 #print "GU",GU.nodes(data=True)
 #############################################GUZ_creation(Unrolled graph by dseq+1)##################################################################################		
 
@@ -164,7 +172,7 @@ def Connect_FF_op_FF_ip(Graph,No_of_Unroll):
 			Graph.remove_node(list_outedge[0])
 			
 		
-			Graph.add_edge(list_inedge[0], list_outedge[1],value_non_fault='x',value_faulty='x', fault='')
+			Graph.add_edge(list_inedge[0], list_outedge[1],value_non_fault='x',value_faulty='x',cc0=0,cc1=0,co=0,fault='')
 			
 		#----------Adding edge between FF_in in previous cycle and FF o/p
 		

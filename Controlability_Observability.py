@@ -6,6 +6,7 @@ from collections import OrderedDict
 def print_Graph_edges(G):
 	
 	for item in G.edges(data=True):
+			print item
 			print item[0],item[1], item[2]['cc0'],item[2]['cc1'],item[2]['co']
 					
 
