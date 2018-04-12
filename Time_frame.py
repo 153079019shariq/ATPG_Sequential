@@ -1,6 +1,6 @@
 #import Podem as Podem
 from Podem import *
-from Graph_Seq_8_3 import *
+from Graph_Seq_Figure_8_6 import *
 from Controlability_Observability import *
 
 #Positive Time Frame

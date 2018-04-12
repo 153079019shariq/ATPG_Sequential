@@ -412,25 +412,61 @@ def print_Graph_edges():
 	
 def error_at_PO():
 		global G
-		for i in PO_list: 
+		for i in PO_list:
 			if(G.edges[i]['value_non_fault']!='x' and G.edges[i]['value_faulty']!='x' and G.edges[i]['value_non_fault']!=G.edges[i]['value_faulty'] ):
 				return True
 		return False 
-def test_not_possible_with_this_val():
-		global G
-		for i in PO_list:
-			if(G.edges[i]['value_non_fault']==G.edges[i]['value_faulty'] and G.edges[i]['value_non_fault']!='x' and G.edges[i]['value_faulty']!='x' and
-			all_PI_assigned()==True):
+
+
+#--------------------------------------------X_path_check-----------------------------------------------------------------------------	
+def X_path(faulty_edge_list,PO_list):
+	print "PO_list",PO_list
+	print "faulty_edge_list",faulty_edge_list
+		
+	for i in PO_list:
+			if (X_check_path(faulty_edge_list[1],i[1])==True):
 				return True
-		return False
-			
-def all_PI_assigned():
-	global G
-	for i in PI_list:
-		if(G.edges[i]['value_non_fault']=='x'):
-			return False
+				
+				
+	return False
 	
-	return True
+	
+def X_create_edge(path):		
+		print path
+		edge_list=[]
+		if(len(path)>0):
+			for i in range(len(path)):
+				if(i>0):
+					edge_list.append((path[i-1],path[i]))
+			print "edges",edge_list
+		return edge_list
+		
+			
+def X_check_path(Source,Destination):
+	flag =0
+	
+	for path in nx.all_simple_paths(G, source=Source, target=Destination):
+		edges = X_create_edge(path)
+	
+		if(len(edges)!=0):
+			for i in edges:
+					print "i",i
+					if((G.edges[i]['value_non_fault']=='x' or G.edges[i]['value_faulty']=='x') or  #X
+					   (G.edges[i]['value_non_fault']=='1' and G.edges[i]['value_faulty']=='0')or	#D
+					   (G.edges[i]['value_non_fault']=='0' and G.edges[i]['value_faulty']=='1')):	#D_bar
+					
+						flag=1
+					else: 
+						flag =0
+						break
+	
+	if(flag==1):
+		print Source,Destination
+		return True
+	else:
+		print Source,Destination
+		return False
+#-----------------------------------------------------------------------------------------------------------------------------------------
 
 	
 def atpg_PODEM():
@@ -439,9 +475,12 @@ def atpg_PODEM():
 		count =0
 		if(error_at_PO()==True):
 			return True
-		print "test_not_possible_with_this_val()",test_not_possible_with_this_val()
-		if(test_not_possible_with_this_val()==True):
-			return False	
+		
+		if(X_path(faulty_edge_list,PO_list)==False):
+			print "X_path False"
+			return False
+		else:
+			print "X_path True"
 		#while (G.edges[PO_list[0]]['value_non_fault']=='x' ):
 			#print "faulty_edge_list",faulty_edge_list
 		print "**********************Objective ********************"
