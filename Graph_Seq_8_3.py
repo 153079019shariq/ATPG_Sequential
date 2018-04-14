@@ -39,7 +39,7 @@ G.add_edges_from([('A', 'fanout5'),('B','fanout6'),('fanout5','G1'),('fanout5','
 G.add_edge('A', 'fanout5', value_non_fault='x',value_faulty='0',fault='',cc0=1,cc1=1,co=0)
 G.add_edge('B','fanout6', value_non_fault='x',value_faulty='0',fault='',cc0=1,cc1=1,co=0)
 
-G.add_edge('G6','out1', value_non_fault='x',value_faulty='0',fault='sa0',cc0=0,cc1=0,co=0)
+G.add_edge('G7','FF1', value_non_fault='x',value_faulty='0',fault='sa0',cc0=0,cc1=0,co=0)
 
 
 
@@ -121,11 +121,11 @@ def Loop_Unroll_Once(GU):
 				sa1_insert1 =0
 			GU.remove_edge(i[0], i[1])
 			if(sa0_insert1 ==1):
-				GU.add_edge(i[0], i[1]+"_ip",value_non_fault='x',value_faulty='x', fault='sa0',cc0=0,cc1=0,co=0)
+				GU.add_edge(i[0], i[1]+"_ip",value_non_fault='x',value_faulty='x', fault='sa0',cc0=0,cc1=0,co=100)
 			elif(sa1_insert1==1):
-				GU.add_edge(i[0], i[1]+"_ip",value_non_fault='x',value_faulty='x', fault='sa1',cc0=0,cc1=0,co=0)
+				GU.add_edge(i[0], i[1]+"_ip",value_non_fault='x',value_faulty='x', fault='sa1',cc0=0,cc1=0,co=100)
 			else:
-				GU.add_edge(i[0], i[1]+"_ip",value_non_fault='x',value_faulty='x', fault='',cc0=0,cc1=0,co=0)
+				GU.add_edge(i[0], i[1]+"_ip",value_non_fault='x',value_faulty='x', fault='',cc0=0,cc1=0,co=100)
 			
 			
 	print "########################################################################################"	
